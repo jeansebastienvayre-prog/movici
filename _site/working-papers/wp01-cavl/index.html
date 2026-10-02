@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>CAVL: A Cognitive Architecture for Vigilant Learning – MOVICI</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">MOVICI</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-working-papers" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Working Papers</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-working-papers">    
+        <li>
+    <a class="dropdown-item" href="../../working-papers/wp01-cavl/index.html">
+ <span class="dropdown-text">WP01 — CAVL</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../working-papers/wp02-information-search/index.html">
+ <span class="dropdown-text">WP02 — Information Search</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../working-papers/wp03-debate/index.html">
+ <span class="dropdown-text">WP03 — Debate</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../working-papers/wp04-search-debate/index.html">
+ <span class="dropdown-text">WP04 — Information Search &amp; Debate</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../working-papers/wp05-agent-based-model/index.html">
+ <span class="dropdown-text">WP05 — Agent-Based Model</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../team.html"> 
+<span class="menu-text">Project Team</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../funding.html"> 
+<span class="menu-text">Funding</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#video-presentation" id="toc-video-presentation" class="nav-link active" data-scroll-target="#video-presentation">Video Presentation</a></li>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#the-theoretical-problem-of-socially-embedded-vigilant-learning" id="toc-the-theoretical-problem-of-socially-embedded-vigilant-learning" class="nav-link" data-scroll-target="#the-theoretical-problem-of-socially-embedded-vigilant-learning">1 The theoretical problem of socially embedded vigilant learning</a></li>
+  <li><a href="#what-kind-of-architecture-is-cavl" id="toc-what-kind-of-architecture-is-cavl" class="nav-link" data-scroll-target="#what-kind-of-architecture-is-cavl">2 What kind of architecture is CAVL</a>
+  <ul class="collapse">
+  <li><a href="#a-functional-multilevel-and-precomputational-architecture" id="toc-a-functional-multilevel-and-precomputational-architecture" class="nav-link" data-scroll-target="#a-functional-multilevel-and-precomputational-architecture">2.1 A functional multilevel and precomputational architecture</a></li>
+  <li><a href="#integration-by-explanatory-transition" id="toc-integration-by-explanatory-transition" class="nav-link" data-scroll-target="#integration-by-explanatory-transition">2.2 Integration by explanatory transition</a></li>
+  <li><a href="#relation-to-adjacent-theories" id="toc-relation-to-adjacent-theories" class="nav-link" data-scroll-target="#relation-to-adjacent-theories">2.3 Relation to adjacent theories</a></li>
+  </ul></li>
+  <li><a href="#the-cognitive-learning-core" id="toc-the-cognitive-learning-core" class="nav-link" data-scroll-target="#the-cognitive-learning-core">3 The cognitive learning core</a>
+  <ul class="collapse">
+  <li><a href="#declarative-and-procedural-long-term-memory" id="toc-declarative-and-procedural-long-term-memory" class="nav-link" data-scroll-target="#declarative-and-procedural-long-term-memory">3.1 Declarative and procedural long-term memory</a></li>
+  <li><a href="#working-memory-as-a-constrained-coordination-space" id="toc-working-memory-as-a-constrained-coordination-space" class="nav-link" data-scroll-target="#working-memory-as-a-constrained-coordination-space">3.2 Working memory as a constrained coordination space</a></li>
+  <li><a href="#learning-as-schema-construction-proceduralizing-and-feedback" id="toc-learning-as-schema-construction-proceduralizing-and-feedback" class="nav-link" data-scroll-target="#learning-as-schema-construction-proceduralizing-and-feedback">3.3 Learning as schema construction proceduralizing and feedback</a></li>
+  <li><a href="#developmental-asymmetry" id="toc-developmental-asymmetry" class="nav-link" data-scroll-target="#developmental-asymmetry">3.4 Developmental asymmetry</a></li>
+  </ul></li>
+  <li><a href="#epistemic-regulations-within-the-learning-architecture" id="toc-epistemic-regulations-within-the-learning-architecture" class="nav-link" data-scroll-target="#epistemic-regulations-within-the-learning-architecture">4 Epistemic regulations within the learning architecture</a>
+  <ul class="collapse">
+  <li><a href="#theory-of-mind-social-knowledge-and-source-representation" id="toc-theory-of-mind-social-knowledge-and-source-representation" class="nav-link" data-scroll-target="#theory-of-mind-social-knowledge-and-source-representation">4.1 Theory of mind social knowledge and source representation</a></li>
+  <li><a href="#epistemic-vigilance-as-coordinated-content-and-source-evaluation" id="toc-epistemic-vigilance-as-coordinated-content-and-source-evaluation" class="nav-link" data-scroll-target="#epistemic-vigilance-as-coordinated-content-and-source-evaluation">4.2 Epistemic vigilance as coordinated content and source evaluation</a></li>
+  <li><a href="#metacognitive-monitoring-and-control" id="toc-metacognitive-monitoring-and-control" class="nav-link" data-scroll-target="#metacognitive-monitoring-and-control">4.3 Metacognitive monitoring and control</a></li>
+  <li><a href="#two-processing-regimes-rather-than-two-fixed-routes" id="toc-two-processing-regimes-rather-than-two-fixed-routes" class="nav-link" data-scroll-target="#two-processing-regimes-rather-than-two-fixed-routes">4.4 Two processing regimes rather than two fixed routes</a></li>
+  </ul></li>
+  <li><a href="#effective-relevance-epistemic-weight-and-uptake" id="toc-effective-relevance-epistemic-weight-and-uptake" class="nav-link" data-scroll-target="#effective-relevance-epistemic-weight-and-uptake">5 Effective relevance epistemic weight and uptake</a>
+  <ul class="collapse">
+  <li><a href="#relevance-is-effects-relative-to-effort" id="toc-relevance-is-effects-relative-to-effort" class="nav-link" data-scroll-target="#relevance-is-effects-relative-to-effort">5.1 Relevance is effects relative to effort</a></li>
+  <li><a href="#conceptual-constraints-on-relevance-epistemic-weight-and-uptake" id="toc-conceptual-constraints-on-relevance-epistemic-weight-and-uptake" class="nav-link" data-scroll-target="#conceptual-constraints-on-relevance-epistemic-weight-and-uptake">5.2 Conceptual constraints on relevance epistemic weight and uptake</a></li>
+  <li><a href="#from-weighting-to-multiple-forms-of-uptake" id="toc-from-weighting-to-multiple-forms-of-uptake" class="nav-link" data-scroll-target="#from-weighting-to-multiple-forms-of-uptake">5.3 From weighting to multiple forms of uptake</a></li>
+  </ul></li>
+  <li><a href="#double-social-embedding" id="toc-double-social-embedding" class="nav-link" data-scroll-target="#double-social-embedding">6 Double social embedding</a>
+  <ul class="collapse">
+  <li><a href="#interactional-embedding-from-competence-to-authority" id="toc-interactional-embedding-from-competence-to-authority" class="nav-link" data-scroll-target="#interactional-embedding-from-competence-to-authority">6.1 Interactional embedding from competence to authority</a></li>
+  <li><a href="#structural-embedding-of-expertise-and-dispositions" id="toc-structural-embedding-of-expertise-and-dispositions" class="nav-link" data-scroll-target="#structural-embedding-of-expertise-and-dispositions">6.2 Structural embedding of expertise and dispositions</a></li>
+  <li><a href="#social-goals-and-the-cost-of-epistemic-quality" id="toc-social-goals-and-the-cost-of-epistemic-quality" class="nav-link" data-scroll-target="#social-goals-and-the-cost-of-epistemic-quality">6.3 Social goals and the cost of epistemic quality</a></li>
+  <li><a href="#epistemic-injustice-as-a-sociocognitive-process" id="toc-epistemic-injustice-as-a-sociocognitive-process" class="nav-link" data-scroll-target="#epistemic-injustice-as-a-sociocognitive-process">6.4 Epistemic injustice as a sociocognitive process</a></li>
+  </ul></li>
+  <li><a href="#the-integrated-recurrent-architecture" id="toc-the-integrated-recurrent-architecture" class="nav-link" data-scroll-target="#the-integrated-recurrent-architecture">7 The integrated recurrent architecture</a>
+  <ul class="collapse">
+  <li><a href="#a-recurrent-process-without-a-fixed-order" id="toc-a-recurrent-process-without-a-fixed-order" class="nav-link" data-scroll-target="#a-recurrent-process-without-a-fixed-order">7.1 A recurrent process without a fixed order</a></li>
+  <li><a href="#functional-differentiation-and-biological-constraints" id="toc-functional-differentiation-and-biological-constraints" class="nav-link" data-scroll-target="#functional-differentiation-and-biological-constraints">7.2 Functional differentiation and biological constraints</a></li>
+  <li><a href="#three-indispensable-dissociations" id="toc-three-indispensable-dissociations" class="nav-link" data-scroll-target="#three-indispensable-dissociations">7.3 Three indispensable dissociations</a></li>
+  </ul></li>
+  <li><a href="#testable-propositions-and-decisive-evidence" id="toc-testable-propositions-and-decisive-evidence" class="nav-link" data-scroll-target="#testable-propositions-and-decisive-evidence">8 Testable propositions and decisive evidence</a>
+  <ul class="collapse">
+  <li><a href="#the-critical-benchmark-design" id="toc-the-critical-benchmark-design" class="nav-link" data-scroll-target="#the-critical-benchmark-design">8.1 The critical benchmark design</a></li>
+  <li><a href="#what-would-falsify-rather-than-merely-qualify-cavl" id="toc-what-would-falsify-rather-than-merely-qualify-cavl" class="nav-link" data-scroll-target="#what-would-falsify-rather-than-merely-qualify-cavl">8.2 What would falsify rather than merely qualify CAVL</a></li>
+  <li><a href="#relation-to-epistemic-growth-research" id="toc-relation-to-epistemic-growth-research" class="nav-link" data-scroll-target="#relation-to-epistemic-growth-research">8.3 Relation to epistemic growth research</a></li>
+  </ul></li>
+  <li><a href="#educational-institutional-and-technological-implications" id="toc-educational-institutional-and-technological-implications" class="nav-link" data-scroll-target="#educational-institutional-and-technological-implications">9 Educational institutional and technological implications</a>
+  <ul class="collapse">
+  <li><a href="#epistemic-autonomy-as-regulated-dependence" id="toc-epistemic-autonomy-as-regulated-dependence" class="nav-link" data-scroll-target="#epistemic-autonomy-as-regulated-dependence">9.1 Epistemic autonomy as regulated dependence</a></li>
+  <li><a href="#institutions-of-epistemic-vigilance" id="toc-institutions-of-epistemic-vigilance" class="nav-link" data-scroll-target="#institutions-of-epistemic-vigilance">9.2 Institutions of epistemic vigilance</a></li>
+  <li><a href="#digital-environments" id="toc-digital-environments" class="nav-link" data-scroll-target="#digital-environments">9.3 Digital environments</a></li>
+  </ul></li>
+  <li><a href="#boundaries-limitations-and-future-formalization" id="toc-boundaries-limitations-and-future-formalization" class="nav-link" data-scroll-target="#boundaries-limitations-and-future-formalization">10 Boundaries limitations and future formalization</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">11 Conclusion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">CAVL: A Cognitive Architecture for Vigilant Learning</h1>
+<p class="subtitle lead">MOVICI Working Paper 01</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="movici-author">
+MOVICI Research Programme
+</div>
+<div class="movici-meta">
+Working paper · 2026 · Preprint — not peer reviewed
+</div>
+<div class="resources">
+<p><span class="resources-title">Resources</span> <a class="resource-link" href="files/MOVICI_WP01.pdf">Download PDF</a> <span class="resources-note">Theoretical paper — no empirical dataset</span></p>
+</div>
+<section id="video-presentation" class="level2">
+<h2 class="anchored" data-anchor-id="video-presentation">Video Presentation</h2>
+<div class="video-embed">
+<iframe src="https://www.youtube.com/embed/Bo5vOOph4H4" title="MOVICI Working Paper 01 video presentation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="">
+</iframe>
+</div>
+</section>
+<section id="abstract" class="level2">
+<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<div class="abstract-block">
+<p>Learning from testimony, instruction, documents, and digital systems requires more than comprehension and memory. Learners must decide which claims warrant acceptance, which sources merit trust, and how limited cognitive resources should be allocated. Yet learning theories often give limited attention to social provenance, whereas social accounts of authority rarely specify the memory and control mechanisms through which social conditions alter learning. This article introduces CAVL, the Cognitive Architecture for Vigilant Learning, as a functional, multilevel architecture of socially embedded vigilant learning. CAVL links working memory, declarative and procedural long-term memory, schema construction, and automatisation with epistemic vigilance, theory of mind, metacognitive regulation, and two forms of social embedding. Structural embedding concerns how trajectories, institutions, and social positions shape knowledge, dispositions, cues, and verification costs. Interactional embedding concerns the evaluation of contents and sources when direct verification is limited. CAVL makes three signature claims. Learners arbitrate between content quality and attributed epistemic authority as a function of valid prior knowledge, processing constraints, and cue diagnosticity. Private epistemic uptake can diverge from public expression when communicating a judgement carries social or reputational costs. Structurally distributed resources and interactionally allocated authority recursively shape exposure, participation, and later learning. Six falsifiable propositions specify when these claims would be supported or require revision. CAVL is not a theory of all learning. It is a middle-level architecture for explaining how socially available information is evaluated, weighted, integrated, and expressed.</p>
+</div>
+<div class="keywords">
+<p><strong>Keywords:</strong> socially embedded learning; epistemic vigilance; expertise; cognitive architecture; epistemic authority; metacognition</p>
+</div>
+</section>
+<section id="the-theoretical-problem-of-socially-embedded-vigilant-learning" class="level2">
+<h2 class="anchored" data-anchor-id="the-theoretical-problem-of-socially-embedded-vigilant-learning">1 The theoretical problem of socially embedded vigilant learning</h2>
+<p>Human learning is radically dependent on others. Instruction, testimony, books, institutions, search engines, and conversational systems make knowledge available that no learner could reconstruct independently. The same dependence creates vulnerability. Communicated information can be mistaken, strategically distorted, socially rewarded despite its weakness, or accurate yet costly to acknowledge. Learning from communication therefore requires calibrated openness: enough receptivity to benefit from others and enough vigilance to avoid granting epistemic weight indiscriminately (Sperber et al., 2010; Mercier, 2020).</p>
+<p>This problem exposes a more general theoretical fragmentation. Newell (1973) argued that psychology could not progress indefinitely by accumulating answers to narrowly framed experimental questions without constructing systems able to coordinate them. His later call for unified theories of cognition sought architectures in which memory, problem solving, learning, and control constrained one another across tasks (Newell, 1990). The concern remains pertinent. Experimental literatures can establish local causal effects while leaving unclear how those effects combine in culturally and socially complex learning situations. This is visible in misinformation research, where findings about source labels, repetition, accuracy prompts, prior beliefs, or corrections often concern sharply delimited mechanisms. It is also visible in expertise research and Cognitive Load Theory, which offer powerful accounts of knowledge-dependent processing but usually represent the social origin and distribution of knowledge only indirectly.</p>
+<p>The inverse fragmentation appears in social sciences. Sociology and social psychology explain how status, institutions, socialisation, collective identities, and inequalities organise belief and authority. Cognitive sociology has long argued that socially organised classifications and interpretive practices shape what becomes cognitively available (Cicourel, 1974; DiMaggio, 1997). Bourdieu’s concept of habitus similarly describes durable and transposable dispositions produced through conditions of existence and trajectories of practice, rather than a momentary variable located inside a task (Bourdieu, 1990). These traditions make the social production of cognition visible. They do not always specify which cognitive mechanisms preserve relative autonomy, how prior knowledge changes online evaluation, or why the same social cue affects novices and experts differently. Situated and bounded accounts further show that cognition is adapted to the structure of tasks and environments rather than optimised in the abstract (Simon, 1955, 1956; Hutchins, 1995).</p>
+<p>The problem is not that controlled experiments are unreal or that social explanations lack cognitive content. A laboratory effect can be causally valid within its design while failing to transport unchanged to a learning situation containing heterogeneous knowledge, competing goals, reputational stakes, and unequal opportunities. Conversely, a structural regularity can be real without determining every judgement directly. The theoretical task is to explain how levels constrain one another without reducing one to the other. Generalisable behavioural science requires such theoretically specified cross-level relations, not merely broader samples or longer lists of moderators (Anderson &amp; Lebiere, 2003; Muthukrishna &amp; Henrich, 2019).</p>
+<p>CAVL addresses this task for a delimited object: <em>socially embedded vigilant learning</em>. This includes learning from teachers and peers, testimony and discussion, search and multiple documents, digital platforms, and knowledge transmitted through institutions. Work on source monitoring, sourcing, and document models shows why content must remain connected to its provenance (Johnson et al., 1993; Perfetti et al., 1999; Bråten et al., 2011; Anmarkrud et al., 2022). CAVL does not attempt to explain all perceptual, motor, associative, or reinforcement learning. Its question is narrower: through what interacting cognitive and social operations does communicated information acquire sufficient effective relevance and epistemic weight to guide judgement and modify knowledge?</p>
+<p>These mechanisms operate in ordinary educational situations. A student comparing conflicting documents must connect claims with their provenance. A novice may depend on a teacher or peer because the knowledge required to evaluate an explanation is not yet available. A learner using a generative system may understand a fluent answer while remaining unable to verify its sources or uncertainty. CAVL treats these situations as variations of the same architectural problem: learners must allocate effort, evaluate contents and attributed authority, and decide what to retain, endorse, express, or verify.</p>
+<p>The proposed answer begins with a robust cognitive core. Anderson’s architecture distinguishes declarative knowledge from procedural productions and explains how practice changes retrieval and control (Anderson, 1996; Anderson &amp; Lebiere, 2003). Sweller’s Cognitive Load Theory explains learning through the relation between severely limited working memory and organised schemas in long-term memory (Sweller, 1988; Sweller et al., 2011). Expertise develops as elements are organised into retrievable schemas, chunks, and procedures, thereby changing the effective demands of a task (Chase &amp; Simon, 1973; Ericsson &amp; Kintsch, 1995). These traditions explain how knowledge makes further learning possible. By themselves, however, they say relatively little about why a learner grants a socially supplied claim access to those learning processes.</p>
+<p>Epistemic vigilance supplies the missing interface. Sperber and colleagues describe a family of mechanisms that evaluate communicated contents and informants by drawing on plausibility, arguments, competence, benevolence, and reputation (Sperber et al., 2010; Mercier &amp; Sperber, 2017). Their account is mechanistic and programmatic, but it is not a complete cognitive architecture of learning. CAVL therefore does not append “the social” as an external contextual box. It integrates epistemic vigilance, theory of mind, source memory, metacognition, and social goals with the memory architecture that supports expertise and knowledge change.</p>
+<p>This integration rests on <em>double social embedding</em>. Structural embedding concerns the production of the learner’s resources: domain knowledge, epistemic dispositions, language practices, familiarity with institutions, and the material cost of verification develop through unequal educational and social trajectories. Interactional embedding concerns a more proximal dependency. When learners lack the expertise needed to evaluate content directly, they rely more heavily on representations of who knows what, source cues, arguments, and socially attributed authority. Actual competence and recognised authority may align, but they can also diverge. The two levels form a feedback loop: structures shape the cues and resources available during interaction; repeated allocations of credibility and attention reproduce or transform structures of epistemic authority.</p>
+<p>CAVL’s distinctive contribution lies in three signature claims that emerge from coupling these literatures. First, arbitration between content quality and attributed epistemic authority is knowledge-dependent. When valid prior knowledge and usable evidence permit direct evaluation, content quality should receive greater weight. When they do not, attributed authority should become more influential. Second, private epistemic uptake and public expression can dissociate because social and reputational costs may affect expression even when private evaluation remains unchanged. Third, structural resources and interactional authority are recursively coupled. Educational and social trajectories shape knowledge, cues, dispositions, and verification costs; repeated allocations of epistemic credit then reshape participation, feedback, and opportunities for later learning. Their joint specification within a single architecture defines CAVL’s distinctive contribution. Together, they form its explanatory core and motivate the tests developed in Section 8.</p>
+<p>The educational implication is not that learners should deliberate continually or become independent of testimony. The mechanisms governing epistemic dependence should instead become sufficiently accessible to regulation when accuracy, uncertainty, or social stakes require it. Effective automatisms should be preserved and trained, while social costs should be recognised rather than confused with evidence. CAVL therefore defines epistemic autonomy as regulated dependence.</p>
+<p>The argument proceeds progressively. Section 2 defines the explanatory status and scope of CAVL and distinguishes it from adjacent theories. Sections 3 through 6 develop its cognitive core, epistemic regulation, and interactional and structural embedding. Section 7 integrates these components into a recurrent process model and specifies conceptual constraints on relevance, epistemic weight, private uptake, and public expression. Section 8 states testable propositions and revision criteria. Sections 9 and 10 examine educational, technological, and institutional implications before clarifying the framework’s limits and research agenda.</p>
+</section>
+<section id="what-kind-of-architecture-is-cavl" class="level2">
+<h2 class="anchored" data-anchor-id="what-kind-of-architecture-is-cavl">2 What kind of architecture is CAVL</h2>
+<section id="a-functional-multilevel-and-precomputational-architecture" class="level3">
+<h3 class="anchored" data-anchor-id="a-functional-multilevel-and-precomputational-architecture">2.1 A functional multilevel and precomputational architecture</h3>
+<p>Cognitive architectures identify relatively stable functions and relations that constrain performance across tasks (Newell, 1990; Kotseruba &amp; Tsotsos, 2020). The strongest architecture also specifies representations, algorithms, and executable models. CAVL does not yet meet that computational standard. It is a <em>functional, integrative, multilevel, and precomputational architecture</em>. It identifies components, information flows, feedback relations, moderators, and boundary conditions that a later formal model must implement. Calling it an architecture is warranted only insofar as these commitments rule out explanations and generate tests.</p>
+<p>Terminological discipline is therefore important. A <em>system</em> refers to a functionally distinguishable organization such as declarative memory, procedural memory, theory of mind, metacognitive monitoring, or valuation and control. A <em>mechanism</em> refers to an operation such as retrieval, source attribution, coherence checking, trust attribution, encoding, or updating. A <em>processing regime</em> describes the degree and form of elaboration through which those systems operate. <em>Epistemic weight</em> is the graded confidence or acceptability assigned to a representation. <em>Attributed epistemic authority</em> is a social representation of who deserves credit or deference; it is not identical to actual competence. <em>Embedding</em> refers to the interactional and structural conditions that shape processing. <em>Module</em> denotes relative functional specialization within distributed and plastic neural networks, not an encapsulated organ or a unique brain region.</p>
+<p>CAVL is compatible with explicit symbolic representations and learned subsymbolic quantities, but it should not be described as a complete hybrid architecture. Newell and Simon established a symbolic architectural tradition. Anderson’s ACT-R programme provides a stronger precedent for relating symbolic productions and declarative chunks to subsymbolic activation, utility, and neural constraints (Anderson &amp; Lebiere, 2003). CAVL inherits the ambition to articulate levels while remaining agnostic about the precise computational format of several components.</p>
+</section>
+<section id="integration-by-explanatory-transition" class="level3">
+<h3 class="anchored" data-anchor-id="integration-by-explanatory-transition">2.2 Integration by explanatory transition</h3>
+<p>CAVL is a problem-driven synthesis rather than a systematic review. A construct enters the architecture when it explains a necessary transition in vigilant learning, constrains that transition, or prevents the conflation of distinguishable outcomes. Integration follows three rules. First, constructs remain separate when their causes or consequences can dissociate. Exposure, memory, private uptake, and public expression are therefore not interchangeable. Second, cross-level relations must specify a pathway. Social position cannot be treated as a momentary cognitive operation; its proximal effects must be mediated by resources, cues, goals, or opportunities unless a direct pathway is demonstrated. Third, biological evidence constrains but does not replace functional explanation.</p>
+<p>These rules answer Newell’s challenge without claiming a universal theory. CAVL is a middle-level architecture. It seeks enough integration to explain recurrent relations across socially situated learning tasks, while leaving detailed models of reading, argumentation, metacognition, persuasion, cultural transmission, and institutional power in place. Its value lies in specifying their interfaces and producing propositions that can drive cumulative theory development (Greene, 2022).</p>
+</section>
+<section id="relation-to-adjacent-theories" class="level3">
+<h3 class="anchored" data-anchor-id="relation-to-adjacent-theories">2.3 Relation to adjacent theories</h3>
+<p>Table 1</p>
+<p>Adjacent theories and the explanatory niche of CAVL</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 24%">
+<col style="width: 24%">
+<col style="width: 32%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Tradition or model</strong></th>
+<th style="text-align: left;"><strong>Primary explanatory object</strong></th>
+<th style="text-align: left;"><strong>Contribution retained by CAVL</strong></th>
+<th style="text-align: left;"><strong>Relation that CAVL adds</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">ACT-R and unified cognitive architectures</td>
+<td style="text-align: left;">Stable cognitive components and learning mechanisms</td>
+<td style="text-align: left;">Declarative and procedural knowledge, retrieval, productions, control</td>
+<td style="text-align: left;">Socially attributed sources and epistemic weighting within learning</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Cognitive Load Theory and expertise research</td>
+<td style="text-align: left;">Learning under limited processing capacity</td>
+<td style="text-align: left;">Working-memory limits, schema construction, automatisation, expertise reversal</td>
+<td style="text-align: left;">How knowledge and load alter content evaluation, source dependence, and uptake</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Epistemic vigilance and testimony</td>
+<td style="text-align: left;">Protection from unreliable communication</td>
+<td style="text-align: left;">Content and source evaluation, competence, benevolence, argumentation</td>
+<td style="text-align: left;">Coupling to memory, metacognition, processing regimes, and knowledge updating</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ELM, heuristic-systematic, and dual-process accounts</td>
+<td style="text-align: left;">Variation in elaboration and persuasion</td>
+<td style="text-align: left;">Differential reliance on arguments and peripheral or heuristic cues</td>
+<td style="text-align: left;">Recurrent route selection constrained by expertise, load, relevance, and social cost</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sourcing and multiple-document comprehension</td>
+<td style="text-align: left;">Source-content representation across documents</td>
+<td style="text-align: left;">Provenance, corroboration, source memory, document models</td>
+<td style="text-align: left;">Generalisation across social learning situations and explicit distinction between weighting and uptake</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">AIR, Apt-AIR, and SEGL</td>
+<td style="text-align: left;">Epistemic aims, ideals, performance, and growth</td>
+<td style="text-align: left;">Normative criteria, epistemic resources, intervention targets</td>
+<td style="text-align: left;">Within-episode mechanisms through which resources change allocation, evaluation, and memory</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Cognitive sociology and social epistemology</td>
+<td style="text-align: left;">Social production of classifications, credibility, and authority</td>
+<td style="text-align: left;">Institutions, trajectories, habitus, status, injustice</td>
+<td style="text-align: left;">Pathways from structural conditions to proximal processing and back to authority distributions</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sociocultural, situated, and participation-based theories</td>
+<td style="text-align: left;">Learning through culturally organised activity, mediation, and participation</td>
+<td style="text-align: left;">Historically constituted practices, tools, institutions, and communities</td>
+<td style="text-align: left;">Within-episode allocation, source and content evaluation, epistemic weighting, and differentiated uptake</td>
+</tr>
+</tbody>
+</table>
+<p>CAVL is also complementary to sociocultural, situated, and participation-based theories of learning. These traditions explain how participation, mediation, cultural practices, and historically constituted tools and institutions organize learning (Lave &amp; Wenger, 1991; Rogoff, 1990; Vygotsky, 1978). CAVL operates at a different explanatory grain. It specifies how attention is allocated, how contents and sources are evaluated, how epistemic weight is assigned, and how different forms of uptake emerge within an episode. It relies on sociocultural theories to explain how the resources entering that episode was historically produced. Recent work on multiple-source use similarly shows why source evaluation must be situated within sociocultural relations and epistemic justice (Knight et al., 2026).</p>
+<p>CAVL is especially complementary to models of epistemic cognition and growth. AIR and Apt-AIR clarify epistemic aims, ideals, reliable processes, and apt performance (Chinn et al., 2011; Barzilai &amp; Chinn, 2018). The Stimulating Epistemic Growth in Learners model organizes epistemic virtues, beliefs, values, emotions, aims, and metacognitive resources within state–trait dynamics and identifies educational leverage points (Orona &amp; Greene, 2026). CAVL asks a different question: how do such resources alter attention, evaluation, confidence, effort, and knowledge updating during a socially situated learning episode? SEGL can explain the development of a disposition to seek justification; CAVL specifies when that disposition can recruit diagnostic knowledge, whether verification is affordable, and how the result receives epistemic weight. Neither model supersedes the other.</p>
+<p>Figure 1 develops CAVL progressively at the points where each layer has been introduced. Figure 1A presents the cognitive learning core. Figure 1B shows how theory of mind and source representation, epistemic vigilance, and metacognition jointly contribute to processing allocation across two variable regimes. Figure 1C presents the complete recurrent architecture within its interactional and structural embedding. The progression is pedagogical, not temporal: the completed architecture has no obligatory first module or fixed linear route.</p>
+</section>
+</section>
+<section id="the-cognitive-learning-core" class="level2">
+<h2 class="anchored" data-anchor-id="the-cognitive-learning-core">3 The cognitive learning core</h2>
+<section id="declarative-and-procedural-long-term-memory" class="level3">
+<h3 class="anchored" data-anchor-id="declarative-and-procedural-long-term-memory">3.1 Declarative and procedural long-term memory</h3>
+<p>Vigilant learning depends first on what the learner already knows. Declarative memory supplies semantic knowledge about domains, concepts, causal relations, social roles, institutions, and typical intentions, together with episodic records of encounters, sources, and outcomes (Squire, 2004; Binder &amp; Desai, 2011). Procedural memory supports production, habits, scripts, search routines, and increasingly automatized ways of evaluating information. These systems are analytically distinct but cooperate in skilled activity.</p>
+<p>Prior knowledge determines which representation a learner can construct from the same message. It enables comprehension, activates expectations, supports comparison with evidence, and makes contradictions detectable. Expertise is more than an accumulation of facts: it is an organization of schemas and procedures that changes perception, retrieval, and problem solving (Chi et al., 1988; Ericsson &amp; Kintsch, 1995). Because organized knowledge allows multiple elements to function as a meaningful unit, expertise changes effective processing cost rather than simply enlarging a fixed working-memory capacity.</p>
+<p>This priority of knowledge creates a cumulative dynamic. Those who already possess relevant schemas can learn more efficiently and can evaluate content more directly. Yet expertise is itself socially produced through instruction, practice, access to resources, and recognition. CAVL therefore treats domain knowledge as a central proximal resource in many tasks and as an outcome of structural trajectories. This dual status is the first bridge between cognitive learning theory and social embedding.</p>
+<p>Prior knowledge is not a truth criterion. Incorrect or identity-protective schemas can make weak claims coherent and strong counterevidence costly to integrate. Expertise can also produce entrenchment, premature closure, and overconfidence when a familiar solution blocks a better one (Bilalić et al., 2008). CAVL consequently predicts advantages from <em>valid and accessible</em> domain knowledge, not from subjective familiarity or social labels of expertise.</p>
+</section>
+<section id="working-memory-as-a-constrained-coordination-space" class="level3">
+<h3 class="anchored" data-anchor-id="working-memory-as-a-constrained-coordination-space">3.2 Working memory as a constrained coordination space</h3>
+<p>Working memory maintains and manipulates currently relevant representations under severe capacity limits (Baddeley, 2000; Cowan, 2001). During vigilant learning, it can coordinate the message, task goal, retrieved domain knowledge, source information, alternative interpretations, and reasons for acceptance or rejection. Executive control maintains goals, inhibits an initially attractive response, updates active representations, and changes strategy (Miller &amp; Cohen, 2001; Miyake et al., 2000; Miyake &amp; Friedman, 2012). These functions depend on distributed frontoparietal and content-specific networks rather than a single anatomical store (D’Esposito &amp; Postle, 2015; Petersen &amp; Posner, 2012).</p>
+<p>The central constraint is competition. Comprehending a difficult claim, reconstructing an argument, recalling source history, inferring an interlocutor’s intention, and anticipating the social consequences of disagreement can draw on overlapping resources. A learner may therefore understand content without comparing sources, remember a source without evaluating its argument, or form a plausible judgement without retaining the evidence that supported it. These are architectural consequences, not necessarily deficits of motivation or character.</p>
+<p>Cognitive Load Theory explains why instruction must manage this competition. If essential elements cannot be coordinated, elaborated evaluation will fail even when the learner values accuracy. Conversely, well-organized knowledge and automatized procedures can make sophisticated evaluation fast and inexpensive. The relation between effort and epistemic quality is therefore conditional. More elaboration improves evaluation only when diagnostic knowledge and usable evidence are available; more effort in their absence can produce confusion, rationalization, or perseveration.</p>
+</section>
+<section id="learning-as-schema-construction-proceduralizing-and-feedback" class="level3">
+<h3 class="anchored" data-anchor-id="learning-as-schema-construction-proceduralizing-and-feedback">3.3 Learning as schema construction proceduralizing and feedback</h3>
+<p>Learning modifies the architecture that produced it. Accepted or conditionally retained information can update semantic schemas, create episodic traces, strengthen source-content links, or establish procedures for future tasks. Practice can transform deliberative steps into productions and heuristics. Feedback can revise both content knowledge and the estimated reliability of a source. A knowledge state at time <em>t + 1</em> therefore changes what will be attended to, understood, and trusted at time <em>t + 2</em>.</p>
+<p>This recurrent structure is central to CAVL. Vigilance is not only a gate before memory. It can operate before focal attention through learned cue sensitivity, during comprehension through coherence monitoring, during controlled evaluation, after encoding through source monitoring, and later through retrieval, correction, or belief revision. The order of these operations depends on task, context, expertise, cognitive availability, goals, and mental state. This flexibility is constrained by predictions developed below; it is not a license to explain any sequence after the fact.</p>
+</section>
+<section id="developmental-asymmetry" class="level3">
+<h3 class="anchored" data-anchor-id="developmental-asymmetry">3.4 Developmental asymmetry</h3>
+<p>Children display early sensitivity to informant accuracy, competence, and deceptive intention (Clément et al., 2004; Mascaro &amp; Sperber, 2009; Harris et al., 2018). Such capacities make vigilant social learning possible. They do not supply criteria for evaluating a statistical inference, a medical study, or an algorithmic recommendation. Culturally secondary knowledge requires extended instruction and practice, whereas some social sensitivities develop through ordinary interaction (Geary, 2008; Tricot &amp; Sweller, 2014).</p>
+<p>Education must therefore do more than invite a generic critical stance. It must build domain knowledge, source concepts, procedures, and institutional understanding that make vigilance diagnostic. Even early sensitivity to informant accuracy and deception becomes educationally powerful only when coordinated with culturally acquired criteria (Clément, 2010; Clément et al., 2004; Harris et al., 2018). A prompt to “check the source” can increase extraneous demand when a novice does not know what constitutes relevant competence or independent evidence.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/image1.png" style="width:6.25in;height:2.67352in" class="figure-img"></p>
+<figcaption>Cognitive learning core linking the information environment, working memory, long-term memory, expertise, and knowledge change.</figcaption>
+</figure>
+</div>
+<p>Figure 1A. Cognitive learning core. Working memory coordinates currently active representations with declarative and procedural long-term memory. Private uptake produces knowledge change; knowledge organization and automatization create expertise that alters later representation and effective processing cost.</p>
+</section>
+</section>
+<section id="epistemic-regulations-within-the-learning-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="epistemic-regulations-within-the-learning-architecture">4 Epistemic regulations within the learning architecture</h2>
+<section id="theory-of-mind-social-knowledge-and-source-representation" class="level3">
+<h3 class="anchored" data-anchor-id="theory-of-mind-social-knowledge-and-source-representation">4.1 Theory of mind social knowledge and source representation</h3>
+<p>Theory of mind supports representations of what other agents know, believe, intend, and can access. In CAVL, it is neither synonymous with epistemic vigilance nor an isolated innate module. It is a constrained social-inference system whose performance draws on early-developing sensitivities and experience-dependent knowledge about agents, roles, institutions, and interactions (Premack &amp; Woodruff, 1978; Frith &amp; Frith, 2003).</p>
+<p>Its relation to memory can be specified. Semantic memory contains general knowledge about roles, norms, institutions, intentions, and the distribution of expertise. Episodic memory retains encounters with particular people and sources, including earlier accuracy, deception, cooperation, and conflict. Source attribution is nevertheless reconstructive and can dissociate from memory for content (Johnson &amp; Raye, 1981; Johnson et al., 1993). Procedural memory supports scripts and heuristics for interpreting confidence, affiliation, disagreement, credentials, and communicative behaviors. Working memory coordinates these representations with the current content. A learner deciding whether to trust an explanation may therefore retrieve what this kind of professional generally knows, remember what this person previously said, and apply a learned procedure for checking incentives.</p>
+<p>This coordination creates a potential <em>double task</em>. The learner must represent the factual object and the social situation at the same time. In a debate, classroom disagreement, or public online exchange, processing may include the claim, the interlocutor’s perspective, status relations, likely audience reactions, and the reputational cost of conceding. Under high load or low expertise, social regulation can compete with factual learning. Dominance, confidence, fluency, or coalition cues may then become more influential than truth-diagnostic evidence. The claim is conditional: debate does not inherently prevent learning, and social cognition can also direct attention toward relevant competence and cooperative intentions.</p>
+<p>Neurocognitive evidence is consistent with a distributed mentalizing system involving medial prefrontal cortex, temporoparietal junction, posterior superior temporal sulcus, precuneus, and temporal poles, with recruitment varying by task (Schurz et al., 2014). CAVL predicts that source evaluations requiring inference about knowledge, access, or intention will draw more strongly on these systems than evaluations based on a simple learned label. It does not predict a unique “trust centre.”</p>
+</section>
+<section id="epistemic-vigilance-as-coordinated-content-and-source-evaluation" class="level3">
+<h3 class="anchored" data-anchor-id="epistemic-vigilance-as-coordinated-content-and-source-evaluation">4.2 Epistemic vigilance as coordinated content and source evaluation</h3>
+<p>Epistemic vigilance is a family of mechanisms that protects the benefits of communication without making general distrust adaptive (Sperber et al., 2010). Content evaluation compares a claim with prior knowledge, evidence, coherence, alternative explanations, and argument quality. Source evaluation represents relevant competence, access to evidence, benevolence, honesty, independence, reputation, and track record. Arguments connect the two: a source can supply reasons that the learner can partly evaluate even when the conclusion exceeds current expertise.</p>
+<p>The routes are reciprocal. Plausible, well-supported information can improve an unfamiliar source’s reputation. A reliable source can justify provisional acceptance when direct content evaluation is impossible. Conflict can trigger search, qualification, reduced confidence, or suspension. It can also be resolved too quickly in favor of an identity-congruent source or a familiar claim. The outcome depends on the learner’s knowledge, processing resources, aims, and cue environment.</p>
+<p>CAVL departs from the idea of epistemic vigilance as a single filter positioned between perception and memory. Vigilance is a coordination function across memory, mentalizing, monitoring, valuation, and control. It can alter selection before comprehension, contribute to interpretation during comprehension, govern acceptance after an argument has been represented, and revise a source or belief after later feedback. No dedicated neural region is claimed. This is also why the attentional construct called vigilance in cognitive neuroscience should not be conflated with <em>epistemic</em> vigilance: sustained attention may support the process but does not perform its epistemic evaluation.</p>
+</section>
+<section id="metacognitive-monitoring-and-control" class="level3">
+<h3 class="anchored" data-anchor-id="metacognitive-monitoring-and-control">4.3 Metacognitive monitoring and control</h3>
+<p>Metacognition monitors and regulates the learner’s own cognition (Flavell, 1979; Nelson &amp; Narens, 1990; Dunlosky &amp; Metcalfe, 2009). Judgements of understanding, confidence, familiarity, difficulty, and knowing guide decisions to study longer, seek help, verify, change strategy, or stop. These judgements are inferred from cues rather than read directly from knowledge (Koriat, 1997). Fluency can be mistaken for understanding, while effortful but productive learning can feel uncertain. Metacognitive accuracy and confidence recruit distributed prefrontal and monitoring systems whose contribution varies across domains (Fleming &amp; Dolan, 2012).</p>
+<p>The target distinguishes metacognition from theory of mind and epistemic vigilance. Metacognition evaluates the learner’s current cognitive state. Theory of mind represents agents and perspectives. Epistemic vigilance evaluates communicated content and sources. They interact, however. Recognizing one’s ignorance can increase dependence on a source; distrusting a source can increase monitoring; noticing a conflict can recruit control. A learner can be well calibrated about not knowing yet poor at identifying who does know or can recognize expertise in another while remaining overconfident about personal understanding.</p>
+<p>The educationally important outcome is not uniformly high confidence or permanent reflection, but calibration and adaptive control. Learners need procedures for recognizing when existing knowledge is sufficient, when authority must be used, and when the stakes justify additional cost.</p>
+</section>
+<section id="two-processing-regimes-rather-than-two-fixed-routes" class="level3">
+<h3 class="anchored" data-anchor-id="two-processing-regimes-rather-than-two-fixed-routes">4.4 Two processing regimes rather than two fixed routes</h3>
+<p>Persuasion and dual-process research provide a crucial constraint. The Elaboration Likelihood Model distinguishes attitude change based predominantly on effortful examination of issue-relevant arguments from change based more heavily on peripheral cues when motivation or ability to elaborate is lower (Petty &amp; Cacioppo, 1986). The heuristic-systematic model and broader dual-process accounts make related distinctions (Chaiken, 1980; Evans, 2008). CAVL imports this insight without treating central, systematic, controlled, and reflective processing as exact synonyms, or peripheral, heuristic, automatic, and intuitive processing as a second natural kind.</p>
+<p>No functional component maps exclusively onto either processing regime. Source evaluation can be highly elaborated, whereas content evaluation can become rapid and automatized through expertise.</p>
+<p>CAVL instead defines two overlapping regimes on an elaboration continuum. A <em>heuristic or peripheral regime</em> is relatively low-cost and relies more strongly on familiarity, fluency, reputation, credentials, status, consensus, identity, affect, or other rapidly available cues. It can be highly effective when learned cues track competence and when direct verification is impossible. It can also integrate poor-quality information when authority, repetition, or social reward diverges from evidence.</p>
+<p>An <em>elaborated or central regime</em> allocates more resources to the content, evidence, coherence, and inferential structure of a message. It can yield more stable and discriminating judgements when the learner is motivated, capacity, relevant knowledge, and diagnostic evidence. It offers no guarantee of truth. Elaborated reasoning can rationalize prior commitments, selectively recruit evidence, or become inefficient when the problem representation is poor (Kunda, 1990; Ditto &amp; Lopez, 1992).</p>
+<p>The regimes can alternate within one episode. A source cue may determine initial attention; a detected inconsistency may trigger elaboration; an automatized expert routine may then resolve the problem quickly; later social feedback may reopen the judgement. Expertise can reduce the cost of elaborated content evaluation, whereas load, time pressure, fatigue, and insufficient knowledge can increase reliance on cheaper cues. Processing and verification costs primarily shape effort allocation, elaboration, and checking. Social and reputational costs primarily shape whether a learner confronts, concedes, withdraws, or expresses a judgement publicly. Anticipated social costs can also operate upstream by redirecting attention or discouraging examination. They should not, however, be automatically absorbed into private epistemic weight: a learner may judge a claim well supported yet remain silent or publicly conform without integrating it.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/image2.png" style="width:6.25in;height:2.67352in" class="figure-img"></p>
+<figcaption>Epistemic regulation linking theory of mind, epistemic vigilance, metacognition, heuristic and elaborated processing, relevance, and epistemic weight.</figcaption>
+</figure>
+</div>
+<p>Figure 1B. Epistemic regulation and variable elaboration. Theory of mind and source representation, epistemic vigilance, and metacognition jointly contribute to processing allocation. Both heuristic/peripheral and elaborated/central regimes can evaluate contents and sources and can alternate within an episode. Effective relevance and epistemic weight remain distinct but interacting constraints on differentiated outcomes; dashed feedback indicates recurrent monitoring and revision.</p>
+</section>
+</section>
+<section id="effective-relevance-epistemic-weight-and-uptake" class="level2">
+<h2 class="anchored" data-anchor-id="effective-relevance-epistemic-weight-and-uptake">5 Effective relevance epistemic weight and uptake</h2>
+<section id="relevance-is-effects-relative-to-effort" class="level3">
+<h3 class="anchored" data-anchor-id="relevance-is-effects-relative-to-effort">5.1 Relevance is effects relative to effort</h3>
+<p>Relevance Theory proposes that information is more relevant when it yields greater positive cognitive effects and when obtaining those effects requires less processing effort (Sperber &amp; Wilson, 1995; Wilson &amp; Sperber, 2004). This relation is comparative, not a validated numerical equality. Positive effects include warranted conclusions, revision of assumptions, strengthened beliefs, and useful implications. The same information can consequently have different relevance for learners with different knowledge, goals, and contexts. Relevance is socially rewarded, but not simply at the price of accuracy, which supports treating usefulness and epistemic quality as related but distinguishable (Altay &amp; Mercier, 2020).</p>
+<p>Comprehension and acceptance remain distinguishable. A message can be understood without being believed, and a rejected claim can still be useful for identifying manipulation, constructing a refutation, or updating a source model. Yet relevance assessment and epistemic assessment are interdependent aspects of communication (Sperber et al., 2010). If a claim is highly consequential but uncertain, it may be relevant enough to justify checking. If a source is unreliable, the claim may receive little weight for belief integration but substantial relevance as evidence about the source.</p>
+</section>
+<section id="conceptual-constraints-on-relevance-epistemic-weight-and-uptake" class="level3">
+<h3 class="anchored" data-anchor-id="conceptual-constraints-on-relevance-epistemic-weight-and-uptake">5.2 Conceptual constraints on relevance epistemic weight and uptake</h3>
+<p>Rather than proposing a numerical equation, CAVL imposes four conceptual constraints on any later formalization.</p>
+<p>First, processing allocation depends on prior knowledge, goals, available capacity, processing and verification costs, and anticipated social stakes. Social stakes can change whether a claim is examined without thereby determining its epistemic weight.</p>
+<p>Second, epistemic weight depends on represented content, source information, arguments, corroboration, and valid prior knowledge. Attributed authority is one input among others, not a substitute for epistemic weight. Effective relevance governs whether further processing or use is worthwhile, whereas epistemic weight governs the degree of acceptability assigned to a representation; they interact without being identical.</p>
+<p>Third, cognitive relevance and epistemic weight jointly constrain private uptake but do not determine a single outcome. A claim can be accepted, rejected, qualified, suspended, stored conditionally, used for refutation, or used to update a source model.</p>
+<p>Fourth, public expression is a distinct decision shaped by private uptake, social and reputational costs, identity, power, and audience. Observed endorsement therefore cannot serve as a transparent measure of private belief or durable learning.</p>
+<p>These constraints preserve the insight that relevance is relative to effects and effort while distinguishing relevance, epistemic weight, private uptake, and public expression. They remain precomputation: later formalization must specify measurable variables and combination rules.</p>
+</section>
+<section id="from-weighting-to-multiple-forms-of-uptake" class="level3">
+<h3 class="anchored" data-anchor-id="from-weighting-to-multiple-forms-of-uptake">5.3 From weighting to multiple forms of uptake</h3>
+<p>Epistemic weight is graded. It can lead to acceptance, rejection, qualification, suspension, or conditional storage. Private uptake also has several targets. Information may change a factual belief, alter a procedure, update a source’s reputation, guide immediate action, or remain available as a counterexample. Public expression, including explicit endorsement, is a further outcome and should not be equated with private judgement. A learner may recognize strong evidence yet avoid expressing agreement because the social cost is high. Conversely, public conformity can occur without durable private uptake.</p>
+<p>This multiplicity is essential for measurement. Exposure is not retention; retention is not evaluation; evaluation is not integration; private integration is not public expression; and immediate change is not durable learning. Behavioral traces such as clicks, dwell time, or speaking turns locate activity in the information environment, but no trace has a universal cognitive meaning. Its interpretation depends on the person, task, and alternatives available.</p>
+</section>
+</section>
+<section id="double-social-embedding" class="level2">
+<h2 class="anchored" data-anchor-id="double-social-embedding">6 Double social embedding</h2>
+<section id="interactional-embedding-from-competence-to-authority" class="level3">
+<h3 class="anchored" data-anchor-id="interactional-embedding-from-competence-to-authority">6.1 Interactional embedding from competence to authority</h3>
+<p>When direct content evaluation is limited, learning depends on other people’s knowledge. This creates a translation problem. <em>Actual domain competence</em> is what a source can validly know or do. <em>Subjective competence</em> is what that source believes about personal knowledge. <em>Perceived competence</em> is what others attribute to the source. <em>Epistemic credit</em> is the weight granted to the source’s contribution. <em>Epistemic authority</em> is the relatively stabilized capacity to shape judgement, learning, or collective action. These quantities can correlate without being identical.</p>
+<p>Learners infer competence from evidence that is often partial. Credentials, disciplinary position, explanatory quality, past accuracy, institutional affiliation, confidence, fluency, familiarity, prestige, dominance, demographic stereotypes, and audience reactions may all enter the judgement. Source-credibility research showed early that communicators influence persuasion even when message content is held constantly (Hovland &amp; Weiss, 1951). Transactive-memory research shows that groups benefit when members accurately represent who knows what (Hollingshead, 2000). Status research shows that participation and influence can follow socially generated competence expectations (Berger et al., 2002; Foschi, 2000). Prestige and dominance provide distinct routes to rank and influence, only imperfectly related to epistemic competence (Henrich &amp; Gil-White, 2001; Cheng et al., 2013).</p>
+<p>CAVL locates the transformation as a sequence: source and social cues inform perceived competence; perceived competence contributes to epistemic weight; weight affects attention and uptake; interactional procedures translate credit into influence. The transformation is one of CAVL’s central hinges because it connects individual source evaluation to social distributions of knowledge. It is also a paradigmatic case of broader architecture rather than its only contribution.</p>
+</section>
+<section id="structural-embedding-of-expertise-and-dispositions" class="level3">
+<h3 class="anchored" data-anchor-id="structural-embedding-of-expertise-and-dispositions">6.2 Structural embedding of expertise and dispositions</h3>
+<p>Expertise is produced in environments. Educational access, language practices, disciplinary training, occupational experience, material resources, and repeated exposure to information systems shape the schemas and procedures available in a task. Habitus names durable and transposable dispositions through which social histories organize perception and practice (Bourdieu, 1990); it should not be reduced to socioeconomic status. Cognitive sociology likewise shows how socially organized categories, routines, and institutional distinctions become cognitive resources (Cicourel, 1974; DiMaggio, 1997).</p>
+<p>CAVL treats these conditions as distal only when their effects are mediated by acquired knowledge, practices, goals, cue access, or verification cost. Distal does not mean weakness. A structural condition can have a strong and durable effect while not functioning as an online memory module. The same construct can also operate at multiple timescales: institutional trust may reflect a long trajectory, while a conflict-of-interest disclosure changes evaluation immediately. Situated and distributed approaches likewise show how artefacts and social organization become resources within activity rather than autonomous cognitive causes (Hutchins, 1995; Hollan et al., 2000).</p>
+<p>Structural and interactional embedding are recursive. Unequal trajectories produce differences in expertise and in the ability to display it. During interaction, imperfect perceptions translate these differences and social stereotypes into unequal credit. Credit affects who is heard, what enters shared representations, which learners receive feedback, and whose knowledge develops further. Repeated episodes can therefore reproduce or transform the structural distribution of epistemic resources.</p>
+</section>
+<section id="social-goals-and-the-cost-of-epistemic-quality" class="level3">
+<h3 class="anchored" data-anchor-id="social-goals-and-the-cost-of-epistemic-quality">6.3 Social goals and the cost of epistemic quality</h3>
+<p>Cooperation, competition, identity, and status alter the value of epistemic actions. Cooperative interdependence can make explanation and correction valuable, but it can also produce conformity or free riding. Competition can suppress information sharing and increase relational threat, but it can sometimes increase effort and error detection. Motivated-information-processing research and work on sociocognitive conflict show that epistemic and relational goals jointly organize attention and disagreement (De Dreu et al., 2008; Darnon et al., 2006, 2007).</p>
+<p>The important implication is that truth is not always socially strategic. Accepting well-supported information can threaten belonging or a valued identity; communicating it can challenge hierarchy; admitting uncertainty can reduce perceived authority. These costs can divert processing toward relational regulation or create a gap between private learning and public expression. A complete theory of learning in social environments must explain these outcomes without treating them as mere error variance.</p>
+</section>
+<section id="epistemic-injustice-as-a-sociocognitive-process" class="level3">
+<h3 class="anchored" data-anchor-id="epistemic-injustice-as-a-sociocognitive-process">6.4 Epistemic injustice as a sociocognitive process</h3>
+<p>Testimonial injustice occurs when prejudice produces an unwarranted credibility deficit; silencing occurs when practices prevent contributions from receiving uptake (Fricker, 2007; Dotson, 2011). CAVL does not replace these normative theories. Recent multiple-source research extends these concerns to source-evaluation criteria and to sociocultural patterns of source use (Chinn et al., 2026; Knight et al., 2026). CAVL specifies a possible mechanism chain:</p>
+<p>unequal structural conditions → differences in expertise, dispositions, exposure, and self-presentation → imperfect attribution of competence → biased epistemic weight and authority → unequal attention, memory, uptake, and influence → reproduction of the original distribution.</p>
+<p>Limited resources can make reliance on status, familiarity, confidence, or stereotypes locally efficient even when the collective result is inaccurate and unjust (Dosso et al., 2025). The architecture therefore separates resource efficiency, epistemic accuracy, confidence calibration, source discrimination, task relevance, and justice. An intervention can improve one while worsening another. Making competence visible may reduce one credibility bias yet reify credentials; increasing provenance information may support checking yet overload novices; protecting disagreement may improve error correction yet raise participation costs. These trade-offs are empirical and institutional design questions.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/image3.png" style="width:6.25in;height:2.67352in" class="figure-img"></p>
+<figcaption>Double social embedding linking structural conditions, knowledge resources, evaluation, attributed authority, uptake, and influence.</figcaption>
+</figure>
+</div>
+<p>Figure 1C. Integrated architecture of socially embedded vigilant learning. Structural conditions shape the resources and opportunities entering an interactional learning episode. Attributed authority, represented within the learner’s source model, enters epistemic regulation as an input. Effective relevance and epistemic weight remain distinct but interacting constraints. Private uptake can diverge from public expression, while allocated epistemic credit and stabilized authority feed back into source models, participation, future exposure, and structural conditions.</p>
+</section>
+</section>
+<section id="the-integrated-recurrent-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="the-integrated-recurrent-architecture">7 The integrated recurrent architecture</h2>
+<section id="a-recurrent-process-without-a-fixed-order" class="level3">
+<h3 class="anchored" data-anchor-id="a-recurrent-process-without-a-fixed-order">7.1 A recurrent process without a fixed order</h3>
+<p>At a given moment, a learner with current knowledge, procedures, source models, goals, and cognitive state acts in an information environment. Activity selects a non-neutral sample of claims, sources, arguments, and social cues. The learner constructs a representation using working memory and retrieved long-term knowledge. Content evaluation, source evaluation, theory of mind, relevance estimation, and metacognitive monitoring contribute to epistemic weight. The learner can accept, reject, qualify, suspend, seek further evidence, store information conditionally, update a source model, or regulate public expression. Any resulting change modifies subsequent knowledge and may alter later search, cue use, confidence, automatization, or authority attribution.</p>
+<p>This description is not a mandatory chronology. Epistemic vigilance may operate before focal attention through learned selection cues, during comprehension through plausibility expectations, during controlled comparison, or after encoding when a source is re-evaluated. Source information may precede content, follow it, or be reconstructed at retrieval. A peripheral cue can initiate elaboration; central evaluation can become automatized; later feedback can reopen an apparently settled judgement. The order depends on expertise, load, motivation, goals, social stake, and mental state.</p>
+<p>Flexibility does not make the architecture unfalsifiable. CAVL predicts systematic conditionality. Low valid knowledge should increase reliance on socially available source cues. High load should amplify that tendency when cue-based routines are cheaper, but automatized expertise may attenuate load costs. Motivation to be accurate should increase elaboration only when ability and evidence permit it. High social cost should increase dissociation between private evaluation and public expression. These moderator-linked predictions distinguish recurrent processing from an unconstrained claim that any module can do anything.</p>
+</section>
+<section id="functional-differentiation-and-biological-constraints" class="level3">
+<h3 class="anchored" data-anchor-id="functional-differentiation-and-biological-constraints">7.2 Functional differentiation and biological constraints</h3>
+<p>CAVL requires partially dissociable functions, not anatomically isolated modules. Memory, cognitive control, mentalising, metacognition, and valuation are implemented by distributed, plastic, and interacting neural systems; no one-function–one-region mapping is assumed. Epistemic vigilance has no established dedicated brain network. It is a functional coordination hypothesis concerning how contents, sources, arguments, uncertainty, and acceptability are evaluated across these systems.</p>
+<p>Neurobiological evidence can constrain CAVL by testing whether proposed functions dissociate and coordinate under appropriate task contrasts. It cannot replace functional explanation, and activation in an overlapping network does not identify a uniquely epistemic process. Behavioural and time-resolved measures are therefore necessary alongside neural evidence.</p>
+</section>
+<section id="three-indispensable-dissociations" class="level3">
+<h3 class="anchored" data-anchor-id="three-indispensable-dissociations">7.3 Three indispensable dissociations</h3>
+<p>The completed architecture depends on three families of dissociation. First, exposure, attention, comprehension, retention, evaluation, uptake, and durable learning are different transitions. Evidence for one does not establish the others. Second, objective knowledge, confidence, perceived expertise, epistemic credit, authority, and influence are different quantities whose alignment must be measured. Third, proximal processing and structural conditions occupy different levels even when they form causal loops. These distinctions are not terminological refinements. They determine what an experiment must manipulate and what an educational intervention can plausibly change.</p>
+</section>
+</section>
+<section id="testable-propositions-and-decisive-evidence" class="level2">
+<h2 class="anchored" data-anchor-id="testable-propositions-and-decisive-evidence">8 Testable propositions and decisive evidence</h2>
+<p>Theoretical architecture earns its place by organizing risky predictions. CAVL therefore reduces its research programmed to six propositions. Each expresses a relation that should survive across more than one task, while allowing direction and magnitude to depend on specified conditions.</p>
+<p>Table 2</p>
+<p>Core CAVL propositions, discriminating tests, and revision criteria</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 4%">
+<col style="width: 38%">
+<col style="width: 31%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Proposition</strong></th>
+<th style="text-align: left;"><strong>Discriminating test</strong></th>
+<th style="text-align: left;"><strong>CAVL prediction</strong></th>
+<th style="text-align: left;"><strong>Evidence that would require major revision</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">P1 Knowledge-dependent evaluation</td>
+<td style="text-align: left;">Present equivalent claims and evidence across independently measured or trained levels of valid domain knowledge</td>
+<td style="text-align: left;">Greater valid knowledge improves content discrimination, lowers effective cost, and reduces non-diagnostic source dependence</td>
+<td style="text-align: left;">Cue use, discrimination, and cost remain invariant across large validated knowledge differences</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">P2 Authority–quality conflict</td>
+<td style="text-align: left;">Orthogonally manipulate objective argument or content quality and attributed source authority</td>
+<td style="text-align: left;">Low-knowledge learners’ weight attributed authority more; knowledgeable learners weight quality more when capacity and evidence are available</td>
+<td style="text-align: left;">Authority and quality have indistinguishable effects across knowledge levels, or one factor universally eliminates the other</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">P3 Regime allocation</td>
+<td style="text-align: left;">Manipulate working memory demand, motivation, time, and cue diagnostic in separate designs</td>
+<td style="text-align: left;">Load and low ability increase reliance on cheaper cues; motivation increases elaboration only when ability and diagnostic evidence permit</td>
+<td style="text-align: left;">Regime-sensitive process measures do not vary under effective ability, load, motivation, or cue manipulations</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">P4 Double social embedding</td>
+<td style="text-align: left;">Test two prespecified pathways separately: (a) structural trajectories → knowledge, institutional familiarity, cue access, and verification ability or cost → evaluation; (b) experimentally varied epistemic credit → later participation, feedback, exposure, and learning opportunities</td>
+<td style="text-align: left;">Models containing the prespecified mediators explain structural effects better than direct-effects-only models; when opportunities depend on credit, increased credit changes subsequent participation, feedback, exposure, or learning</td>
+<td style="text-align: left;">Prespecified-mediator models do not improve on direct-effects-only models, or manipulated credit does not affect later opportunities where those opportunities demonstrably depend on credit</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">P5 Distinct uptake outcomes</td>
+<td style="text-align: left;">Measure attention, perceived validity, confidence, private epistemic uptake, memory, source updating, public expression or endorsement, and delayed learning separately</td>
+<td style="text-align: left;">These outcomes dissociate, especially under uncertainty and social cost</td>
+<td style="text-align: left;">The measures form a single invariant construct across tasks, stakes, and delays</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">P6 Institutional regulation</td>
+<td style="text-align: left;">Compare two interventions producing the same immediate correct response: one improves evidence access, source comparison, or checking cost; the other changes authority or compliance cues only</td>
+<td style="text-align: left;">Verification support improves private understanding, calibration, delayed retention, and transfer; authority-only support may change public answers without equivalent private uptake</td>
+<td style="text-align: left;">Matched interventions are indistinguishable across process, private uptake, public expression, calibration, retention, and transfer outcomes</td>
+</tr>
+</tbody>
+</table>
+<section id="the-critical-benchmark-design" class="level3">
+<h3 class="anchored" data-anchor-id="the-critical-benchmark-design">8.1 The critical benchmark design</h3>
+<p>The most informative initial programmed crosses content or argument quality, attributed source authority, and objective prior knowledge. Content and source should be manipulated independently. Prior knowledge should be measured with a domain-valid test and, where possible, changed through training. The minimum outcomes are attention or effort, perceived validity and confidence, private epistemic uptake, memory or delayed knowledge change, source-model updating, and public expression or endorsement.</p>
+<p>CAVL predicts a quality-by-authority-by-knowledge pattern. When valid prior knowledge is low, learners cannot fully evaluate content and should depend more on attributed authority, especially when the cue is accessible. As knowledge increases, diagnostic content should receive more weight and misleading authority should lose influence, provided that the learner has capacity and evidence. The theory does not predict complete independence from sources among experts. Experts still depend on testimony outside their specialty and use learned institutional cues efficiently.</p>
+<p>Working memory load, motivation, and social cost should be examined as moderators in focused follow-up studies rather than added immediately to an uninterpretable high-order design. Load should shift evaluation toward cheaper cues, unless expertise has automatized the relevant content check. Accuracy motivation should increase elaboration when learners can use it. Social cost should produce the clearest divergence between private recognition and public expression. Process tracing, confidence, and delayed measures are needed because a single post-task answer cannot identify the responsible transition.</p>
+</section>
+<section id="what-would-falsify-rather-than-merely-qualify-cavl" class="level3">
+<h3 class="anchored" data-anchor-id="what-would-falsify-rather-than-merely-qualify-cavl">8.2 What would falsify rather than merely qualify CAVL</h3>
+<p>Several results would challenge the architecture rather than add another moderator. CAVL would require major revision if validated prior knowledge did not alter representation, cost, or cue use across diverse domain-specific tasks; if content quality and attributed authority could not be made to dissociate behaviorally; or if memory, confidence, private uptake, and public expression consistently behaved as one construct. It would also require revision if models containing prespecified proximal mediators did not outperform direct-effects-only models, if manipulated epistemic credit failed to change opportunities that demonstrably depend on credit, or if verification support and authority-only support produced indistinguishable private, public, delayed, and transfer outcomes.</p>
+<p>The model would also be weakened if a simpler architecture containing only memory and generic value learning explained all sources, argument, metacognitive, and authority effects without loss of prediction. Conversely, finding neural overlaps among modules would not falsify CAVL because it predicts distributed implementation. What matters is functional dissociation and coordinated recruitment, not anatomical isolation.</p>
+</section>
+<section id="relation-to-epistemic-growth-research" class="level3">
+<h3 class="anchored" data-anchor-id="relation-to-epistemic-growth-research">8.3 Relation to epistemic growth research</h3>
+<p>The bridge to SEGL generates a complementary test. An intervention that changes epistemic virtues, aims, or metacognitive knowledge should affect learning through state-level allocation, verification, confidence regulation, or persistence. Its effect should vary with available knowledge, load, and provenance. Intellectual humility cannot improve source discrimination when no diagnostic evidence is accessible; a commitment to accuracy cannot remove working-memory limits; an interface can temporarily improve checking without changing a durable disposition. Longitudinal designs can test the reciprocal possibility that repeated successful regulation consolidates epistemic resources described by SEGL (Orona &amp; Greene, 2026).</p>
+</section>
+</section>
+<section id="educational-institutional-and-technological-implications" class="level2">
+<h2 class="anchored" data-anchor-id="educational-institutional-and-technological-implications">9 Educational institutional and technological implications</h2>
+<section id="epistemic-autonomy-as-regulated-dependence" class="level3">
+<h3 class="anchored" data-anchor-id="epistemic-autonomy-as-regulated-dependence">9.1 Epistemic autonomy as regulated dependence</h3>
+<p>The educational aim implied by CAVL is <em>epistemic autonomy</em>, understood not as independence from others but as the capacity to regulate dependence on contents, sources, authorities, heuristics, and environments. Learners should know when direct evaluation is possible, when expert dependence is warranted, when corroboration is needed, when judgement should be suspended, and when the social cost of expression must be managed separately from private belief.</p>
+<p>This aim requires four capacities. The first is domain knowledge, because no generic checklist substitutes for the concepts needed to understand evidence. The second is source-content coordination: learners must connect who made which claim with relevant competence, access, incentives, and independent support. The third is metacognitive calibration and regulation of elaboration: they must recognize when rapid routines are sufficiently diagnostic and when additional processing is worth its cost. The fourth is social-epistemic regulation: they must manage disagreement, identity, reputation, dependence, and uncertainty without confusing social strategy with epistemic validity.</p>
+<p>Instruction should therefore make mechanisms sufficiently accessible to awareness for learners to regulate them when needed, without promising total conscious control. Instruction in sourcing and multiple-document integration offers concrete practices for connecting claims, sources, and corroboration (Rouet, 2006; Barzilai &amp; Zohar, 2012). Learners can be taught that familiarity, confidence, prestige, dominance, consensus, and fluency affect epistemic weight; they can compare initial judgements with evidence and feedback; and they can practice shifting regimes. Some automatisms are highly effective and should be trained rather than suppressed. The target is calibrated movement, not permanent elaboration.</p>
+<p>Expertise itself should become an object of regulation. Rich knowledge can reduce load and improve discrimination, but it can also support overconfidence, motivated reasoning, or fixation. Procedures that invite alternative representations, explicit uncertainty, and cross-domain consultation can protect against these costs without treating expertise as suspect.</p>
+</section>
+<section id="institutions-of-epistemic-vigilance" class="level3">
+<h3 class="anchored" data-anchor-id="institutions-of-epistemic-vigilance">9.2 Institutions of epistemic vigilance</h3>
+<p>Educational settings regulate cognition from the outside. In the sociological sense, institutions are durable ways of acting, thinking, and organizing that confront individuals as shared rules and arrangements. They are not cognitive modules. They alter cue validity, information access, verification cost, incentives, speaking rights, and accountability. Scientific peer review, legal adversarial procedures, professional certification, journalistic correction, classroom discussion rules, and platform provenance can all function as <em>institutions of epistemic vigilance</em>.</p>
+<p>Such institutions can intervene on both processing regimes. Credentials, labels, and reputational records offer low-cost cues. Evidence displays, structured comparison, independent initial judgements, requests for reasons, and protected revision support elaboration. Repeated participation can also become internalized as semantic knowledge, procedures, and metacognitive dispositions. This is how external regulation can contribute to autonomy rather than merely impose compliance.</p>
+<p>Institutional support can backfire. More provenances may increase extraneous load. Certification may become a proxy for status rather than relevant competence. Mandatory public justification may expose vulnerable learners to reputational risk. Accuracy prompts may improve private attention while leaving participation inequalities untouched. Design must consequently evaluate at least accuracy, calibration, competence–authority alignment, cognitive cost, and epistemic justice.</p>
+</section>
+<section id="digital-environments" class="level3">
+<h3 class="anchored" data-anchor-id="digital-environments">9.3 Digital environments</h3>
+<p>Digital systems shape what is encountered and how costly it is to verify (Allen et al., 2026; List &amp; Braasch, 2026). Search rankings, recommendation systems, social metrics, and conversational agents distribute attention and authority before deliberate evaluation begins. Fluent synthesis can reduce comprehension costs while obscuring source independence or uncertainty. CAVL rejects technological determinism: a feature changes the learner–task–environment relation, and its effect depends on knowledge and goals.</p>
+<p>Useful designs preserve provenance, connect claims to evidence, expose source independence and relevant competence, represent uncertainty, and make comparison inexpensive. Adaptive support should respond to prior knowledge rather than infer learning from clicks or time alone. Interfaces can separate “I understand,” “I believe,” “I can verify,” and “I would share,” thereby preventing one fluent response from standing in for several epistemic outcomes.</p>
+</section>
+</section>
+<section id="boundaries-limitations-and-future-formalization" class="level2">
+<h2 class="anchored" data-anchor-id="boundaries-limitations-and-future-formalization">10 Boundaries limitations and future formalization</h2>
+<p>CAVL is deliberately limited to socially embedded vigilant learning. Its primary cases are communicated claims, instruction, testimony, search, documents, discussion, argument, and institutionally or digitally mediated knowledge. The source need not be physically present: provenance can be carried out by a text, curriculum, database, interface, or platform. CAVL does not replace theories of basic perception, motor skill, associative conditioning, or reinforcement learning, although those processes can contribute to its procedures and valuations.</p>
+<p>The architecture remains precomputation. It specifies functions and constraints but not complete algorithms or parameter values. A later agent-based implementation could represent heterogeneous knowledge, limited resources, claims, sources, social relations, and updating rules. Such a model should be treated as a new formal theory to be calibrated and tested, not as confirmation supplied by drawing the present diagram.</p>
+<p>Several constructs remain underspecified. CAVL needs fuller models of argument representation, emotional dynamics, language, collective memory, cultural variation, and institutional change. The boundaries among relevance, valuation, and motivation will require computational clarification. The two processing regimes are useful explanatory poles but should not be reified as independent systems. Likewise, the current neural mapping is a set of constraints and hypotheses, not evidence for a unitary brain architecture.</p>
+<p>Normative claims require particular care. A strategy can be efficient for a learner’s current goals yet inaccurate or unjust. A true belief can be socially costly; a socially strategic response can preserve safety without reflecting private belief. CAVL describes these conflicts before evaluating them. Normatively successful vigilant learning requires justified aims, reliable evidence, calibrated confidence, appropriate source discrimination, and fair conditions of participation. Those standards are culturally transmitted and institutionally contested, not generated by the architecture alone.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">11 Conclusion</h2>
+<p>CAVL addresses a delimited version of Newell’s challenge. Socially embedded vigilant learning cannot be explained by memory without provenance, by authority without cognition, or by social structure without proximal pathways. Architecture connects working memory, long-term knowledge, epistemic vigilance, theory of mind and source representation, metacognition, variable processing regimes, and two forms of social embedding while leaving specialized theories in place.</p>
+<p>Three relations define CAVL’s distinctive contribution. First, learners arbitrate between content quality and attributed epistemic authority as a function of valid prior knowledge, available evidence, and processing conditions. Second, private epistemic uptake can diverge from public expression when social and reputational costs intervene. Third, structurally distributed resources and interactionally allocated authority recursively shape participation, feedback, exposure, and later learning.</p>
+<p>CAVL should be retained only if these relations generate discriminating evidence. If quality and authority cannot be separated, if their influence does not vary under the predicted conditions, if private and public outcomes do not dissociate, or if the proposed structure–interaction pathways fail, the architecture should change. If the relations hold, CAVL provides a cognitively specified and socially realistic basis for research and educational design aimed at epistemic autonomy as regulated dependence.</p>
+</section>
+<div id="movici-references">
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<p>Allen, L. K., DeLiema, D., &amp; Kendeou, P. (2026). A multidimensional framework for student searching in algorithmically curated information environments. <em>Educational Psychologist, 61</em>(3), 170–189. <a href="https://doi.org/10.1080/00461520.2025.2588213">https://doi.org/10.1080/00461520.2025.2588213</a></p>
+<p>Altay, S., &amp; Mercier, H. (2020). Relevance is socially rewarded, but not at the price of accuracy. <em>Evolutionary Psychology, 18</em>(1), 1–17. <a href="https://doi.org/10.1177/1474704920912640">https://doi.org/10.1177/1474704920912640</a></p>
+<p>Anderson, J. R. (1996). ACT: A simple theory of complex cognition. <em>American Psychologist, 51</em>(4), 355–365. <a href="https://doi.org/10.1037/0003-066X.51.4.355">https://doi.org/10.1037/0003-066X.51.4.355</a></p>
+<p>Anderson, J. R., &amp; Lebiere, C. (2003). The Newell test for a theory of cognition. <em>Behavioral and Brain Sciences, 26</em>(5), 587–601. <a href="https://doi.org/10.1017/S0140525X0300013X">https://doi.org/10.1017/S0140525X0300013X</a></p>
+<p>Anmarkrud, Ø., Bråten, I., Florit, E., &amp; Mason, L. (2022). The role of individual differences in sourcing: A systematic review. <em>Educational Psychology Review, 34</em>, 749–792. <a href="https://doi.org/10.1007/s10648-021-09640-7">https://doi.org/10.1007/s10648-021-09640-7</a></p>
+<p>Baddeley, A. (2000). The episodic buffer: A new component of working memory? <em>Trends in Cognitive Sciences, 4</em>(11), 417–423. <a href="https://doi.org/10.1016/S1364-6613(00)">https://doi.org/10.1016/S1364-6613(00</a>01538-2</p>
+<p>Barzilai, S., &amp; Chinn, C. A. (2018). On the goals of epistemic education: Promoting apt epistemic performance. <em>The Journal of the Learning Sciences, 27</em>(3), 353–389. <a href="https://doi.org/10.1080/10508406.2017.1392968">https://doi.org/10.1080/10508406.2017.1392968</a></p>
+<p>Barzilai, S., &amp; Zohar, A. (2012). Epistemic thinking in action: Evaluating and integrating online sources. <em>Cognition and Instruction, 30</em>(1), 39–85. <a href="https://doi.org/10.1080/07370008.2011.636495">https://doi.org/10.1080/07370008.2011.636495</a></p>
+<p>Berger, J., Ridgeway, C. L., &amp; Zelditch, M. (2002). Construction of status and referential structures. <em>Sociological Theory, 20</em>(2), 157–179. <a href="https://doi.org/10.1111/1467-9558.00157">https://doi.org/10.1111/1467-9558.00157</a></p>
+<p>Bilalić, M., McLeod, P., &amp; Gobet, F. (2008). Why good thoughts block better ones: The mechanism of the pernicious Einstellung effect. <em>Cognition, 108</em>(3), 652–661. <a href="https://doi.org/10.1016/j.cognition.2008.05.005">https://doi.org/10.1016/j.cognition.2008.05.005</a></p>
+<p>Binder, J. R., &amp; Desai, R. H. (2011). The neurobiology of semantic memory. <em>Trends in Cognitive Sciences, 15</em>(11), 527–536. <a href="https://doi.org/10.1016/j.tics.2011.10.001">https://doi.org/10.1016/j.tics.2011.10.001</a></p>
+<p>Bourdieu, P. (1990). <em>The logic of practice</em>. Stanford University Press.</p>
+<p>Bråten, I., Strømsø, H. I., &amp; Salmerón, L. (2011). Trust and mistrust when students read multiple information sources about climate change. <em>Learning and Instruction, 21</em>(2), 180–192. <a href="https://doi.org/10.1016/j.learninstruc.2010.02.002">https://doi.org/10.1016/j.learninstruc.2010.02.002</a></p>
+<p>Chaiken, S. (1980). Heuristic versus systematic information processing and the use of source versus message cues in persuasion. <em>Journal of Personality and Social Psychology, 39</em>(5), 752–766. <a href="https://doi.org/10.1037/0022-3514.39.5.752">https://doi.org/10.1037/0022-3514.39.5.752</a></p>
+<p>Chase, W. G., &amp; Simon, H. A. (1973). Perception in chess. <em>Cognitive Psychology, 4</em>(1), 55–81. <a href="https://doi.org/10.1016/0010-0285(73)">https://doi.org/10.1016/0010-0285(73</a>90004-2</p>
+<p>Cheng, J. T., Tracy, J. L., Foulsham, T., Kingstone, A., &amp; Henrich, J. (2013). Two ways to the top: Evidence that dominance and prestige are distinct yet viable avenues to social rank and influence. <em>Journal of Personality and Social Psychology, 104</em>(1), 103–125. <a href="https://doi.org/10.1037/a0030398">https://doi.org/10.1037/a0030398</a></p>
+<p>Chi, M. T. H., Glaser, R., &amp; Farr, M. J. (Eds.). (1988). <em>The nature of expertise</em>. Erlbaum.</p>
+<p>Chinn, C. A., Buckland, L. A., &amp; Samarapungavan, A. (2011). Expanding the dimensions of epistemic cognition: Arguments from philosophy and psychology. <em>Educational Psychologist, 46</em>(3), 141–167. <a href="https://doi.org/10.1080/00461520.2011.587722">https://doi.org/10.1080/00461520.2011.587722</a></p>
+<p>Chinn, C. A., Barzilai, S., &amp; Elby, A. (2026). Epistemic rights in tension and accord: Expanding the analysis of source evaluation criteria. <em>Educational Psychologist, 61</em>(3), 135–150. <a href="https://doi.org/10.1080/00461520.2025.2584975">https://doi.org/10.1080/00461520.2025.2584975</a></p>
+<p>Cicourel, A. V. (1974). <em>Cognitive sociology: Language and meaning in social interaction</em>. Free Press.</p>
+<p>Clément, F. (2010). To trust or not to trust? Children’s social epistemology. <em>Review of Philosophy and Psychology, 1</em>(4), 531–549. <a href="https://doi.org/10.1007/s13164-010-0022-3">https://doi.org/10.1007/s13164-010-0022-3</a></p>
+<p>Clément, F., Koenig, M. A., &amp; Harris, P. L. (2004). The ontogenesis of trust. <em>Mind &amp; Language, 19</em>(4), 360–379. <a href="https://doi.org/10.1111/j.0268-1064.2004.00263.x">https://doi.org/10.1111/j.0268-1064.2004.00263.x</a></p>
+<p>Cowan, N. (2001). The magical number 4 in short-term memory: A reconsideration of mental storage capacity. <em>Behavioral and Brain Sciences, 24</em>(1), 87–114. <a href="https://doi.org/10.1017/S0140525X01003922">https://doi.org/10.1017/S0140525X01003922</a></p>
+<p>Darnon, C., Doll, S., &amp; Butera, F. (2007). Dealing with a disagreeing partner: Relational and epistemic conflict elaboration. <em>European Journal of Psychology of Education, 22</em>(3), 227–242. <a href="https://doi.org/10.1007/BF03173423">https://doi.org/10.1007/BF03173423</a></p>
+<p>Darnon, C., Muller, D., Schrager, S. M., Pannuzzo, N., &amp; Butera, F. (2006). Mastery and performance goals predict epistemic and relational conflict regulation. <em>Journal of Educational Psychology, 98</em>(4), 766–776. <a href="https://doi.org/10.1037/0022-0663.98.4.766">https://doi.org/10.1037/0022-0663.98.4.766</a></p>
+<p>De Dreu, C. K. W., Nijstad, B. A., &amp; van Knippenberg, D. (2008). Motivated information processing in group judgment and decision making. <em>Personality and Social Psychology Review, 12</em>(1), 22–49. <a href="https://doi.org/10.1177/1088868307304092">https://doi.org/10.1177/1088868307304092</a></p>
+<p>D’Esposito, M., &amp; Postle, B. R. (2015). The cognitive neuroscience of working memory. <em>Annual Review of Psychology, 66</em>, 115–142. <a href="https://doi.org/10.1146/annurev-psych-010814-015031">https://doi.org/10.1146/annurev-psych-010814-015031</a></p>
+<p>DiMaggio, P. (1997). Culture and cognition. <em>Annual Review of Sociology, 23</em>, 263–287. <a href="https://doi.org/10.1146/annurev.soc.23.1.263">https://doi.org/10.1146/annurev.soc.23.1.263</a></p>
+<p>Ditto, P. H., &amp; Lopez, D. F. (1992). Motivated skepticism: Use of differential decision criteria for preferred and nonpreferred conclusions. <em>Journal of Personality and Social Psychology, 63</em>(4), 568–584. <a href="https://doi.org/10.1037/0022-3514.63.4.568">https://doi.org/10.1037/0022-3514.63.4.568</a></p>
+<p>Dosso, C., Morisseau, T., Heintz, C., &amp; Vayre, J.-S. (2025). A cognitive resource-rational account of epistemic injustice. <em>The Philosophical Quarterly, 75</em>(4), 1272–1293. <a href="https://doi.org/10.1093/pq/pqaf088">https://doi.org/10.1093/pq/pqaf088</a></p>
+<p>Dotson, K. (2011). Tracking epistemic violence, tracking practices of silencing. <em>Hypatia, 26</em>(2), 236–257. <a href="https://doi.org/10.1111/j.1527-2001.2011.01177.x">https://doi.org/10.1111/j.1527-2001.2011.01177.x</a></p>
+<p>Dunlosky, J., &amp; Metcalfe, J. (2009). <em>Metacognition</em>. Sage.</p>
+<p>Ericsson, K. A., &amp; Kintsch, W. (1995). Long-term working memory. <em>Psychological Review, 102</em>(2), 211–245. <a href="https://doi.org/10.1037/0033-295X.102.2.211">https://doi.org/10.1037/0033-295X.102.2.211</a></p>
+<p>Evans, J. St.&nbsp;B. T. (2008). Dual-processing accounts of reasoning, judgment, and social cognition. <em>Annual Review of Psychology, 59</em>, 255–278. <a href="https://doi.org/10.1146/annurev.psych.59.103006.093629">https://doi.org/10.1146/annurev.psych.59.103006.093629</a></p>
+<p>Flavell, J. H. (1979). Metacognition and cognitive monitoring: A new area of cognitive-developmental inquiry. <em>American Psychologist, 34</em>(10), 906–911. <a href="https://doi.org/10.1037/0003-066X.34.10.906">https://doi.org/10.1037/0003-066X.34.10.906</a></p>
+<p>Fleming, S. M., &amp; Dolan, R. J. (2012). The neural basis of metacognitive ability. <em>Philosophical Transactions of the Royal Society B, 367</em>(1594), 1338–1349. <a href="https://doi.org/10.1098/rstb.2011.0417">https://doi.org/10.1098/rstb.2011.0417</a></p>
+<p>Foschi, M. (2000). Double standards for competence: Theory and research. <em>Annual Review of Sociology, 26</em>, 21–42. <a href="https://doi.org/10.1146/annurev.soc.26.1.21">https://doi.org/10.1146/annurev.soc.26.1.21</a></p>
+<p>Fricker, M. (2007). <em>Epistemic injustice: Power and the ethics of knowing</em>. Oxford University Press. <a href="https://doi.org/10.1093/acprof:oso/9780198237907.001.0001">https://doi.org/10.1093/acprof:oso/9780198237907.001.0001</a></p>
+<p>Frith, U., &amp; Frith, C. D. (2003). Development and neurophysiology of mentalizing. <em>Philosophical Transactions of the Royal Society B, 358</em>(1431), 459–473. <a href="https://doi.org/10.1098/rstb.2002.1218">https://doi.org/10.1098/rstb.2002.1218</a></p>
+<p>Geary, D. C. (2008). An evolutionarily informed education science. <em>Educational Psychologist, 43</em>(4), 179–195. <a href="https://doi.org/10.1080/00461520802392133">https://doi.org/10.1080/00461520802392133</a></p>
+<p>Greene, J. A. (2022). What can educational psychology learn from, and contribute to, theory development scholarship? <em>Educational Psychology Review, 34</em>, 3011–3035. <a href="https://doi.org/10.1007/s10648-022-09682-5">https://doi.org/10.1007/s10648-022-09682-5</a></p>
+<p>Harris, P. L., Koenig, M. A., Corriveau, K. H., &amp; Jaswal, V. K. (2018). Cognitive foundations of learning from testimony. <em>Annual Review of Psychology, 69</em>, 251–273. <a href="https://doi.org/10.1146/annurev-psych-122216-011710">https://doi.org/10.1146/annurev-psych-122216-011710</a></p>
+<p>Henrich, J., &amp; Gil-White, F. J. (2001). The evolution of prestige: Freely conferred deference as a mechanism for enhancing the benefits of cultural transmission. <em>Evolution and Human Behavior, 22</em>(3), 165–196. <a href="https://doi.org/10.1016/S1090-5138(00)">https://doi.org/10.1016/S1090-5138(00</a>00071-4</p>
+<p>Hollan, J., Hutchins, E., &amp; Kirsh, D. (2000). Distributed cognition: Toward a new foundation for human-computer interaction research. <em>ACM Transactions on Computer-Human Interaction, 7</em>(2), 174–196. <a href="https://doi.org/10.1145/353485.353487">https://doi.org/10.1145/353485.353487</a></p>
+<p>Hollingshead, A. B. (2000). Perceptions of expertise and transactive memory in work relationships. <em>Group Processes &amp; Intergroup Relations, 3</em>(3), 257–267. <a href="https://doi.org/10.1177/1368430200033002">https://doi.org/10.1177/1368430200033002</a></p>
+<p>Hovland, C. I., &amp; Weiss, W. (1951). The influence of source credibility on communication effectiveness. <em>Public Opinion Quarterly, 15</em>(4), 635–650. <a href="https://doi.org/10.1086/266350">https://doi.org/10.1086/266350</a></p>
+<p>Hutchins, E. (1995). <em>Cognition in the wild</em>. MIT Press.</p>
+<p>Johnson, M. K., Hashtroudi, S., &amp; Lindsay, D. S. (1993). Source monitoring. <em>Psychological Bulletin, 114</em>(1), 3–28. <a href="https://doi.org/10.1037/0033-2909.114.1.3">https://doi.org/10.1037/0033-2909.114.1.3</a></p>
+<p>Johnson, M. K., &amp; Raye, C. L. (1981). Reality monitoring. <em>Psychological Review, 88</em>(1), 67–85. <a href="https://doi.org/10.1037/0033-295X.88.1.67">https://doi.org/10.1037/0033-295X.88.1.67</a></p>
+<p>Knight, S., Braasch, J. L. G., &amp; Allen, L. K. (2026). Epistemic in/justice and theories of multiple source use: A narrative review and emerging sociocultural model. <em>Educational Psychologist, 61</em>(3), 190–210. <a href="https://doi.org/10.1080/00461520.2026.2686106">https://doi.org/10.1080/00461520.2026.2686106</a></p>
+<p>Koriat, A. (1997). Monitoring one’s own knowledge during study: A cue-utilization approach to judgments of learning. <em>Journal of Experimental Psychology: General, 126</em>(4), 349–370. <a href="https://doi.org/10.1037/0096-3445.126.4.349">https://doi.org/10.1037/0096-3445.126.4.349</a></p>
+<p>Kotseruba, I., &amp; Tsotsos, J. K. (2020). 40 years of cognitive architectures: Core cognitive abilities and practical applications. <em>Artificial Intelligence Review, 53</em>, 17–94. <a href="https://doi.org/10.1007/s10462-018-9646-y">https://doi.org/10.1007/s10462-018-9646-y</a></p>
+<p>Kunda, Z. (1990). The case for motivated reasoning. <em>Psychological Bulletin, 108</em>(3), 480–498. <a href="https://doi.org/10.1037/0033-2909.108.3.480">https://doi.org/10.1037/0033-2909.108.3.480</a></p>
+<p>Lave, J., &amp; Wenger, E. (1991). <em>Situated learning: Legitimate peripheral participation</em>. Cambridge University Press. <a href="https://doi.org/10.1017/CBO9780511815355">https://doi.org/10.1017/CBO9780511815355</a></p>
+<p>List, A., &amp; Braasch, J. L. G. (2026). Multiple texts, culture, marginalization, and generative AI: An introduction to the special issue. <em>Educational Psychologist, 61</em>(3), 121–134. <a href="https://doi.org/10.1080/00461520.2026.2686110">https://doi.org/10.1080/00461520.2026.2686110</a></p>
+<p>Mascaro, O., &amp; Sperber, D. (2009). The moral, epistemic, and mindreading components of children’s vigilance towards deception. <em>Cognition, 112</em>(3), 367–380. <a href="https://doi.org/10.1016/j.cognition.2009.05.012">https://doi.org/10.1016/j.cognition.2009.05.012</a></p>
+<p>Mercier, H. (2020). <em>Not born yesterday: The science of who we trust and what we believe</em>. Princeton University Press. <a href="https://doi.org/10.2307/j.ctvn1tbqq">https://doi.org/10.2307/j.ctvn1tbqq</a></p>
+<p>Mercier, H., &amp; Sperber, D. (2017). <em>The enigma of reason</em>. Harvard University Press.</p>
+<p>Miller, E. K., &amp; Cohen, J. D. (2001). An integrative theory of prefrontal cortex function. <em>Annual Review of Neuroscience, 24</em>, 167–202. <a href="https://doi.org/10.1146/annurev.neuro.24.1.167">https://doi.org/10.1146/annurev.neuro.24.1.167</a></p>
+<p>Miyake, A., &amp; Friedman, N. P. (2012). The nature and organization of individual differences in executive functions: Four general conclusions. <em>Current Directions in Psychological Science, 21</em>(1), 8–14. <a href="https://doi.org/10.1177/0963721411429458">https://doi.org/10.1177/0963721411429458</a></p>
+<p>Miyake, A., Friedman, N. P., Emerson, M. J., Witzki, A. H., Howerter, A., &amp; Wager, T. D. (2000). The unity and diversity of executive functions and their contributions to complex frontal lobe tasks: A latent variable analysis. <em>Cognitive Psychology, 41</em>(1), 49–100. <a href="https://doi.org/10.1006/cogp.1999.0734">https://doi.org/10.1006/cogp.1999.0734</a></p>
+<p>Muthukrishna, M., &amp; Henrich, J. (2019). A problem in theory. <em>Nature Human Behaviour, 3</em>, 221–229. <a href="https://doi.org/10.1038/s41562-018-0522-1">https://doi.org/10.1038/s41562-018-0522-1</a></p>
+<p>Nelson, T. O., &amp; Narens, L. (1990). Metamemory: A theoretical framework and new findings. In G. H. Bower (Ed.), <em>The psychology of learning and motivation</em> (Vol. 26, pp.&nbsp;125–173). Academic Press. <a href="https://doi.org/10.1016/S0079-7421(08)">https://doi.org/10.1016/S0079-7421(08</a>60053-5</p>
+<p>Newell, A. (1973). You can’t play 20 questions with nature and win: Projective comments on the papers of this symposium. In W. G. Chase (Ed.), <em>Visual information processing</em> (pp.&nbsp;283–308). Academic Press. <a href="https://doi.org/10.1016/B978-0-12-170150-5.50012-3">https://doi.org/10.1016/B978-0-12-170150-5.50012-3</a></p>
+<p>Newell, A. (1990). <em>Unified theories of cognition</em>. Harvard University Press.</p>
+<p>Orona, G. A., &amp; Greene, J. A. (2026). A theoretical model for stimulating epistemic growth in learners. <em>Educational Psychologist</em>, 1–22. <a href="https://doi.org/10.1080/00461520.2026.2689595">https://doi.org/10.1080/00461520.2026.2689595</a></p>
+<p>Perfetti, C. A., Rouet, J.-F., &amp; Britt, M. A. (1999). Toward a theory of documents representation. In H. van Oostendorp &amp; S. R. Goldman (Eds.), <em>The construction of mental representations during reading</em> (pp.&nbsp;99–122). Erlbaum.</p>
+<p>Petersen, S. E., &amp; Posner, M. I. (2012). The attention system of the human brain: 20 years after. <em>Annual Review of Neuroscience, 35</em>, 73–89. <a href="https://doi.org/10.1146/annurev-neuro-062111-150525">https://doi.org/10.1146/annurev-neuro-062111-150525</a></p>
+<p>Petty, R. E., &amp; Cacioppo, J. T. (1986). <em>Communication and persuasion: Central and peripheral routes to attitude change</em>. Springer. <a href="https://doi.org/10.1007/978-1-4612-4964-1">https://doi.org/10.1007/978-1-4612-4964-1</a></p>
+<p>Premack, D., &amp; Woodruff, G. (1978). Does the chimpanzee have a theory of mind? <em>Behavioral and Brain Sciences, 1</em>(4), 515–526. <a href="https://doi.org/10.1017/S0140525X00076512">https://doi.org/10.1017/S0140525X00076512</a></p>
+<p>Rogoff, B. (1990). <em>Apprenticeship in thinking: Cognitive development in social context</em>. Oxford University Press.</p>
+<p>Rouet, J.-F. (2006). <em>The skills of document use: From text comprehension to Web-based learning</em>. Erlbaum.</p>
+<p>Schurz, M., Radua, J., Aichhorn, M., Richlan, F., &amp; Perner, J. (2014). Fractionating theory of mind: A meta-analysis of functional brain imaging studies. <em>Neuroscience &amp; Biobehavioral Reviews, 42</em>, 9–34. <a href="https://doi.org/10.1016/j.neubiorev.2014.01.009">https://doi.org/10.1016/j.neubiorev.2014.01.009</a></p>
+<p>Simon, H. A. (1955). A behavioral model of rational choice. <em>The Quarterly Journal of Economics, 69</em>(1), 99–118. <a href="https://doi.org/10.2307/1884852">https://doi.org/10.2307/1884852</a></p>
+<p>Simon, H. A. (1956). Rational choice and the structure of the environment. <em>Psychological Review, 63</em>(2), 129–138. <a href="https://doi.org/10.1037/h0042769">https://doi.org/10.1037/h0042769</a></p>
+<p>Sperber, D., Clément, F., Heintz, C., Mascaro, O., Mercier, H., Origgi, G., &amp; Wilson, D. (2010). Epistemic vigilance. <em>Mind &amp; Language, 25</em>(4), 359–393. <a href="https://doi.org/10.1111/j.1468-0017.2010.01394.x">https://doi.org/10.1111/j.1468-0017.2010.01394.x</a></p>
+<p>Sperber, D., &amp; Wilson, D. (1995). <em>Relevance: Communication and cognition</em> (2nd ed.). Blackwell.</p>
+<p>Squire, L. R. (2004). Memory systems of the brain: A brief history and current perspective. <em>Neurobiology of Learning and Memory, 82</em>(3), 171–177. <a href="https://doi.org/10.1016/j.nlm.2004.06.005">https://doi.org/10.1016/j.nlm.2004.06.005</a></p>
+<p>Sweller, J. (1988). Cognitive load during problem solving: Effects on learning. <em>Cognitive Science, 12</em>(2), 257–285. <a href="https://doi.org/10.1207/s15516709cog1202_4">https://doi.org/10.1207/s15516709cog1202_4</a></p>
+<p>Sweller, J., Ayres, P., &amp; Kalyuga, S. (2011). <em>Cognitive load theory</em>. Springer. <a href="https://doi.org/10.1007/978-1-4419-8126-4">https://doi.org/10.1007/978-1-4419-8126-4</a></p>
+<p>Tricot, A., &amp; Sweller, J. (2014). Domain-specific knowledge and why teaching generic skills does not work. <em>Educational Psychology Review, 26</em>, 265–283. <a href="https://doi.org/10.1007/s10648-013-9243-1">https://doi.org/10.1007/s10648-013-9243-1</a></p>
+<p>Vygotsky, L. S. (1978). <em>Mind in society: The development of higher psychological processes</em>. Harvard University Press.</p>
+<p>Wilson, D., &amp; Sperber, D. (2004). Relevance theory. In L. R. Horn &amp; G. Ward (Eds.), <em>The handbook of pragmatics</em> (pp.&nbsp;607–632). Blackwell. <a href="https://doi.org/10.1002/9780470756959.ch27">https://doi.org/10.1002/9780470756959.ch27</a></p>
+</section>
+</div>
+<script>
+window.MOVICI_REFERENCES = [{"id": "ref-1", "full": "Allen, L. K., DeLiema, D., & Kendeou, P. (2026). A multidimensional framework for student searching in algorithmically curated information environments. Educational Psychologist, 61(3), 170--189. https://doi.org/10.1080/00461520.2025.2588213", "doi": "https://doi.org/10.1080/00461520.2025.2588213", "aliases": ["Allen and Kendeou (2026)", "Allen and Kendeou, 2026", "Allen & Kendeou (2026)", "Allen & Kendeou, 2026", "Allen et al. (2026)", "Allen et al., 2026", "Allen (2026)", "Allen, 2026"]}, {"id": "ref-2", "full": "Altay, S., & Mercier, H. (2020). Relevance is socially rewarded, but not at the price of accuracy. Evolutionary Psychology, 18(1), 1--17. https://doi.org/10.1177/1474704920912640", "doi": "https://doi.org/10.1177/1474704920912640", "aliases": ["Altay and Mercier (2020)", "Altay and Mercier, 2020", "Altay & Mercier (2020)", "Altay & Mercier, 2020", "Altay et al. (2020)", "Altay et al., 2020", "Altay (2020)", "Altay, 2020"]}, {"id": "ref-3", "full": "Anderson, J. R. (1996). ACT: A simple theory of complex cognition. American Psychologist, 51(4), 355--365. https://doi.org/10.1037/0003-066X.51.4.355", "doi": "https://doi.org/10.1037/0003-066X.51.4.355", "aliases": ["Anderson et al. (1996)", "Anderson et al., 1996", "Anderson (1996)", "Anderson, 1996"]}, {"id": "ref-4", "full": "Anderson, J. R., & Lebiere, C. (2003). The Newell test for a theory of cognition. Behavioral and Brain Sciences, 26(5), 587--601. https://doi.org/10.1017/S0140525X0300013X", "doi": "https://doi.org/10.1017/S0140525X0300013X", "aliases": ["Anderson and Lebiere (2003)", "Anderson and Lebiere, 2003", "Anderson & Lebiere (2003)", "Anderson & Lebiere, 2003", "Anderson et al. (2003)", "Anderson et al., 2003", "Anderson (2003)", "Anderson, 2003"]}, {"id": "ref-5", "full": "Anmarkrud, Ø., Bråten, I., Florit, E., & Mason, L. (2022). The role of individual differences in sourcing: A systematic review. Educational Psychology Review, 34, 749--792. https://doi.org/10.1007/s10648-021-09640-7", "doi": "https://doi.org/10.1007/s10648-021-09640-7", "aliases": ["Anmarkrud and Mason (2022)", "Anmarkrud and Mason, 2022", "Anmarkrud & Mason (2022)", "Anmarkrud & Mason, 2022", "Anmarkrud et al. (2022)", "Anmarkrud et al., 2022", "Anmarkrud (2022)", "Anmarkrud, 2022"]}, {"id": "ref-6", "full": "Baddeley, A. (2000). The episodic buffer: A new component of working memory? Trends in Cognitive Sciences, 4(11), 417--423. https://doi.org/10.1016/S1364-6613(00)01538-2", "doi": "https://doi.org/10.1016/S1364-6613(00)01538-2", "aliases": ["Baddeley et al. (2000)", "Baddeley et al., 2000", "Baddeley (2000)", "Baddeley, 2000"]}, {"id": "ref-7", "full": "Barzilai, S., & Chinn, C. A. (2018). On the goals of epistemic education: Promoting apt epistemic performance. The Journal of the Learning Sciences, 27(3), 353--389. https://doi.org/10.1080/10508406.2017.1392968", "doi": "https://doi.org/10.1080/10508406.2017.1392968", "aliases": ["Barzilai and Chinn (2018)", "Barzilai and Chinn, 2018", "Barzilai & Chinn (2018)", "Barzilai et al. (2018)", "Barzilai & Chinn, 2018", "Barzilai et al., 2018", "Barzilai (2018)", "Barzilai, 2018"]}, {"id": "ref-8", "full": "Barzilai, S., & Zohar, A. (2012). Epistemic thinking in action: Evaluating and integrating online sources. Cognition and Instruction, 30(1), 39--85. https://doi.org/10.1080/07370008.2011.636495", "doi": "https://doi.org/10.1080/07370008.2011.636495", "aliases": ["Barzilai and Zohar (2012)", "Barzilai and Zohar, 2012", "Barzilai & Zohar (2012)", "Barzilai & Zohar, 2012", "Barzilai et al. (2012)", "Barzilai et al., 2012", "Barzilai (2012)", "Barzilai, 2012"]}, {"id": "ref-9", "full": "Berger, J., Ridgeway, C. L., & Zelditch, M. (2002). Construction of status and referential structures. Sociological Theory, 20(2), 157--179. https://doi.org/10.1111/1467-9558.00157", "doi": "https://doi.org/10.1111/1467-9558.00157", "aliases": ["Berger and Zelditch (2002)", "Berger and Zelditch, 2002", "Berger & Zelditch (2002)", "Berger & Zelditch, 2002", "Berger et al. (2002)", "Berger et al., 2002", "Berger (2002)", "Berger, 2002"]}, {"id": "ref-10", "full": "Bilalić, M., McLeod, P., & Gobet, F. (2008). Why good thoughts block better ones: The mechanism of the pernicious Einstellung effect. Cognition, 108(3), 652--661. https://doi.org/10.1016/j.cognition.2008.05.005", "doi": "https://doi.org/10.1016/j.cognition.2008.05.005", "aliases": ["Bilalić and Gobet (2008)", "Bilalić and Gobet, 2008", "Bilalić & Gobet (2008)", "Bilalić & Gobet, 2008", "Bilalić et al. (2008)", "Bilalić et al., 2008", "Bilalić (2008)", "Bilalić, 2008"]}, {"id": "ref-11", "full": "Binder, J. R., & Desai, R. H. (2011). The neurobiology of semantic memory. Trends in Cognitive Sciences, 15(11), 527--536. https://doi.org/10.1016/j.tics.2011.10.001", "doi": "https://doi.org/10.1016/j.tics.2011.10.001", "aliases": ["Binder and Desai (2011)", "Binder and Desai, 2011", "Binder & Desai (2011)", "Binder & Desai, 2011", "Binder et al. (2011)", "Binder et al., 2011", "Binder (2011)", "Binder, 2011"]}, {"id": "ref-12", "full": "Bourdieu, P. (1990). The logic of practice. Stanford University Press.", "doi": "", "aliases": ["Bourdieu et al. (1990)", "Bourdieu et al., 1990", "Bourdieu (1990)", "Bourdieu, 1990"]}, {"id": "ref-13", "full": "Bråten, I., Strømsø, H. I., & Salmerón, L. (2011). Trust and mistrust when students read multiple information sources about climate change. Learning and Instruction, 21(2), 180--192. https://doi.org/10.1016/j.learninstruc.2010.02.002", "doi": "https://doi.org/10.1016/j.learninstruc.2010.02.002", "aliases": ["Bråten and Salmerón (2011)", "Bråten and Salmerón, 2011", "Bråten & Salmerón (2011)", "Bråten & Salmerón, 2011", "Bråten et al. (2011)", "Bråten et al., 2011", "Bråten (2011)", "Bråten, 2011"]}, {"id": "ref-14", "full": "Chaiken, S. (1980). Heuristic versus systematic information processing and the use of source versus message cues in persuasion. Journal of Personality and Social Psychology, 39(5), 752--766. https://doi.org/10.1037/0022-3514.39.5.752", "doi": "https://doi.org/10.1037/0022-3514.39.5.752", "aliases": ["Chaiken et al. (1980)", "Chaiken et al., 1980", "Chaiken (1980)", "Chaiken, 1980"]}, {"id": "ref-15", "full": "Chase, W. G., & Simon, H. A. (1973). Perception in chess. Cognitive Psychology, 4(1), 55--81. https://doi.org/10.1016/0010-0285(73)90004-2", "doi": "https://doi.org/10.1016/0010-0285(73)90004-2", "aliases": ["Chase and Simon (1973)", "Chase and Simon, 1973", "Chase & Simon (1973)", "Chase & Simon, 1973", "Chase et al. (1973)", "Chase et al., 1973", "Chase (1973)", "Chase, 1973"]}, {"id": "ref-16", "full": "Cheng, J. T., Tracy, J. L., Foulsham, T., Kingstone, A., & Henrich, J. (2013). Two ways to the top: Evidence that dominance and prestige are distinct yet viable avenues to social rank and influence. Journal of Personality and Social Psychology, 104(1), 103--125. https://doi.org/10.1037/a0030398", "doi": "https://doi.org/10.1037/a0030398", "aliases": ["Cheng and Henrich (2013)", "Cheng and Henrich, 2013", "Cheng & Henrich (2013)", "Cheng & Henrich, 2013", "Cheng et al. (2013)", "Cheng et al., 2013", "Cheng (2013)", "Cheng, 2013"]}, {"id": "ref-17", "full": "Chi, M. T. H., Glaser, R., & Farr, M. J. (Eds.). (1988). The nature of expertise. Erlbaum.", "doi": "", "aliases": ["Chi and Farr (1988)", "Chi and Farr, 1988", "Chi & Farr (1988)", "Chi et al. (1988)", "Chi & Farr, 1988", "Chi et al., 1988", "Chi (1988)", "Chi, 1988"]}, {"id": "ref-18", "full": "Chinn, C. A., Buckland, L. A., & Samarapungavan, A. (2011). Expanding the dimensions of epistemic cognition: Arguments from philosophy and psychology. Educational Psychologist, 46(3), 141--167. https://doi.org/10.1080/00461520.2011.587722", "doi": "https://doi.org/10.1080/00461520.2011.587722", "aliases": ["Chinn and Samarapungavan (2011)", "Chinn and Samarapungavan, 2011", "Chinn & Samarapungavan (2011)", "Chinn & Samarapungavan, 2011", "Chinn et al. (2011)", "Chinn et al., 2011", "Chinn (2011)", "Chinn, 2011"]}, {"id": "ref-19", "full": "Chinn, C. A., Barzilai, S., & Elby, A. (2026). Epistemic rights in tension and accord: Expanding the analysis of source evaluation criteria. Educational Psychologist, 61(3), 135--150. https://doi.org/10.1080/00461520.2025.2584975", "doi": "https://doi.org/10.1080/00461520.2025.2584975", "aliases": ["Chinn and Elby (2026)", "Chinn and Elby, 2026", "Chinn & Elby (2026)", "Chinn et al. (2026)", "Chinn et al., 2026", "Chinn & Elby, 2026", "Chinn (2026)", "Chinn, 2026"]}, {"id": "ref-20", "full": "Cicourel, A. V. (1974). Cognitive sociology: Language and meaning in social interaction. Free Press.", "doi": "", "aliases": ["Cicourel et al. (1974)", "Cicourel et al., 1974", "Cicourel (1974)", "Cicourel, 1974"]}, {"id": "ref-21", "full": "Clément, F. (2010). To trust or not to trust? Children's social epistemology. Review of Philosophy and Psychology, 1(4), 531--549. https://doi.org/10.1007/s13164-010-0022-3", "doi": "https://doi.org/10.1007/s13164-010-0022-3", "aliases": ["Clément et al. (2010)", "Clément et al., 2010", "Clément (2010)", "Clément, 2010"]}, {"id": "ref-22", "full": "Clément, F., Koenig, M. A., & Harris, P. L. (2004). The ontogenesis of trust. Mind & Language, 19(4), 360--379. https://doi.org/10.1111/j.0268-1064.2004.00263.x", "doi": "https://doi.org/10.1111/j.0268-1064.2004.00263.x", "aliases": ["Clément and Harris (2004)", "Clément and Harris, 2004", "Clément & Harris (2004)", "Clément & Harris, 2004", "Clément et al. (2004)", "Clément et al., 2004", "Clément (2004)", "Clément, 2004"]}, {"id": "ref-23", "full": "Cowan, N. (2001). The magical number 4 in short-term memory: A reconsideration of mental storage capacity. Behavioral and Brain Sciences, 24(1), 87--114. https://doi.org/10.1017/S0140525X01003922", "doi": "https://doi.org/10.1017/S0140525X01003922", "aliases": ["Cowan et al. (2001)", "Cowan et al., 2001", "Cowan (2001)", "Cowan, 2001"]}, {"id": "ref-24", "full": "Darnon, C., Doll, S., & Butera, F. (2007). Dealing with a disagreeing partner: Relational and epistemic conflict elaboration. European Journal of Psychology of Education, 22(3), 227--242. https://doi.org/10.1007/BF03173423", "doi": "https://doi.org/10.1007/BF03173423", "aliases": ["Darnon and Butera (2007)", "Darnon and Butera, 2007", "Darnon & Butera (2007)", "Darnon & Butera, 2007", "Darnon et al. (2007)", "Darnon et al., 2007", "Darnon (2007)", "Darnon, 2007"]}, {"id": "ref-25", "full": "Darnon, C., Muller, D., Schrager, S. M., Pannuzzo, N., & Butera, F. (2006). Mastery and performance goals predict epistemic and relational conflict regulation. Journal of Educational Psychology, 98(4), 766--776. https://doi.org/10.1037/0022-0663.98.4.766", "doi": "https://doi.org/10.1037/0022-0663.98.4.766", "aliases": ["Darnon and Butera (2006)", "Darnon and Butera, 2006", "Darnon & Butera (2006)", "Darnon & Butera, 2006", "Darnon et al. (2006)", "Darnon et al., 2006", "Darnon (2006)", "Darnon, 2006"]}, {"id": "ref-26", "full": "De Dreu, C. K. W., Nijstad, B. A., & van Knippenberg, D. (2008). Motivated information processing in group judgment and decision making. Personality and Social Psychology Review, 12(1), 22--49. https://doi.org/10.1177/1088868307304092", "doi": "https://doi.org/10.1177/1088868307304092", "aliases": ["De Dreu and van Knippenberg (2008)", "De Dreu and van Knippenberg, 2008", "De Dreu & van Knippenberg (2008)", "De Dreu & van Knippenberg, 2008", "De Dreu et al. (2008)", "De Dreu et al., 2008", "De Dreu (2008)", "De Dreu, 2008"]}, {"id": "ref-27", "full": "D'Esposito, M., & Postle, B. R. (2015). The cognitive neuroscience of working memory. Annual Review of Psychology, 66, 115--142. https://doi.org/10.1146/annurev-psych-010814-015031", "doi": "https://doi.org/10.1146/annurev-psych-010814-015031", "aliases": ["D'Esposito and Postle (2015)", "D'Esposito and Postle, 2015", "D'Esposito & Postle (2015)", "D'Esposito & Postle, 2015", "D'Esposito et al. (2015)", "D'Esposito et al., 2015", "D'Esposito (2015)", "D'Esposito, 2015"]}, {"id": "ref-28", "full": "DiMaggio, P. (1997). Culture and cognition. Annual Review of Sociology, 23, 263--287. https://doi.org/10.1146/annurev.soc.23.1.263", "doi": "https://doi.org/10.1146/annurev.soc.23.1.263", "aliases": ["DiMaggio et al. (1997)", "DiMaggio et al., 1997", "DiMaggio (1997)", "DiMaggio, 1997"]}, {"id": "ref-29", "full": "Ditto, P. H., & Lopez, D. F. (1992). Motivated skepticism: Use of differential decision criteria for preferred and nonpreferred conclusions. Journal of Personality and Social Psychology, 63(4), 568--584. https://doi.org/10.1037/0022-3514.63.4.568", "doi": "https://doi.org/10.1037/0022-3514.63.4.568", "aliases": ["Ditto and Lopez (1992)", "Ditto and Lopez, 1992", "Ditto & Lopez (1992)", "Ditto & Lopez, 1992", "Ditto et al. (1992)", "Ditto et al., 1992", "Ditto (1992)", "Ditto, 1992"]}, {"id": "ref-30", "full": "Dosso, C., Morisseau, T., Heintz, C., & Vayre, J.-S. (2025). A cognitive resource-rational account of epistemic injustice. The Philosophical Quarterly, 75(4), 1272--1293. https://doi.org/10.1093/pq/pqaf088", "doi": "https://doi.org/10.1093/pq/pqaf088", "aliases": ["Dosso and Vayre (2025)", "Dosso and Vayre, 2025", "Dosso & Vayre (2025)", "Dosso et al. (2025)", "Dosso & Vayre, 2025", "Dosso et al., 2025", "Dosso (2025)", "Dosso, 2025"]}, {"id": "ref-31", "full": "Dotson, K. (2011). Tracking epistemic violence, tracking practices of silencing. Hypatia, 26(2), 236--257. https://doi.org/10.1111/j.1527-2001.2011.01177.x", "doi": "https://doi.org/10.1111/j.1527-2001.2011.01177.x", "aliases": ["Dotson et al. (2011)", "Dotson et al., 2011", "Dotson (2011)", "Dotson, 2011"]}, {"id": "ref-32", "full": "Dunlosky, J., & Metcalfe, J. (2009). Metacognition. Sage.", "doi": "", "aliases": ["Dunlosky and Metcalfe (2009)", "Dunlosky and Metcalfe, 2009", "Dunlosky & Metcalfe (2009)", "Dunlosky & Metcalfe, 2009", "Dunlosky et al. (2009)", "Dunlosky et al., 2009", "Dunlosky (2009)", "Dunlosky, 2009"]}, {"id": "ref-33", "full": "Ericsson, K. A., & Kintsch, W. (1995). Long-term working memory. Psychological Review, 102(2), 211--245. https://doi.org/10.1037/0033-295X.102.2.211", "doi": "https://doi.org/10.1037/0033-295X.102.2.211", "aliases": ["Ericsson and Kintsch (1995)", "Ericsson and Kintsch, 1995", "Ericsson & Kintsch (1995)", "Ericsson & Kintsch, 1995", "Ericsson et al. (1995)", "Ericsson et al., 1995", "Ericsson (1995)", "Ericsson, 1995"]}, {"id": "ref-34", "full": "Evans, J. St. B. T. (2008). Dual-processing accounts of reasoning, judgment, and social cognition. Annual Review of Psychology, 59, 255--278. https://doi.org/10.1146/annurev.psych.59.103006.093629", "doi": "https://doi.org/10.1146/annurev.psych.59.103006.093629", "aliases": ["Evans et al. (2008)", "Evans et al., 2008", "Evans (2008)", "Evans, 2008"]}, {"id": "ref-35", "full": "Flavell, J. H. (1979). Metacognition and cognitive monitoring: A new area of cognitive-developmental inquiry. American Psychologist, 34(10), 906--911. https://doi.org/10.1037/0003-066X.34.10.906", "doi": "https://doi.org/10.1037/0003-066X.34.10.906", "aliases": ["Flavell et al. (1979)", "Flavell et al., 1979", "Flavell (1979)", "Flavell, 1979"]}, {"id": "ref-36", "full": "Fleming, S. M., & Dolan, R. J. (2012). The neural basis of metacognitive ability. Philosophical Transactions of the Royal Society B, 367(1594), 1338--1349. https://doi.org/10.1098/rstb.2011.0417", "doi": "https://doi.org/10.1098/rstb.2011.0417", "aliases": ["Fleming and Dolan (2012)", "Fleming and Dolan, 2012", "Fleming & Dolan (2012)", "Fleming & Dolan, 2012", "Fleming et al. (2012)", "Fleming et al., 2012", "Fleming (2012)", "Fleming, 2012"]}, {"id": "ref-37", "full": "Foschi, M. (2000). Double standards for competence: Theory and research. Annual Review of Sociology, 26, 21--42. https://doi.org/10.1146/annurev.soc.26.1.21", "doi": "https://doi.org/10.1146/annurev.soc.26.1.21", "aliases": ["Foschi et al. (2000)", "Foschi et al., 2000", "Foschi (2000)", "Foschi, 2000"]}, {"id": "ref-38", "full": "Fricker, M. (2007). Epistemic injustice: Power and the ethics of knowing. Oxford University Press. https://doi.org/10.1093/acprof:oso/9780198237907.001.0001", "doi": "https://doi.org/10.1093/acprof:oso/9780198237907.001.0001", "aliases": ["Fricker et al. (2007)", "Fricker et al., 2007", "Fricker (2007)", "Fricker, 2007"]}, {"id": "ref-39", "full": "Frith, U., & Frith, C. D. (2003). Development and neurophysiology of mentalizing. Philosophical Transactions of the Royal Society B, 358(1431), 459--473. https://doi.org/10.1098/rstb.2002.1218", "doi": "https://doi.org/10.1098/rstb.2002.1218", "aliases": ["Frith and Frith (2003)", "Frith and Frith, 2003", "Frith & Frith (2003)", "Frith & Frith, 2003", "Frith et al. (2003)", "Frith et al., 2003", "Frith (2003)", "Frith, 2003"]}, {"id": "ref-40", "full": "Geary, D. C. (2008). An evolutionarily informed education science. Educational Psychologist, 43(4), 179--195. https://doi.org/10.1080/00461520802392133", "doi": "https://doi.org/10.1080/00461520802392133", "aliases": ["Geary et al. (2008)", "Geary et al., 2008", "Geary (2008)", "Geary, 2008"]}, {"id": "ref-41", "full": "Greene, J. A. (2022). What can educational psychology learn from, and contribute to, theory development scholarship? Educational Psychology Review, 34, 3011--3035. https://doi.org/10.1007/s10648-022-09682-5", "doi": "https://doi.org/10.1007/s10648-022-09682-5", "aliases": ["Greene et al. (2022)", "Greene et al., 2022", "Greene (2022)", "Greene, 2022"]}, {"id": "ref-42", "full": "Harris, P. L., Koenig, M. A., Corriveau, K. H., & Jaswal, V. K. (2018). Cognitive foundations of learning from testimony. Annual Review of Psychology, 69, 251--273. https://doi.org/10.1146/annurev-psych-122216-011710", "doi": "https://doi.org/10.1146/annurev-psych-122216-011710", "aliases": ["Harris and Jaswal (2018)", "Harris and Jaswal, 2018", "Harris & Jaswal (2018)", "Harris & Jaswal, 2018", "Harris et al. (2018)", "Harris et al., 2018", "Harris (2018)", "Harris, 2018"]}, {"id": "ref-43", "full": "Henrich, J., & Gil-White, F. J. (2001). The evolution of prestige: Freely conferred deference as a mechanism for enhancing the benefits of cultural transmission. Evolution and Human Behavior, 22(3), 165--196. https://doi.org/10.1016/S1090-5138(00)00071-4", "doi": "https://doi.org/10.1016/S1090-5138(00)00071-4", "aliases": ["Henrich and Gil-White (2001)", "Henrich and Gil-White, 2001", "Henrich & Gil-White (2001)", "Henrich & Gil-White, 2001", "Henrich et al. (2001)", "Henrich et al., 2001", "Henrich (2001)", "Henrich, 2001"]}, {"id": "ref-44", "full": "Hollan, J., Hutchins, E., & Kirsh, D. (2000). Distributed cognition: Toward a new foundation for human-computer interaction research. ACM Transactions on Computer-Human Interaction, 7(2), 174--196. https://doi.org/10.1145/353485.353487", "doi": "https://doi.org/10.1145/353485.353487", "aliases": ["Hollan and Kirsh (2000)", "Hollan and Kirsh, 2000", "Hollan & Kirsh (2000)", "Hollan & Kirsh, 2000", "Hollan et al. (2000)", "Hollan et al., 2000", "Hollan (2000)", "Hollan, 2000"]}, {"id": "ref-45", "full": "Hollingshead, A. B. (2000). Perceptions of expertise and transactive memory in work relationships. Group Processes & Intergroup Relations, 3(3), 257--267. https://doi.org/10.1177/1368430200033002", "doi": "https://doi.org/10.1177/1368430200033002", "aliases": ["Hollingshead et al. (2000)", "Hollingshead et al., 2000", "Hollingshead (2000)", "Hollingshead, 2000"]}, {"id": "ref-46", "full": "Hovland, C. I., & Weiss, W. (1951). The influence of source credibility on communication effectiveness. Public Opinion Quarterly, 15(4), 635--650. https://doi.org/10.1086/266350", "doi": "https://doi.org/10.1086/266350", "aliases": ["Hovland and Weiss (1951)", "Hovland and Weiss, 1951", "Hovland & Weiss (1951)", "Hovland & Weiss, 1951", "Hovland et al. (1951)", "Hovland et al., 1951", "Hovland (1951)", "Hovland, 1951"]}, {"id": "ref-47", "full": "Hutchins, E. (1995). Cognition in the wild. MIT Press.", "doi": "", "aliases": ["Hutchins et al. (1995)", "Hutchins et al., 1995", "Hutchins (1995)", "Hutchins, 1995"]}, {"id": "ref-48", "full": "Johnson, M. K., Hashtroudi, S., & Lindsay, D. S. (1993). Source monitoring. Psychological Bulletin, 114(1), 3--28. https://doi.org/10.1037/0033-2909.114.1.3", "doi": "https://doi.org/10.1037/0033-2909.114.1.3", "aliases": ["Johnson and Lindsay (1993)", "Johnson and Lindsay, 1993", "Johnson & Lindsay (1993)", "Johnson & Lindsay, 1993", "Johnson et al. (1993)", "Johnson et al., 1993", "Johnson (1993)", "Johnson, 1993"]}, {"id": "ref-49", "full": "Johnson, M. K., & Raye, C. L. (1981). Reality monitoring. Psychological Review, 88(1), 67--85. https://doi.org/10.1037/0033-295X.88.1.67", "doi": "https://doi.org/10.1037/0033-295X.88.1.67", "aliases": ["Johnson and Raye (1981)", "Johnson and Raye, 1981", "Johnson et al. (1981)", "Johnson & Raye (1981)", "Johnson & Raye, 1981", "Johnson et al., 1981", "Johnson (1981)", "Johnson, 1981"]}, {"id": "ref-50", "full": "Knight, S., Braasch, J. L. G., & Allen, L. K. (2026). Epistemic in/justice and theories of multiple source use: A narrative review and emerging sociocultural model. Educational Psychologist, 61(3), 190--210. https://doi.org/10.1080/00461520.2026.2686106", "doi": "https://doi.org/10.1080/00461520.2026.2686106", "aliases": ["Knight and Allen (2026)", "Knight and Allen, 2026", "Knight & Allen (2026)", "Knight et al. (2026)", "Knight & Allen, 2026", "Knight et al., 2026", "Knight (2026)", "Knight, 2026"]}, {"id": "ref-51", "full": "Koriat, A. (1997). Monitoring one's own knowledge during study: A cue-utilization approach to judgments of learning. Journal of Experimental Psychology: General, 126(4), 349--370. https://doi.org/10.1037/0096-3445.126.4.349", "doi": "https://doi.org/10.1037/0096-3445.126.4.349", "aliases": ["Koriat et al. (1997)", "Koriat et al., 1997", "Koriat (1997)", "Koriat, 1997"]}, {"id": "ref-52", "full": "Kotseruba, I., & Tsotsos, J. K. (2020). 40 years of cognitive architectures: Core cognitive abilities and practical applications. Artificial Intelligence Review, 53, 17--94. https://doi.org/10.1007/s10462-018-9646-y", "doi": "https://doi.org/10.1007/s10462-018-9646-y", "aliases": ["Kotseruba and Tsotsos (2020)", "Kotseruba and Tsotsos, 2020", "Kotseruba & Tsotsos (2020)", "Kotseruba & Tsotsos, 2020", "Kotseruba et al. (2020)", "Kotseruba et al., 2020", "Kotseruba (2020)", "Kotseruba, 2020"]}, {"id": "ref-53", "full": "Kunda, Z. (1990). The case for motivated reasoning. Psychological Bulletin, 108(3), 480--498. https://doi.org/10.1037/0033-2909.108.3.480", "doi": "https://doi.org/10.1037/0033-2909.108.3.480", "aliases": ["Kunda et al. (1990)", "Kunda et al., 1990", "Kunda (1990)", "Kunda, 1990"]}, {"id": "ref-54", "full": "Lave, J., & Wenger, E. (1991). Situated learning: Legitimate peripheral participation. Cambridge University Press. https://doi.org/10.1017/CBO9780511815355", "doi": "https://doi.org/10.1017/CBO9780511815355", "aliases": ["Lave and Wenger (1991)", "Lave and Wenger, 1991", "Lave & Wenger (1991)", "Lave & Wenger, 1991", "Lave et al. (1991)", "Lave et al., 1991", "Lave (1991)", "Lave, 1991"]}, {"id": "ref-55", "full": "List, A., & Braasch, J. L. G. (2026). Multiple texts, culture, marginalization, and generative AI: An introduction to the special issue. Educational Psychologist, 61(3), 121--134. https://doi.org/10.1080/00461520.2026.2686110", "doi": "https://doi.org/10.1080/00461520.2026.2686110", "aliases": ["List and Braasch (2026)", "List and Braasch, 2026", "List & Braasch (2026)", "List & Braasch, 2026", "List et al. (2026)", "List et al., 2026", "List (2026)", "List, 2026"]}, {"id": "ref-56", "full": "Mascaro, O., & Sperber, D. (2009). The moral, epistemic, and mindreading components of children's vigilance towards deception. Cognition, 112(3), 367--380. https://doi.org/10.1016/j.cognition.2009.05.012", "doi": "https://doi.org/10.1016/j.cognition.2009.05.012", "aliases": ["Mascaro and Sperber (2009)", "Mascaro and Sperber, 2009", "Mascaro & Sperber (2009)", "Mascaro & Sperber, 2009", "Mascaro et al. (2009)", "Mascaro et al., 2009", "Mascaro (2009)", "Mascaro, 2009"]}, {"id": "ref-57", "full": "Mercier, H. (2020). Not born yesterday: The science of who we trust and what we believe. Princeton University Press. https://doi.org/10.2307/j.ctvn1tbqq", "doi": "https://doi.org/10.2307/j.ctvn1tbqq", "aliases": ["Mercier et al. (2020)", "Mercier et al., 2020", "Mercier (2020)", "Mercier, 2020"]}, {"id": "ref-58", "full": "Mercier, H., & Sperber, D. (2017). The enigma of reason. Harvard University Press.", "doi": "", "aliases": ["Mercier and Sperber (2017)", "Mercier and Sperber, 2017", "Mercier & Sperber (2017)", "Mercier & Sperber, 2017", "Mercier et al. (2017)", "Mercier et al., 2017", "Mercier (2017)", "Mercier, 2017"]}, {"id": "ref-59", "full": "Miller, E. K., & Cohen, J. D. (2001). An integrative theory of prefrontal cortex function. Annual Review of Neuroscience, 24, 167--202. https://doi.org/10.1146/annurev.neuro.24.1.167", "doi": "https://doi.org/10.1146/annurev.neuro.24.1.167", "aliases": ["Miller and Cohen (2001)", "Miller and Cohen, 2001", "Miller & Cohen (2001)", "Miller & Cohen, 2001", "Miller et al. (2001)", "Miller et al., 2001", "Miller (2001)", "Miller, 2001"]}, {"id": "ref-60", "full": "Miyake, A., & Friedman, N. P. (2012). The nature and organization of individual differences in executive functions: Four general conclusions. Current Directions in Psychological Science, 21(1), 8--14. https://doi.org/10.1177/0963721411429458", "doi": "https://doi.org/10.1177/0963721411429458", "aliases": ["Miyake and Friedman (2012)", "Miyake and Friedman, 2012", "Miyake & Friedman (2012)", "Miyake & Friedman, 2012", "Miyake et al. (2012)", "Miyake et al., 2012", "Miyake (2012)", "Miyake, 2012"]}, {"id": "ref-61", "full": "Miyake, A., Friedman, N. P., Emerson, M. J., Witzki, A. H., Howerter, A., & Wager, T. D. (2000). The unity and diversity of executive functions and their contributions to complex frontal lobe tasks: A latent variable analysis. Cognitive Psychology, 41(1), 49--100. https://doi.org/10.1006/cogp.1999.0734", "doi": "https://doi.org/10.1006/cogp.1999.0734", "aliases": ["Miyake and Wager (2000)", "Miyake and Wager, 2000", "Miyake & Wager (2000)", "Miyake et al. (2000)", "Miyake & Wager, 2000", "Miyake et al., 2000", "Miyake (2000)", "Miyake, 2000"]}, {"id": "ref-62", "full": "Muthukrishna, M., & Henrich, J. (2019). A problem in theory. Nature Human Behaviour, 3, 221--229. https://doi.org/10.1038/s41562-018-0522-1", "doi": "https://doi.org/10.1038/s41562-018-0522-1", "aliases": ["Muthukrishna and Henrich (2019)", "Muthukrishna and Henrich, 2019", "Muthukrishna & Henrich (2019)", "Muthukrishna & Henrich, 2019", "Muthukrishna et al. (2019)", "Muthukrishna et al., 2019", "Muthukrishna (2019)", "Muthukrishna, 2019"]}, {"id": "ref-63", "full": "Nelson, T. O., & Narens, L. (1990). Metamemory: A theoretical framework and new findings. In G. H. Bower (Ed.), The psychology of learning and motivation (Vol. 26, pp. 125--173). Academic Press. https://doi.org/10.1016/S0079-7421(08)60053-5", "doi": "https://doi.org/10.1016/S0079-7421(08)60053-5", "aliases": ["Nelson and Narens (1990)", "Nelson and Narens, 1990", "Nelson & Narens (1990)", "Nelson & Narens, 1990", "Nelson et al. (1990)", "Nelson et al., 1990", "Nelson (1990)", "Nelson, 1990"]}, {"id": "ref-64", "full": "Newell, A. (1973). You can't play 20 questions with nature and win: Projective comments on the papers of this symposium. In W. G. Chase (Ed.), Visual information processing (pp. 283--308). Academic Press. https://doi.org/10.1016/B978-0-12-170150-5.50012-3", "doi": "https://doi.org/10.1016/B978-0-12-170150-5.50012-3", "aliases": ["Newell et al. (1973)", "Newell et al., 1973", "Newell (1973)", "Newell, 1973"]}, {"id": "ref-65", "full": "Newell, A. (1990). Unified theories of cognition. Harvard University Press.", "doi": "", "aliases": ["Newell et al. (1990)", "Newell et al., 1990", "Newell (1990)", "Newell, 1990"]}, {"id": "ref-66", "full": "Orona, G. A., & Greene, J. A. (2026). A theoretical model for stimulating epistemic growth in learners. Educational Psychologist, 1--22. https://doi.org/10.1080/00461520.2026.2689595", "doi": "https://doi.org/10.1080/00461520.2026.2689595", "aliases": ["Orona and Greene (2026)", "Orona and Greene, 2026", "Orona & Greene (2026)", "Orona & Greene, 2026", "Orona et al. (2026)", "Orona et al., 2026", "Orona (2026)", "Orona, 2026"]}, {"id": "ref-67", "full": "Perfetti, C. A., Rouet, J.-F., & Britt, M. A. (1999). Toward a theory of documents representation. In H. van Oostendorp & S. R. Goldman (Eds.), The construction of mental representations during reading (pp. 99--122). Erlbaum.", "doi": "", "aliases": ["Perfetti and Britt (1999)", "Perfetti and Britt, 1999", "Perfetti & Britt (1999)", "Perfetti & Britt, 1999", "Perfetti et al. (1999)", "Perfetti et al., 1999", "Perfetti (1999)", "Perfetti, 1999"]}, {"id": "ref-68", "full": "Petersen, S. E., & Posner, M. I. (2012). The attention system of the human brain: 20 years after. Annual Review of Neuroscience, 35, 73--89. https://doi.org/10.1146/annurev-neuro-062111-150525", "doi": "https://doi.org/10.1146/annurev-neuro-062111-150525", "aliases": ["Petersen and Posner (2012)", "Petersen and Posner, 2012", "Petersen & Posner (2012)", "Petersen & Posner, 2012", "Petersen et al. (2012)", "Petersen et al., 2012", "Petersen (2012)", "Petersen, 2012"]}, {"id": "ref-69", "full": "Petty, R. E., & Cacioppo, J. T. (1986). Communication and persuasion: Central and peripheral routes to attitude change. Springer. https://doi.org/10.1007/978-1-4612-4964-1", "doi": "https://doi.org/10.1007/978-1-4612-4964-1", "aliases": ["Petty and Cacioppo (1986)", "Petty and Cacioppo, 1986", "Petty & Cacioppo (1986)", "Petty & Cacioppo, 1986", "Petty et al. (1986)", "Petty et al., 1986", "Petty (1986)", "Petty, 1986"]}, {"id": "ref-70", "full": "Premack, D., & Woodruff, G. (1978). Does the chimpanzee have a theory of mind? Behavioral and Brain Sciences, 1(4), 515--526. https://doi.org/10.1017/S0140525X00076512", "doi": "https://doi.org/10.1017/S0140525X00076512", "aliases": ["Premack and Woodruff (1978)", "Premack and Woodruff, 1978", "Premack & Woodruff (1978)", "Premack & Woodruff, 1978", "Premack et al. (1978)", "Premack et al., 1978", "Premack (1978)", "Premack, 1978"]}, {"id": "ref-71", "full": "Rogoff, B. (1990). Apprenticeship in thinking: Cognitive development in social context. Oxford University Press.", "doi": "", "aliases": ["Rogoff et al. (1990)", "Rogoff et al., 1990", "Rogoff (1990)", "Rogoff, 1990"]}, {"id": "ref-72", "full": "Rouet, J.-F. (2006). The skills of document use: From text comprehension to Web-based learning. Erlbaum.", "doi": "", "aliases": ["Rouet et al. (2006)", "Rouet et al., 2006", "Rouet (2006)", "Rouet, 2006"]}, {"id": "ref-73", "full": "Schurz, M., Radua, J., Aichhorn, M., Richlan, F., & Perner, J. (2014). Fractionating theory of mind: A meta-analysis of functional brain imaging studies. Neuroscience & Biobehavioral Reviews, 42, 9--34. https://doi.org/10.1016/j.neubiorev.2014.01.009", "doi": "https://doi.org/10.1016/j.neubiorev.2014.01.009", "aliases": ["Schurz and Perner (2014)", "Schurz and Perner, 2014", "Schurz & Perner (2014)", "Schurz & Perner, 2014", "Schurz et al. (2014)", "Schurz et al., 2014", "Schurz (2014)", "Schurz, 2014"]}, {"id": "ref-74", "full": "Simon, H. A. (1955). A behavioral model of rational choice. The Quarterly Journal of Economics, 69(1), 99--118. https://doi.org/10.2307/1884852", "doi": "https://doi.org/10.2307/1884852", "aliases": ["Simon et al. (1955)", "Simon et al., 1955", "Simon (1955)", "Simon, 1955"]}, {"id": "ref-75", "full": "Simon, H. A. (1956). Rational choice and the structure of the environment. Psychological Review, 63(2), 129--138. https://doi.org/10.1037/h0042769", "doi": "https://doi.org/10.1037/h0042769", "aliases": ["Simon et al. (1956)", "Simon et al., 1956", "Simon (1956)", "Simon, 1956"]}, {"id": "ref-76", "full": "Sperber, D., Clément, F., Heintz, C., Mascaro, O., Mercier, H., Origgi, G., & Wilson, D. (2010). Epistemic vigilance. Mind & Language, 25(4), 359--393. https://doi.org/10.1111/j.1468-0017.2010.01394.x", "doi": "https://doi.org/10.1111/j.1468-0017.2010.01394.x", "aliases": ["Sperber and Wilson (2010)", "Sperber and Wilson, 2010", "Sperber & Wilson (2010)", "Sperber & Wilson, 2010", "Sperber et al. (2010)", "Sperber et al., 2010", "Sperber (2010)", "Sperber, 2010"]}, {"id": "ref-77", "full": "Sperber, D., & Wilson, D. (1995). Relevance: Communication and cognition (2nd ed.). Blackwell.", "doi": "", "aliases": ["Sperber and Wilson (1995)", "Sperber and Wilson, 1995", "Sperber & Wilson (1995)", "Sperber & Wilson, 1995", "Sperber et al. (1995)", "Sperber et al., 1995", "Sperber (1995)", "Sperber, 1995"]}, {"id": "ref-78", "full": "Squire, L. R. (2004). Memory systems of the brain: A brief history and current perspective. Neurobiology of Learning and Memory, 82(3), 171--177. https://doi.org/10.1016/j.nlm.2004.06.005", "doi": "https://doi.org/10.1016/j.nlm.2004.06.005", "aliases": ["Squire et al. (2004)", "Squire et al., 2004", "Squire (2004)", "Squire, 2004"]}, {"id": "ref-79", "full": "Sweller, J. (1988). Cognitive load during problem solving: Effects on learning. Cognitive Science, 12(2), 257--285. https://doi.org/10.1207/s15516709cog12024", "doi": "https://doi.org/10.1207/s15516709cog12024", "aliases": ["Sweller et al. (1988)", "Sweller et al., 1988", "Sweller (1988)", "Sweller, 1988"]}, {"id": "ref-80", "full": "Sweller, J., Ayres, P., & Kalyuga, S. (2011). Cognitive load theory. Springer. https://doi.org/10.1007/978-1-4419-8126-4", "doi": "https://doi.org/10.1007/978-1-4419-8126-4", "aliases": ["Sweller and Kalyuga (2011)", "Sweller and Kalyuga, 2011", "Sweller & Kalyuga (2011)", "Sweller & Kalyuga, 2011", "Sweller et al. (2011)", "Sweller et al., 2011", "Sweller (2011)", "Sweller, 2011"]}, {"id": "ref-81", "full": "Tricot, A., & Sweller, J. (2014). Domain-specific knowledge and why teaching generic skills does not work. Educational Psychology Review, 26, 265--283. https://doi.org/10.1007/s10648-013-9243-1", "doi": "https://doi.org/10.1007/s10648-013-9243-1", "aliases": ["Tricot and Sweller (2014)", "Tricot and Sweller, 2014", "Tricot & Sweller (2014)", "Tricot & Sweller, 2014", "Tricot et al. (2014)", "Tricot et al., 2014", "Tricot (2014)", "Tricot, 2014"]}, {"id": "ref-82", "full": "Vygotsky, L. S. (1978). Mind in society: The development of higher psychological processes. Harvard University Press.", "doi": "", "aliases": ["Vygotsky et al. (1978)", "Vygotsky et al., 1978", "Vygotsky (1978)", "Vygotsky, 1978"]}, {"id": "ref-83", "full": "Wilson, D., & Sperber, D. (2004). Relevance theory. In L. R. Horn & G. Ward (Eds.), The handbook of pragmatics (pp. 607--632). Blackwell. https://doi.org/10.1002/9780470756959.ch27", "doi": "https://doi.org/10.1002/9780470756959.ch27", "aliases": ["Wilson and Sperber (2004)", "Wilson and Sperber, 2004", "Wilson & Sperber (2004)", "Wilson & Sperber, 2004", "Wilson et al. (2004)", "Wilson et al., 2004", "Wilson (2004)", "Wilson, 2004"]}];
+</script>
+
+
+
+</main> <!-- /main -->
+
+<div id="movici-citation-tooltip" role="tooltip"></div>
+<script>
+(function () {
+  function escRE(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+
+  function run() {
+    const refs = window.MOVICI_REFERENCES || [];
+    if (!refs.length) return;
+
+    const aliasMap = new Map();
+    refs.forEach(ref => (ref.aliases || []).forEach(a => {
+      if (a && !aliasMap.has(a)) aliasMap.set(a, ref);
+    }));
+    const aliases = Array.from(aliasMap.keys()).sort((a,b) => b.length - a.length);
+    if (!aliases.length) return;
+
+    const rx = new RegExp(aliases.map(escRE).join('|'), 'g');
+    const root = document.querySelector('main.content') || document.querySelector('main') || document.body;
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    let node;
+    while ((node = walker.nextNode())) {
+      const p = node.parentElement;
+      if (!p) continue;
+      if (p.closest('#movici-references, script, style, pre, code, a, .movici-citation-hover')) continue;
+      if (rx.test(node.nodeValue)) nodes.push(node);
+      rx.lastIndex = 0;
+    }
+
+    nodes.forEach(textNode => {
+      const text = textNode.nodeValue;
+      let last = 0, match;
+      rx.lastIndex = 0;
+      const frag = document.createDocumentFragment();
+      while ((match = rx.exec(text))) {
+        if (match.index > last) frag.appendChild(document.createTextNode(text.slice(last, match.index)));
+        const ref = aliasMap.get(match[0]);
+        const el = ref && ref.doi ? document.createElement('a') : document.createElement('span');
+        el.className = 'movici-citation-hover';
+        el.textContent = match[0];
+        el.dataset.full = (ref && ref.full) || '';
+        el.dataset.doi = (ref && ref.doi) || '';
+        if (ref && ref.doi) {
+          el.href = ref.doi;
+          el.target = '_blank';
+          el.rel = 'noopener';
+          el.setAttribute('aria-label', match[0] + ' — open DOI');
+        }
+        frag.appendChild(el);
+        last = rx.lastIndex;
+      }
+      if (last < text.length) frag.appendChild(document.createTextNode(text.slice(last)));
+      textNode.replaceWith(frag);
+    });
+
+    const tip = document.getElementById('movici-citation-tooltip');
+    let hideTimer = null;
+
+    function show(el) {
+      clearTimeout(hideTimer);
+      const full = el.dataset.full || '';
+      const doi = el.dataset.doi || '';
+      tip.innerHTML = '';
+      const txt = document.createElement('div');
+      txt.textContent = full;
+      tip.appendChild(txt);
+      if (doi) {
+        const a = document.createElement('a');
+        a.href = doi;
+        a.target = '_blank';
+        a.rel = 'noopener';
+        a.textContent = 'Open DOI';
+        tip.appendChild(a);
+      }
+      tip.style.display = 'block';
+      const r = el.getBoundingClientRect();
+      const w = Math.min(460, window.innerWidth - 24);
+      tip.style.maxWidth = w + 'px';
+      let left = Math.min(r.left, window.innerWidth - w - 12);
+      left = Math.max(12, left);
+      let top = r.bottom + 8;
+      requestAnimationFrame(() => {
+        const th = tip.getBoundingClientRect().height;
+        if (top + th > window.innerHeight - 12) top = Math.max(12, r.top - th - 8);
+        tip.style.left = left + 'px';
+        tip.style.top = top + 'px';
+      });
+    }
+
+    function scheduleHide() {
+      hideTimer = setTimeout(() => { tip.style.display = 'none'; }, 180);
+    }
+
+    document.querySelectorAll('.movici-citation-hover').forEach(el => {
+      el.addEventListener('mouseenter', () => show(el));
+      el.addEventListener('mouseleave', scheduleHide);
+      el.addEventListener('focus', () => show(el));
+      el.addEventListener('blur', scheduleHide);
+      el.tabIndex = 0;
+    });
+    tip.addEventListener('mouseenter', () => clearTimeout(hideTimer));
+    tip.addEventListener('mouseleave', scheduleHide);
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run);
+  else run();
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>MOVICI Research Programme · Working papers and research materials</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

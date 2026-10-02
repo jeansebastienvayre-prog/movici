@@ -1,0 +1,438 @@
+---
+title: "Epistemic Credit in Cooperative and Competitive Debate"
+subtitle: "MOVICI Working Paper 03"
+toc: true
+toc-location: right
+toc-title: "On this page"
+---
+
+<div class="movici-author">MOVICI Research Programme</div>
+<div class="movici-meta">Working paper · 2026 · Preprint — not peer reviewed</div>
+
+<div class="resources">
+<span class="resources-title">Resources</span>
+<a class="resource-link" href="files/MOVICI_WP03.pdf">Download PDF</a>
+<a class="resource-link" href="files/MOVICI_WP03_debate_Replication_Package.zip">Data &amp; replication package</a>
+</div>
+
+## Video Presentation
+
+<div class="video-embed">
+<iframe src="https://www.youtube.com/embed/7ZlA8G064oc" title="MOVICI Working Paper 03 video presentation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+## Abstract
+
+::: {.abstract-block}
+In groups, having knowledge is not enough. Members must also recognize who knows what and calibrate their own competence. We tested whether cooperative versus competitive interdependence changes this epistemic coordination. Ninety-six participants in 34 debates first completed an individual search-recall-evaluation sequence, then completed a 20-minute debate followed by partner evaluation and argument recall/evaluation before T3. Factual scores did not increase substantially across this full debate-evaluation-recall sequence (T3--T2 = −0.23/20; one-sided 95% upper bound = +0.052). Analyses converged on greater under-crediting of others under competition, although the primary test was marginal. Self-calibration was also poorer under competition. At T3, subjective expertise tracked objective expertise under cooperation but not competition. Partners' actual expertise barely predicted perceived expertise, and evaluators' own expertise did not clearly improve this discrimination. These findings distinguish knowledge, recognition, and epistemic credit, and identify a proximal sociocognitive mechanism relevant to epistemic injustice: weak competence-credit coupling may leave more room for socially distributed cues.
+:::
+
+<div class="keywords">
+
+**Keywords:** cooperation; competition; epistemic credit; calibration; epistemic injustice
+
+</div>
+
+## 1. Introduction
+
+Groups can function as information-processing systems. Their members must share content, identify relevant expertise, and combine different contributions (Hinsz et al., 1997). Discussion can improve reasoning and decision making. On some tasks, it helps groups find solutions that individuals do not find alone (Mercier et al., 2015). But this advantage also requires effective epistemic coordination. Members need to know, at least approximately, who knows what and how much weight to give different contributions.
+
+This issue is distinct from factual learning. Discussion can help detect an error or improve a justification without producing measurable new factual knowledge. Wecker and Fischer (2014) documented this gap in their meta-analysis. Interventions focused on argumentation more clearly improve argumentative quality than the acquisition of domain-specific knowledge. Debate should therefore be studied as an activity with multiple outcomes.
+
+We distinguish four constructs. K_D denotes objective domain knowledge. K_S denotes the subjective representation of one's own knowledge. K_O denotes the representation of another person's knowledge. C_O denotes the epistemic credit granted to others. These constructs can be related without being equivalent. A person can be competent without being recognized as such. A group can grant more credit to its members without becoming better at identifying who actually knows more. An individual can also feel knowledgeable without this feeling closely tracking actual knowledge.
+
+Epistemic vigilance provides a first framework for analysing this coordination. Communication gives access to knowledge that cannot be acquired alone. It also creates exposure to error and deception. People must therefore evaluate both content and sources, including their competence and intentions (Sperber et al., 2010). Yet vigilance does not ensure good calibration. In adults, several studies show that social cues can serve as signals of competence. Confidence can be used as an expertise heuristic (Price & Stone, 2004). Dominance can increase influence by signalling competence beyond actual ability (Anderson & Kilduff, 2009). Prestige and dominance are also distinct routes to rank and influence (Cheng et al., 2013). Overconfidence can further yield status benefits (Anderson et al., 2012).
+
+Sensitivity to social cues appears early. Children learn to prefer informants who have previously been reliable (Clément et al., 2004). By preschool age, they also use dominance cues to organize social expectations and competence judgements (Charafeddine et al., 2015). Bernard et al. (2016) further showed that children tend to prefer the testimony of a dominant agent over that of a subordinate agent. These developmental studies do not directly describe adult debates. They nevertheless show that relational cues can acquire epistemic value early in development.
+
+This issue also has a sociological dimension. Expectation States Theory shows that competence expectations organize participation, deference, and influence in small groups (Berger et al., 2002; Kalkhoff & Thye, 2006). The standards used to recognize competence can also vary with the status of the person being evaluated (Foschi, 2000). Competence possessed and competence recognized must therefore be distinguished.
+
+This distinction creates a link with epistemic injustice. In its classic formulation, testimonial injustice involves an unwarranted credibility deficit arising from identity prejudice (Fricker, 2007). MOVICI does not allow us to diagnose a complete case of testimonial injustice. It does, however, allow us to examine a condition that can make such injustice possible: can epistemic credit become decoupled from actual competence? The resource-rational approach of Dosso et al. (2025) shows how limited resources and social motivations can shape credibility evaluation. Our study adds a relational dimension. The evaluator is also a participant who must locate their own position relative to others.
+
+We examine this issue after an individual sequence of information search, recall, and evaluation. Participants then debate under either cooperative or competitive interdependence. We test four main hypotheses. They concern factual learning, under-crediting of others, self-calibration, and the relation between objective and subjective expertise. We also examine one secondary question: does having more knowledge oneself improve recognition of others' expertise?
+
+## 2. Theoretical Framework
+
+### 2.1. CAVL as a Framework for Epistemic Coordination
+
+We use CAVL (Cognitive Architecture for Vigilant Learning) as an integrative framework (Vayre et al., 2026b). CAVL links domain knowledge, processing resources, metacognitive monitoring, representations of others, evaluation of sources and content, motivation, and social context.
+
+Domain knowledge provides a proximal infrastructure. Greater expertise gives access to more semantic criteria. It can facilitate processing and judgement. But it does not mechanically determine the feeling of knowing. Such judgements also draw on cues of familiarity, fluency, difficulty, and social comparison. The first MOVICI preprint illustrates this dissociation. Between T1 and T2, factual knowledge increases, but subjective knowledge does not clearly increase. Subjective change is also only weakly related to factual gain (Vayre et al., 2026a).
+
+In debate, this dissociation becomes relational. CAVL distinguishes objective competence, subjective competence, perceived competence, epistemic credit, and epistemic authority. We examine two forms of calibration. The first links K_S to K_D: does self-evaluation track actual knowledge? The second links K_O to another person's K_D: does attributed expertise track the partner's actual knowledge? Credit C_O refers to the weight granted to a source's contribution. MOVICI measures it only indirectly through post-debate evaluations and under-crediting indices. More stabilized epistemic authority is not measured here.
+
+CAVL predicts that arbitration between content quality and attributed authority depends on knowledge, processing constraints, and cue diagnosticity (Vayre et al., 2026b). This idea is consistent with the resource-rational approach of Dosso et al. (2025). Directly evaluating every claim and source requires time and knowledge. Second-order cues can therefore be useful, but they can also produce local errors. Cooperative or competitive interdependence may change their value.
+
+### 2.2. Debate, Argumentation, and Factual Learning: H1
+
+The first prediction concerns factual knowledge. Collaborative Cognitive Load Theory shows that collaboration can distribute processing across group members. It can therefore increase the resources available at the group level. But it also introduces communication, coordination, and 'who knows what' tracking costs (Kirschner et al., 2011, 2018). The balance depends on the task.
+
+In debate, part of processing is devoted to understanding reasons, preparing a response, tracking interlocutors, evaluating their reliability, and monitoring one's own position. These operations are not equivalent to encoding new facts. Argumentative theory adds another distinction. People often generate reasons supporting their own position more easily. They evaluate arguments attributed to others more critically (Mercier & Sperber, 2011; Mercier, 2016; Trouche et al., 2016). This asymmetry may help a group detect errors without automatically producing individual factual gains.
+
+The first MOVICI preprint already shows a mean factual gain of 1.40 points from T1 to T2 across the search-recall-evaluation sequence (Vayre et al., 2026a). T2 is therefore measured after a phase that has already changed knowledge. We expect little additional factual gain during debate. This prediction is limited to the factual inventory used here.
+
+H1 --- After the individual information search, recall, and evaluation sequence, the subsequent debate followed by partner evaluation and argument recall/evaluation should not produce a substantial additional increase in domain-specific factual knowledge by T3. The T2-to-T3 contrast therefore concerns this full composite sequence, not the 20-minute debate in isolation.
+
+### 2.3. Social Interdependence and Under-Crediting: H2a
+
+Social interdependence theory distinguishes situations in which members' outcomes are positively linked from those in which they are negatively linked (Johnson & Johnson, 2009). Under cooperation, a partner's competence can benefit the group. Under competition, that same competence also provides information about one's own relative position. The Motivated Information Processing in Groups model similarly proposes that social motivations shape information search and use (De Dreu et al., 2008). Toma and Butera (2009), for example, showed that competition can foster strategic information use.
+
+Research on sociocognitive conflict distinguishes epistemic regulation from relational regulation. The first concerns the content of disagreement. The second concerns competence comparison more directly (Darnon et al., 2006). When one's own competence is threatened, participants may become more assertive and devalue the partner more strongly (Darnon et al., 2007). Sommet et al. (2014) describe a competitive form of relational regulation oriented toward self-assertion and invalidation of the other. Lee and Roseth (2022) likewise show that perceived competence and social interdependence are related to modes of conflict regulation.
+
+The asymmetry between producing and evaluating arguments may reinforce this pattern. Under competition, refuting the other person may protect one's relative position. Under cooperation, another person's competence can more readily become a shared resource. MOVICI does not test this mechanism directly. It provides a theoretical derivation of the prediction.
+
+H2a --- Participants in the competitive condition should show greater epistemic under-crediting of their partners than participants in the cooperative condition.
+
+### 2.4. Self-Calibration and Social Comparison: H2b and H3
+
+Competition should not necessarily increase mean confidence for all participants. Confidence level, directional bias, and calibration error must be distinguished (Moore & Healy, 2008). Two people can have the same mean confidence while differing substantially in how closely what they think they know corresponds to what they actually know.
+
+H2b --- Competition should impair calibration between objective and subjective self-expertise. It should therefore increase absolute error without requiring a uniform increase in mean confidence.
+
+H3 concerns the diagnosticity of self-evaluation. Social comparison has, among other functions, a self-evaluative role. When an objective standard is uncertain, people use others as reference points for evaluating their opinions or abilities (Festinger, 1954). But comparative information does not always serve the same function.
+
+Colpaert et al. (2015) showed that a cooperative versus competitive mindset changes the effect of social comparison on self-evaluation. Under cooperation, another person's competence may serve more readily as feedback. Under competition, it also becomes a ranking concern. Buchs and Butera (2009), however, showed that a competent partner can remain threatening under cooperation depending on resource interdependence. We therefore do not equate cooperation with the absence of comparison.
+
+The findings of Pesout and Nietfeld (2021) are also relevant. They did not observe a general improvement in monitoring accuracy across conditions. However, overconfidence increased over time in the competitive condition. The effect of social context on metacognition therefore cannot be reduced to a simple difference in mean confidence.
+
+H3 --- The relation between objective and subjective self-expertise should be stronger under cooperation than under competition.
+
+H3 is tested at T3. We also examine the relation at T2 and its change from T2 to T3. These analyses distinguish a difference observed after the full debate--partner-evaluation--argument-recall/evaluation sequence from a difference that can be attributed specifically to the debate itself; the present design does not isolate that latter causal contribution.
+
+### 2.5. Recognizing Who Knows: Evaluator Expertise and Social Cues
+
+A secondary question concerns evaluator expertise. A more knowledgeable evaluator may have better criteria for judging the content produced by others. Brand-Gruwel et al. (2017) showed that domain experts use more sophisticated criteria when evaluating Web sources. They also select more reliable information than novices. Lucassen and Schraagen (2011) similarly showed that expertise changes the use of factual accuracy in trust judgements.
+
+This advantage is not automatic. Evaluating content and inferring a person's overall competence are different tasks. Goldman (2001) emphasizes the difficulty of discriminating between rival experts. Hinds (1999) also documented a 'curse of expertise': experts can be poor at predicting novice performance. Expertise therefore provides criteria without guaranteeing an accurate model of others.
+
+When direct evaluation is costly, indirect cues can carry more weight. Prestige theories describe deference as a useful cue for deciding from whom to learn (Henrich & Gil-White, 2001). Prestige-biased learning has also been observed experimentally (Atkisson et al., 2012). Jiménez and Mesoudi (2019) nevertheless emphasize that prestige is especially useful when direct success is difficult to evaluate. Cheng et al. (2013) further distinguish prestige and dominance as two different routes to rank and influence.
+
+The sociology of status leads to a similar distinction. Competence expectations can quickly organize participation and influence (Berger et al., 2002; Kalkhoff & Thye, 2006). Different standards can also be applied to people of different status (Foschi, 2000). In the scientific field, Bourdieu (1975) distinguishes technical competence from socially recognized authority. MOVICI does not directly measure these forms of power. It does, however, test whether actual competence is sufficient to structure recognition.
+
+We therefore test two questions. First, does the partner's objective expertise predict the expertise attributed to that partner? Second, does this relation become stronger when the evaluator has more knowledge?
+
+**Table 1. Architecture of Hypotheses and Analyses**
+
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Status**        **Question / prediction**                                             **Primary indicator**                                      **Interpretation**
+  ----------------- --------------------------------------------------------------------- ---------------------------------------------------------- -------------------------------------------------
+  H1 --- primary    No substantial positive factual gain after debate                     T3--T2; one-sided upper bound; thresholds +0.10 to +1.00   Distinguish argumentation from factual learning
+
+  H2a --- primary   Greater under-crediting of others under competition                   Mean T3 under-crediting + dyadic robustness checks         Effect of interdependence on epistemic credit
+
+  H2b --- primary   Poorer self-calibration under competition                             Absolute error \|z(KS) − z(KD)\| at T3                     Distinguish calibration from mean confidence
+
+  H3 --- primary    Stronger objective--subjective expertise relation under cooperation   KD,T3 × condition → KS,T3                                  Diagnosticity of self-evaluation
+
+  Secondary         Is others' actual expertise recognized?                               KD,other → perceived expertise                             Expertise discrimination
+
+  Secondary         Does evaluator expertise improve this discrimination?                 KD,other × KD,self; absolute error                         Role of own knowledge
+
+  Exploratory       Which relational cues accompany epistemic credit?                     Benevolence; attacks; visibility; rank reversal            Possible mechanisms
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## 3. Method
+
+### 3.1. Participants and Design
+
+The analytical sample included 96 participants recruited in the environment of Université Côte d'Azur. Ninety-four were students and two were recent graduates. Age ranged from 18 to 42 years (M = 20.45, SD = 3.41). The sample included 62 women and 34 men. Forty-nine participants were in the cooperative condition and 47 in the competitive condition.
+
+The 96 participants were distributed across 34 debates. Participant-level analyses use these 34 debates as clusters. Coded debate data are available for 85 participants. The dyadic dataset contains 212 ordered evaluator-partner relations. Of these, 196 have a measure of perceived expertise. They involve 91 evaluators across 29 debates.
+
+Eligibility screening required an age between 18 and 50 years, French proficiency at C1/C2 or bilingual level, and no self-reported diagnosed language disorder. Participants were assigned to either the cooperative or competitive condition.
+
+Sessions took place at CoCoLab, Université Côte d'Azur. Participants received written information and gave free and informed consent. The protocol received a favorable opinion from the Université Côte d'Azur Research Ethics Committee on March 9, 2024 (file no. 2024-037). The announced compensation included a fixed €20 payment and up to €10 in a variable component linked to experimental condition. All participants ultimately received €30.
+
+### 3.2. Experimental Procedure
+
+One to several weeks before the laboratory session, participants completed a pre-questionnaire and the first factual knowledge inventory (T1). In the laboratory, each participant was seated at an individual computer. The cooperative or competitive framing of the future debate was announced before the search task.
+
+Participants then had 20 minutes to search the Internet freely for information about animal-protein consumption. They formulated their own queries and selected their own sources. The topic covered several dimensions: health, nutrition, environment, farming, economics, and public policy. After the search, participants recalled and evaluated sources and arguments. The second factual inventory (T2) was administered after this sequence and before any discussion.
+
+The debate then lasted 20 minutes and involved two to four people. In the competitive condition, the individual goal was to convince the others that one's own viewpoint was accurate and well founded. Participants were told that individual persuasive performance would be evaluated. In the cooperative condition, the goal was to improve knowledge collectively and build points of agreement. Participants were told that group performance would be evaluated.
+
+After the debate, participants first evaluated each partner, then recalled and evaluated arguments attributed to their partners. They subsequently reassessed their own level of knowledge and completed the third factual inventory (T3). T2-to-T3 change therefore covers the full debate → partner evaluation → argument recall/evaluation → T3 sequence, rather than the debate alone. The debates were recorded, transcribed, and coded.
+
+### 3.3. Measures
+
+Objective domain knowledge. Factual knowledge was measured with a 20-item multiple-choice inventory developed for MOVICI. Correct responses scored 1. Incorrect, 'I don't know', and missing responses scored 0. Scores ranged from 0 to 20. The same inventory was administered at T1, T2, and T3. Question and response-option order were randomized at each administration. The instrument samples knowledge relevant to the controversy. It is not treated as a unidimensional scale of general expertise.
+
+Subjective self-knowledge. Participants answered the item, 'My knowledge about the topic of animal-protein consumption is...'. Four response options ranged from 'Very low' to 'Very high'. The item was administered at T1, T2, and T3. Objective and subjective scores were standardized for calibration analyses.
+
+Perceived partner expertise. After debate, each participant evaluated each partner separately. Perceived expertise was based on five items rated from 1 to 6. The score was computed as Exp1 − Exp2 + Exp3 − Exp4 + Exp5. This scoring rule is documented and verified in the analytical package.
+
+Perceived benevolence. Benevolence was also based on five items rated from 1 to 6. The score was computed as Bien1 − Bien2 − Bien3 + Bien4 + Bien5. This scoring rule is also documented and verified in the analytical package.
+
+Argument evaluation. Participants recalled up to two arguments attributed to each partner. Each argument was evaluated on four dimensions: persuasiveness, reliability, perceived consensus, and willingness to retransmit it. Each judgement used a 1-to-9 scale. An argument score was the sum of the four ratings.
+
+Perceived social hierarchy. Three ratings concerned the status, authority, and responsibility attributed to the partner. Each rating used a 1-to-9 scale. Their sum formed the perceived social hierarchy indicator. This variable is not used in the central analyses reported here.
+
+Debate behavior. The transcripts yielded individual indicators of speech quantity, attacks, questions, doubt or ignorance, and argumentative polarization. Visibility analyses used the evaluated member's word count and speech share. A subsample of 474 sequences from eight debates was coded independently by two annotators. Cohen's kappas were .924 for the NP category, which comprises sequences excluded from argumentative analysis under the coding guide; .960 for questions; .667 for doubt or ignorance; .735 for the support/attack/mixed-neutral relation; and .680 for polarization. The coding guide and full reliability audit are included in the analytical package.
+
+### 3.4. Calibration and Under-Crediting
+
+For self-evaluation, we distinguish two indices. Absolute calibration error is \|z(K_S) − z(K_D)\|. It measures the magnitude of the discrepancy between perceived and objective knowledge. Directional bias, z(K_S) − z(K_D), indicates over-crediting when positive and under-crediting when negative. H2b concerns absolute error.
+
+For evaluations of others, under-crediting is the difference between the partner's standardized objective position and the expertise attributed to that partner. A positive value means that the partner is placed subjectively below their objective relative position. The primary analysis aggregates this discrepancy at the evaluator level. Robustness analyses use a rank transformation, the dyadic structure, adjustment for familiarity and group size, and a subsample in which the partner is objectively more expert than the evaluator.
+
+Expertise discrimination is conceptually different from credit level. It is estimated by the slope relating the partner's objective expertise to attributed expertise. A positive slope indicates that evaluators order their partners, at least partly, according to their actual knowledge. We also test whether this slope varies with evaluator expertise.
+
+### 3.5. Analytical Strategy
+
+The study was not preregistered. We distinguish four theory-guided main hypotheses, secondary analyses, and exploratory analyses. Inference accounts for dependence among observations within debates. We use CR2 cluster-robust standard errors with Satterthwaite degrees of freedom. This approach is suitable when the number of clusters is modest (Pustejovsky & Tipton, 2018). Competition is the reference condition unless otherwise stated.
+
+For H1, we estimate mean T3--T2 change across the full debate → partner evaluation → argument recall/evaluation → T3 sequence. We report the two-sided 95% confidence interval, the one-sided 95% upper bound, and four sensitivity tests against gains of +0.10, +0.25, +0.50, and +1.00 points. For H2a, we estimate mean under-crediting of others at T3 and then examine several robustness specifications. For H2b, we compare absolute self-calibration error at T3 across conditions and analyze directional bias separately. For H3, we test the interaction between objective expertise and condition in predicting subjective expertise at T3. We also estimate simple slopes, the same model at T2, and an Expertise × Condition × Time interaction. Finally, we predict T3 error while controlling for T2 error. Because T3 is administered only after the post-debate evaluation and recall operations, none of these T2-to-T3 analyses identifies a pure causal effect of debate alone.
+
+Secondary analyses examine discrimination of others' expertise and the role of evaluator expertise. Exploratory analyses examine benevolence, attacks, speech quantity, conversational visibility, and Epistemic Rank Reversal. The condition → benevolence → under-crediting path is estimated with a cluster bootstrap of 500 replications. It is interpreted as a statistical indirect path, not as causal mediation, because benevolence and under-crediting are both measured after debate.
+
+## 4. Results
+
+### 4.1. H1 --- No Substantial Additional Positive Factual Learning Across the Debate--Evaluation--Recall Sequence
+
+Mean factual score was 10.40/20 at T2 (SD = 2.14) and 10.17/20 at T3 (SD = 2.48). Mean T3--T2 change was −0.229 points (descriptive SD = 1.40). With CR2 correction, the estimate was b = −0.229, SE = 0.165, t(28.92) = −1.39, p = .176, 95% CI \[−0.567, 0.109\]. The one-sided 95% upper bound was +0.052 points out of 20.
+
+The sensitivity tests rejected each of the four candidate positive gains at the one-sided .05 level: +0.10 points, p = .028; +0.25, p = .0035; +0.50, p \< .001; and +1.00, p \< .001. H1 is therefore supported in a bounded sense. Among the thresholds examined, the data are not compatible with a mean gain of at least +0.10 points. This conclusion does not imply an absence of conceptual or argumentative learning.
+
+As a secondary analysis, factual change did not differ significantly between conditions: b = −0.574, SE = 0.310, p = .075, 95% CI \[−1.210, 0.062\].
+
+### 4.2. H2a --- Analyses Converge on Greater Under-Crediting Under Competition
+
+Mean under-crediting of others at T3 was positive under competition (M = 0.284, SD = 1.07) and negative under cooperation (M = −0.286, SD = 1.12). The primary contrast indicated lower under-crediting under cooperation: b = −0.570, SE = 0.285, t(24.72) = −2.00, p = .057, 95% CI \[−1.157, 0.018\], N = 89, 29 debates. The primary test was therefore slightly above the conventional .05 threshold.
+
+Robustness analyses converged in the same direction. With a percentile/rank transformation, b = −0.181, SE = 0.083, p = .038, 95% CI \[−0.352, −0.011\]. At the dyadic level, b = −0.712, SE = 0.308, p = .032, 95% CI \[−1.355, −0.069\], N = 196, 29 debates. After adjustment for familiarity and group size, b = −0.739, SE = 0.292, p = .020, 95% CI \[−1.350, −0.128\]. When the partner was objectively more expert than the evaluator, b = −0.606, SE = 0.289, p = .047, 95% CI \[−1.204, −0.009\], N = 56, 28 debates. H2a therefore receives convergent but nonuniform support.
+
+### 4.3. H2b --- Competition Impairs Self-Calibration Without Uniform Confidence Inflation
+
+Standardized absolute calibration error at T3 was higher under competition (M = 1.249, SD = 0.707) than under cooperation (M = 0.798, SD = 0.588). The contrast was b = −0.452, SE = 0.137, t(27.91) = −3.29, p = .0027, 95% CI \[−0.732, −0.171\], N = 96, 34 debates. The Benjamini--Hochberg correction applied to the two main H2 components yielded q = .0054 for H2b. H2b is therefore supported.
+
+Directional bias, z(K_S) − z(K_D), did not differ between conditions: b = 0.141, SE = 0.225, p = .536, 95% CI \[−0.320, 0.603\]. Competition therefore increases calibration error without producing a uniform mean increase in confidence.
+
+### 4.4. H3 --- Subjective Expertise Tracks Actual Expertise Under Cooperation but Not Competition
+
+At T3, the interaction between standardized objective expertise and condition significantly predicted subjective expertise: b = 0.562, SE = 0.176, t(16.93) = 3.19, p = .0054, 95% CI \[0.190, 0.933\], N = 96, 34 debates. Under competition, the slope was nearly zero: b = −0.016, SE = 0.150, p = .917, 95% CI \[−0.370, 0.337\]. Under cooperation, it was positive: b = 0.545, SE = 0.092, p \< .001, 95% CI \[0.341, 0.750\]. H3 is therefore supported at the cross-sectional T3 level.
+
+Timing limits the interpretation, however. The Expertise × Condition contrast was already suggestive at T2: b = 0.408, SE = 0.201, p = .056, 95% CI \[−0.012, 0.828\]. The Expertise × Condition × Time interaction was not significant: b = 0.153, SE = 0.159, p = .347, 95% CI \[−0.179, 0.486\]. We therefore cannot claim that the debate itself created the slope difference observed at T3; T3 follows the full debate--partner-evaluation--argument-recall/evaluation sequence.
+
+A longitudinal analysis of absolute error provides a more directly temporal result. After controlling for T2 error, cooperation predicted lower T3 error: b = −0.351, SE = 0.122, t(28.05) = −2.86, p = .0079, 95% CI \[−0.601, −0.100\].
+
+### 4.5. Secondary Analyses --- Actual Competence Barely Structures Recognition of Others
+
+The partner's objective T3 expertise barely predicted perceived expertise: b = 0.024, SE = 0.326, t(13.72) = 0.07, p = .942, 95% CI \[−0.676, 0.724\], N = 196, 29 debates. The Partner Expertise × Condition interaction was also null: b = −0.284, p = .694. Simple slopes were nonsignificant under competition (b = 0.155, p = .705) and cooperation (b = −0.129, p = .833). Cooperation nevertheless tended to increase mean perceived expertise: b = 2.015, SE = 1.016, p = .061, 95% CI \[−0.104, 4.134\]. Credit level and expertise discrimination are therefore distinct.
+
+We then tested the role of evaluator expertise. The Partner Expertise × Evaluator Expertise interaction was positive but nonsignificant: b = 0.475, SE = 0.334, t(8.31) = 1.42, p = .191, 95% CI \[−0.290, 1.239\]. Simple slopes remained nonsignificant at −1 SD (b = −0.392, p = .458), the mean (b = 0.083, p = .800), and +1 SD (b = 0.557, p = .211).
+
+Evaluator expertise also did not reduce mean absolute error in evaluating others: b = −0.024, SE = 0.067, p = .721. The percentile/rank robustness analysis was null: b = −0.00065, p = .968. The analysis using T2 as the objective anchor also remained nonsignificant: b = 0.053, p = .403. In MOVICI, knowing more oneself is therefore not clearly sufficient to recognize who else knows more.
+
+### 4.6. Exploratory Analyses --- Benevolence, Attacks, Visibility, and Rank Reversals
+
+Cooperation strongly increased perceived benevolence: b = 2.586, SE = 0.670, t(20.34) = 3.86, p \< .001, 95% CI \[1.191, 3.981\], N = 212, 29 debates, q = .0028. It also increased mean argument evaluation: b = 4.846, SE = 1.407, p = .0025, 95% CI \[1.915, 7.778\], N = 192, 29 debates, q = .0038.
+
+The indirect condition → benevolence → under-crediting path was negative: ab = −0.330. The 95% cluster-bootstrap interval based on 500 replications excluded zero: \[−0.670, −0.104\]. This result is compatible with an indirect path. It does not establish causal mediation because benevolence and under-crediting were measured after debate.
+
+The attack rate was lower under cooperation: b = −0.096, SE = 0.042, p = .032, 95% CI \[−0.184, −0.009\], N = 84, 30 debates. In contrast, overall speech quantity did not differ: number of sequences, p = .974; number of words, p = .599; speech share, p = .803. The manipulation therefore changed the relational form of debate more than its verbal volume.
+
+Conversational visibility was strongly associated with attributed expertise under competition. For the evaluated member's word count, b = 1.588, SE = 0.378, p = .0026. The interaction with cooperation was negative: b = −1.408, SE = 0.474, p = .0085. The same pattern appeared for speech share: b = 1.609, p = .0023 under competition; interaction with cooperation, b = −1.401, p = .0024. These analyses are associational. They do not show that speaking more causes recognition.
+
+Finally, Epistemic Rank Reversal identifies dyads in which the partner is objectively more expert but is not placed subjectively above the evaluator. The rate was 54.5% under competition versus 28.3% under cooperation. The contrast was b = −0.262, SE = 0.133, p = .061, 95% CI \[−0.536, 0.013\], N = 56, 28 debates. This result remains exploratory. Full specifications are available in the analytical package associated with the study.
+
+**Table 2. Central Results and Main Robustness Analyses**
+
+  -------------------------------------------------------------------------------------------------------------------------------
+  **Analysis**                                        **b**       **SE**      **95% CI**           **p**       **N (clusters)**
+  --------------------------------------------------- ----------- ----------- -------------------- ----------- ------------------
+  H1: T3--T2 change                                   −0.229      0.165       \[−0.567, 0.109\]    .176        96 (34)
+
+  H2a: COOP → under-crediting                         −0.570      0.285       \[−1.157, 0.018\]    .057        89 (29)
+
+  H2a: percentile robustness                          −0.181      0.083       \[−0.352, −0.011\]   .038        89 (29)
+
+  H2a: adjusted dyadic model                          −0.739      0.292       \[−1.350, −0.128\]   .020        196 (29)
+
+  H2b: COOP → absolute self-calibration error         −0.452      0.137       \[−0.732, −0.171\]   .0027       96 (34)
+
+  H3: objective expertise × COOP                      +0.562      0.176       \[0.190, 0.933\]     .0054       96 (34)
+
+  H3: T3 error controlling T2 error                   −0.351      0.122       \[−0.601, −0.100\]   .0079       96 (34)
+
+  Partner objective expertise → perceived expertise   +0.024      0.326       \[−0.676, 0.724\]    .942        196 (29)
+
+  Partner expertise × evaluator expertise             +0.475      0.334       \[−0.290, 1.239\]    .191        196 (29)
+
+  Evaluator expertise → other-evaluation error        −0.024      0.067       \[−0.167, 0.118\]    .721        89 (29)
+
+  COOP → benevolence                                  +2.586      0.670       \[1.191, 3.981\]     \< .001     212 (29)
+
+  COOP → attack rate                                  −0.096      0.042       \[−0.184, −0.009\]   .032        84 (30)
+  -------------------------------------------------------------------------------------------------------------------------------
+
+## 5. Discussion
+
+This study examined how cooperation and competition reconfigure a small-group epistemic system. Participants must learn, evaluate themselves, recognize others' expertise, and grant epistemic credit. The results reveal three dissociations. The first separates debate from factual learning. The second separates actual knowledge from the social recognition of knowledge. The third separates the level of epistemic credit from calibration accuracy.
+
+### 5.1. Debate Can Be Cognitively Productive Without Additional Factual Learning
+
+After the individual search, recall, and evaluation sequence, factual scores did not increase substantially across the subsequent 20-minute debate followed by partner evaluation and argument recall/evaluation. The one-sided upper bound on the mean T3--T2 gain was only +0.052 points out of 20. All candidate gains from +0.10 points upward were rejected. This conclusion is more informative than a simple null test of T3--T2. It bounds the size of any positive gain across the full second sequence on the metric used; it does not isolate the debate itself.
+
+This result does not contradict possible benefits of argumentation. Discussion can improve error detection, the quality of reasons, decision making, or coordination without producing gains on a factual inventory. Wecker and Fischer (2014) specifically show that argumentative quality and domain-specific knowledge are distinct outcomes. Work by Mercier and colleagues also shows that cross-evaluation of arguments can improve reasoning (Mercier, 2016; Mercier et al., 2015).
+
+Collaborative Cognitive Load Theory helps explain this dissociation. A group can distribute part of the processing demand. But members must also communicate and coordinate (Kirschner et al., 2011, 2018). In MOVICI, participants must additionally evaluate human sources and locate their own epistemic position. The resources mobilized can therefore support several different cognitive outcomes.
+
+A future study could measure more directly what circulates during debate. For example, a small set of target facts could be linked to specific arguments and then tested after discussion. This approach would be lighter than exhaustive tracing of every piece of information while still allowing local learning to be identified.
+
+### 5.2. Knowing, Recognizing Knowledge, and Granting Credit Are Distinct Properties
+
+The second contribution is the most important. The partner's objective expertise explains virtually none of the variance in attributed expertise. The estimated coefficient is close to zero. The slopes remain null in both conditions. In this task, the objective distribution of knowledge and the social distribution of recognized expertise are therefore largely decoupled.
+
+Evaluator expertise does not clearly correct this decoupling. Research on source evaluation might have suggested an expert advantage (Brand-Gruwel et al., 2017; Lucassen & Schraagen, 2011). The observed interaction points in that direction, but its interval is wide and includes zero. Error analyses also show no advantage. Knowing more therefore does not guarantee a better map of others' knowledge in this interaction.
+
+This result is not incompatible with the expertise literature. Evaluating the accuracy of content and inferring a person's overall competence are different tasks. MOVICI debate is relatively unscripted. Knowledge is distributed across several themes and speaking turns. Hinds (1999) also reminds us that expertise can distort representations of others' performance.
+
+This result requires a distinction between actual competence, recognized expertise, and epistemic credit. It does not show that power causes credit. It shows that competence possessed does not enjoy an automatic privilege in the social attribution of expertise. The distribution of knowledge is therefore not equivalent to the distribution of recognized expertise or epistemic credit. CAVL also distinguishes this episode-specific credit from more stabilized epistemic authority (Vayre et al., 2026b).
+
+The visibility analyses illustrate this openness to other cues. Under competition, word count and speech share are strongly associated with attributed expertise. Objective expertise is not. This contrast is consistent with work on confidence as a competence signal (Price & Stone, 2004) and dominance as a signal of influence (Anderson & Kilduff, 2009). It also connects with work on prestige. When direct competence is difficult to evaluate, deference and reputation can serve as useful shortcuts (Henrich & Gil-White, 2001; Jiménez & Mesoudi, 2019).
+
+Developmental research shows that this conversion of social cues into epistemic cues emerges early. Children use an informant's past reliability to decide whom to believe (Clément et al., 2004). They also infer competence differences from dominance cues (Charafeddine et al., 2015). Bernard et al. (2016) further showed a testimonial preference for a dominant agent. These results cannot be directly generalized to the adults in MOVICI. They nevertheless show that the link between perceived social position and epistemic credit can emerge early.
+
+The sociology of status allows us to go further. Competence expectations can structure who speaks, who is heard, and who influences others (Berger et al., 2002; Kalkhoff & Thye, 2006). Standards of recognition can also vary by status (Foschi, 2000). Bourdieu (1975) further distinguishes technical competence from socially recognized authority. MOVICI does not directly measure these mechanisms. It reveals the problem they can exploit: competence does not automatically make itself visible.
+
+This dissociation also has implications for transactive memory. A representation of 'who knows what' is useful only if it corresponds sufficiently well to the actual distribution of expertise (Hollingshead, 2000). Bringing competent people together is therefore not enough. The group must also be able to identify where competence lies and give it appropriate weight.
+
+### 5.3. Relational Structure Reconfigures Credit and May Set the Stage for Epistemic Inequalities
+
+H2a should be interpreted cautiously. The primary under-crediting test was marginal (p = .057). Several closely related specifications nevertheless converge on greater under-crediting under competition. The signal therefore rests on a coherent set of analyses rather than on a single decisive test.
+
+For self-evaluation, the result is more robust. Competition does not simply increase mean confidence. It weakens the correspondence between confidence and actual knowledge. H3 reinforces this point. At T3, subjective expertise strongly tracks objective expertise under cooperation and barely does so under competition. Social comparison provides a plausible mechanism. Colpaert et al. (2015) show that cooperative versus competitive framing changes the effect of comparison on self-evaluation. Competence differences can serve as feedback under cooperation. They can also become a ranking concern under competition.
+
+Timing imposes a clear limit. The slope contrast is already suggestive at T2. The Expertise × Condition × Time interaction is not significant. We therefore cannot say that the debate itself created the difference. However, T3 error remains lower under cooperation after controlling for T2 error. This result is compatible with more precise adjustment across the full interactional sequence, which includes debate, partner evaluation, and argument recall/evaluation before T3.
+
+Behavioral results support the idea of relational reconfiguration. Competition increases attacks but not total speech quantity. It therefore changes the form of interaction more than its volume. This pattern is consistent with research on relational conflict regulation (Darnon et al., 2006, 2007; Sommet et al., 2014). Cooperation also strongly increases perceived benevolence. The condition → benevolence → under-crediting path is compatible with a role for this relational dimension. But it remains exploratory and noncausal.
+
+The link with epistemic injustice becomes relevant at this point. Fricker (2007) defines testimonial injustice as a credibility deficit arising from prejudice. Dotson (2011) also shows how practices of listening can produce silencing. Medina (2011, 2013) emphasizes the unequal distribution of epistemic authority and the importance of both credibility excesses and deficits. MOVICI measures neither oppression nor identity prejudice. The observed errors are therefore not, in themselves, injustices.
+
+MOVICI reveals a more basic condition. Social credit can be weakly coupled to objective competence. The resource-rational approach of Dosso et al. (2025) helps explain how this condition can become a mechanism. When direct evaluation is costly, credibility heuristics may carry more weight. If these cues are unequally distributed, an architecture already weakly sensitive to actual competence can transform social inequality into inequality of epistemic credit. Status theories then provide a bridge to social mechanisms of recognition.
+
+MOVICI's contribution is more specific. The study does not demonstrate a complete case of epistemic injustice. It identifies a possible sociocognitive microfoundation: knowing, recognizing knowledge, and granting credit are not spontaneously aligned.
+
+## 6. Limitations and Future Directions
+
+First, the study includes 96 participants and 34 debates. Several dyadic or behavioral analyses use 29 to 30 debates. CR2 corrections reduce the risk of overly liberal inference, but they do not replace replication. H2a should be read primarily as a convergence of results.
+
+Second, H3 is supported at T3, but its timing remains open. The slope difference is already suggestive at T2. The interaction with time is not significant. Because T3 follows debate, partner evaluation, and argument recall/evaluation, the present design cannot isolate change caused by the debate alone. A replication could add measures immediately before and immediately after debate, before post-debate evaluation and recall, to separate these components.
+
+Third, objective and subjective scores are placed on a common metric. Rank analyses provide a useful robustness check. But any under-crediting index depends partly on this mapping. A future study could ask participants to estimate, on the same scale, both their own expected score and their partners' expected scores.
+
+Fourth, objective knowledge is measured with a factual inventory. This criterion is relevant to the task, but it does not exhaust expertise. A participant may be better at synthesis, argumentation, or recognizing the limits of their knowledge while having a similar factual score. The findings therefore concern factual expertise as measured here.
+
+Fifth, the proposed relational mechanisms remain associational. Visibility is not manipulated. Benevolence and credit are measured in the same phase. Targeted studies could isolate one mechanism at a time. For example, they could manipulate displayed confidence while holding actual expertise constant, or manipulate a status cue separately.
+
+Finally, the link with epistemic injustice remains proximal. A dedicated study could cross interdependence structure with a status or social-membership cue. It would need to be designed and powered for that test. This would allow researchers to examine whether competition amplifies systematic credibility deficits or excesses.
+
+## 7. Conclusion
+
+In a small group, having knowledge is not enough. Members must also recognize where knowledge lies and calibrate their own position. In MOVICI, factual scores do not increase substantially across the debate followed by partner evaluation and argument recall/evaluation that comes after the individual search-recall-evaluation sequence. Interdependence structure is, however, related to epistemic credit toward others and self-calibration. Analyses converge on greater under-crediting under competition. They also show a stronger relation between objective and subjective expertise under cooperation.
+
+The broader result goes beyond this comparison. Partners' actual expertise barely predicts the expertise attributed to them. Having greater expertise oneself does not clearly improve this discrimination. The social distribution of epistemic credit can therefore acquire relative autonomy from the objective distribution of knowledge. This autonomy does not show that power replaces truth. It shows why cues of visibility, status, prestige, or dominance can shape recognition. It therefore opens a possible mechanism for the production of epistemic inequalities.
+
+::: {#movici-references}
+## References
+
+Anderson, C., Brion, S., Moore, D. A., & Kennedy, J. A. (2012). A status-enhancement account of overconfidence. Journal of Personality and Social Psychology, 103(4), 718--735. [https://doi.org/10.1037/a0029395](https://doi.org/10.1037/a0029395)
+
+Anderson, C., & Kilduff, G. J. (2009). Why do dominant personalities attain influence in face-to-face groups? The competence-signaling effects of trait dominance. Journal of Personality and Social Psychology, 96(2), 491--503. [https://doi.org/10.1037/a0014201](https://doi.org/10.1037/a0014201)
+
+Atkisson, C., O'Brien, M. J., & Mesoudi, A. (2012). Adult learners in a novel environment use prestige-biased social learning. Evolutionary Psychology, 10(3), 519--537. [https://doi.org/10.1177/147470491201000309](https://doi.org/10.1177/147470491201000309)
+
+Berger, J., Ridgeway, C. L., & Zelditch, M. (2002). Construction of status and referential structures. Sociological Theory, 20(2), 157--179. [https://doi.org/10.1111/1467-9558.00157](https://doi.org/10.1111/1467-9558.00157)
+
+Bernard, S., Castelain, T., Mercier, H., Kaufmann, L., Van der Henst, J.-B., & Clément, F. (2016). The boss is always right: Preschoolers endorse the testimony of a dominant over that of a subordinate. Journal of Experimental Child Psychology, 152, 307--317. [https://doi.org/10.1016/j.jecp.2016.08.007](https://doi.org/10.1016/j.jecp.2016.08.007)
+
+Bourdieu, P. (1975). The specificity of the scientific field and the social conditions of the progress of reason. Social Science Information, 14(6), 19--47. [https://doi.org/10.1177/053901847501400602](https://doi.org/10.1177/053901847501400602)
+
+Brand-Gruwel, S., Kammerer, Y., van Meeuwen, L., & van Gog, T. (2017). Source evaluation of domain experts and novices during Web search. Journal of Computer Assisted Learning, 33(3), 234--251. [https://doi.org/10.1111/jcal.12162](https://doi.org/10.1111/jcal.12162)
+
+Buchs, C., & Butera, F. (2009). Is a partner's competence threatening during dyadic cooperative work? It depends on resource interdependence. European Journal of Psychology of Education, 24, 145--154. [https://doi.org/10.1007/BF03173007](https://doi.org/10.1007/BF03173007)
+
+Charafeddine, R., Mercier, H., Clément, F., Kaufmann, L., Berchtold, A., Reboul, A., & Van der Henst, J.-B. (2015). How preschoolers use cues of dominance to make sense of their social environment. Journal of Cognition and Development, 16(4), 587--607. [https://doi.org/10.1080/15248372.2014.926269](https://doi.org/10.1080/15248372.2014.926269)
+
+Cheng, J. T., Tracy, J. L., Foulsham, T., Kingstone, A., & Henrich, J. (2013). Two ways to the top: Evidence that dominance and prestige are distinct yet viable avenues to social rank and influence. Journal of Personality and Social Psychology, 104(1), 103--125. [https://doi.org/10.1037/a0030398](https://doi.org/10.1037/a0030398)
+
+Clément, F., Koenig, M. A., & Harris, P. L. (2004). The ontogenesis of trust. Mind & Language, 19(4), 360--379. [https://doi.org/10.1111/j.0268-1064.2004.00263.x](https://doi.org/10.1111/j.0268-1064.2004.00263.x)
+
+Colpaert, L., Muller, D., Fayant, M.-P., & Butera, F. (2015). A mindset of competition versus cooperation moderates the impact of social comparison on self-evaluation. Frontiers in Psychology, 6, 1337. [https://doi.org/10.3389/fpsyg.2015.01337](https://doi.org/10.3389/fpsyg.2015.01337)
+
+Darnon, C., Doll, S., & Butera, F. (2007). Dealing with a disagreeing partner: Relational and epistemic conflict elaboration. European Journal of Psychology of Education, 22(3), 227--242. [https://doi.org/10.1007/BF03173423](https://doi.org/10.1007/BF03173423)
+
+Darnon, C., Muller, D., Schrager, S. M., Pannuzzo, N., & Butera, F. (2006). Mastery and performance goals predict epistemic and relational conflict regulation. Journal of Educational Psychology, 98(4), 766--776. [https://doi.org/10.1037/0022-0663.98.4.766](https://doi.org/10.1037/0022-0663.98.4.766)
+
+De Dreu, C. K. W., Nijstad, B. A., & van Knippenberg, D. (2008). Motivated information processing in group judgment and decision making. Personality and Social Psychology Review, 12(1), 22--49. [https://doi.org/10.1177/1088868307304092](https://doi.org/10.1177/1088868307304092)
+
+Dosso, C., Morisseau, T., Heintz, C., & Vayre, J.-S. (2025). A cognitive resource-rational account of epistemic injustice. The Philosophical Quarterly, 75(4), 1272--1293. [https://doi.org/10.1093/pq/pqaf088](https://doi.org/10.1093/pq/pqaf088)
+
+Dotson, K. (2011). Tracking epistemic violence, tracking practices of silencing. Hypatia, 26(2), 236--257. [https://doi.org/10.1111/j.1527-2001.2011.01177.x](https://doi.org/10.1111/j.1527-2001.2011.01177.x)
+
+Festinger, L. (1954). A theory of social comparison processes. Human Relations, 7(2), 117--140. [https://doi.org/10.1177/001872675400700202](https://doi.org/10.1177/001872675400700202)
+
+Foschi, M. (2000). Double standards for competence: Theory and research. Annual Review of Sociology, 26, 21--42. [https://doi.org/10.1146/annurev.soc.26.1.21](https://doi.org/10.1146/annurev.soc.26.1.21)
+
+Fricker, M. (2007). Epistemic injustice: Power and the ethics of knowing. Oxford University Press. [https://doi.org/10.1093/acprof:oso/9780198237907.001.0001](https://doi.org/10.1093/acprof:oso/9780198237907.001.0001)
+
+Goldman, A. I. (2001). Experts: Which ones should you trust? Philosophy and Phenomenological Research, 63(1), 85--110. [https://doi.org/10.1111/j.1933-1592.2001.tb00093.x](https://doi.org/10.1111/j.1933-1592.2001.tb00093.x)
+
+Henrich, J., & Gil-White, F. J. (2001). The evolution of prestige: Freely conferred deference as a mechanism for enhancing the benefits of cultural transmission. Evolution and Human Behavior, 22(3), 165--196. [https://doi.org/10.1016/S1090-5138(00](https://doi.org/10.1016/S1090-5138(00))00071-4
+
+Hinds, P. J. (1999). The curse of expertise: The effects of expertise and debiasing methods on prediction of novice performance. Journal of Experimental Psychology: Applied, 5(2), 205--221. [https://doi.org/10.1037/1076-898X.5.2.205](https://doi.org/10.1037/1076-898X.5.2.205)
+
+Hinsz, V. B., Tindale, R. S., & Vollrath, D. A. (1997). The emerging conceptualization of groups as information processors. Psychological Bulletin, 121(1), 43--64. [https://doi.org/10.1037/0033-2909.121.1.43](https://doi.org/10.1037/0033-2909.121.1.43)
+
+Hollingshead, A. B. (2000). Perceptions of expertise and transactive memory in work relationships. Group Processes & Intergroup Relations, 3(3), 257--267. [https://doi.org/10.1177/1368430200033002](https://doi.org/10.1177/1368430200033002)
+
+Jiménez, Á. V., & Mesoudi, A. (2019). Prestige-biased social learning: Current evidence and outstanding questions. Palgrave Communications, 5, 20. [https://doi.org/10.1057/s41599-019-0228-7](https://doi.org/10.1057/s41599-019-0228-7)
+
+Johnson, D. W., & Johnson, R. T. (2009). An educational psychology success story: Social interdependence theory and cooperative learning. Educational Researcher, 38(5), 365--379. [https://doi.org/10.3102/0013189X09339057](https://doi.org/10.3102/0013189X09339057)
+
+Kalkhoff, W., & Thye, S. R. (2006). Expectation states theory and research: New observations from meta-analysis. Sociological Methods & Research, 35(2), 219--249. [https://doi.org/10.1177/0049124106290311](https://doi.org/10.1177/0049124106290311)
+
+Kirschner, F., Paas, F., & Kirschner, P. A. (2011). Task complexity as a driver for collaborative learning efficiency: The collective working-memory effect. Applied Cognitive Psychology, 25(4), 615--624. [https://doi.org/10.1002/acp.1730](https://doi.org/10.1002/acp.1730)
+
+Kirschner, P. A., Sweller, J., Kirschner, F., & Zambrano, J. R. (2018). From cognitive load theory to collaborative cognitive load theory. International Journal of Computer-Supported Collaborative Learning, 13(2), 213--233. [https://doi.org/10.1007/s11412-018-9277-y](https://doi.org/10.1007/s11412-018-9277-y)
+
+Lee, Y.-K., & Roseth, C. J. (2022). A 2 × 2 model of sociocognitive conflict regulation. Journal of Experimental Social Psychology, 99, 104269. [https://doi.org/10.1016/j.jesp.2021.104269](https://doi.org/10.1016/j.jesp.2021.104269)
+
+Lucassen, T., & Schraagen, J. M. (2011). Factual accuracy and trust in information: The role of expertise. Journal of the American Society for Information Science and Technology, 62(7), 1232--1242. [https://doi.org/10.1002/asi.21545](https://doi.org/10.1002/asi.21545)
+
+Medina, J. (2011). The relevance of credibility excess in a proportional view of epistemic injustice: Differential epistemic authority and the social imaginary. Social Epistemology, 25(1), 15--35. [https://doi.org/10.1080/02691728.2010.534568](https://doi.org/10.1080/02691728.2010.534568)
+
+Medina, J. (2013). The epistemology of resistance: Gender and racial oppression, epistemic injustice, and the social imagination. Oxford University Press. [https://doi.org/10.1093/acprof:oso/9780199929023.001.0001](https://doi.org/10.1093/acprof:oso/9780199929023.001.0001)
+
+Mercier, H. (2016). The argumentative theory: Predictions and empirical evidence. Trends in Cognitive Sciences, 20(9), 689--700. [https://doi.org/10.1016/j.tics.2016.07.001](https://doi.org/10.1016/j.tics.2016.07.001)
+
+Mercier, H., & Sperber, D. (2011). Why do humans reason? Arguments for an argumentative theory. Behavioral and Brain Sciences, 34(2), 57--74. [https://doi.org/10.1017/S0140525X10000968](https://doi.org/10.1017/S0140525X10000968)
+
+Mercier, H., Trouche, E., Yama, H., Heintz, C., & Girotto, V. (2015). Experts and laymen grossly underestimate the benefits of argumentation for reasoning. Thinking & Reasoning, 21(3), 341--355. [https://doi.org/10.1080/13546783.2014.981582](https://doi.org/10.1080/13546783.2014.981582)
+
+Moore, D. A., & Healy, P. J. (2008). The trouble with overconfidence. Psychological Review, 115(2), 502--517. [https://doi.org/10.1037/0033-295X.115.2.502](https://doi.org/10.1037/0033-295X.115.2.502)
+
+Pesout, O., & Nietfeld, J. (2021). The impact of cooperation and competition on metacognitive monitoring in classroom context. The Journal of Experimental Education, 89(2), 237--258. [https://doi.org/10.1080/00220973.2020.1751577](https://doi.org/10.1080/00220973.2020.1751577)
+
+Price, P. C., & Stone, E. R. (2004). Intuitive evaluation of likelihood judgment producers: Evidence for a confidence heuristic. Journal of Behavioral Decision Making, 17(1), 39--57. [https://doi.org/10.1002/bdm.460](https://doi.org/10.1002/bdm.460)
+
+Pustejovsky, J. E., & Tipton, E. (2018). Small-sample methods for cluster-robust variance estimation and hypothesis testing in fixed effects models. Journal of Business & Economic Statistics, 36(4), 672--683. [https://doi.org/10.1080/07350015.2016.1247004](https://doi.org/10.1080/07350015.2016.1247004)
+
+Sommet, N., Darnon, C., Mugny, G., Quiamzade, A., Pulfrey, C., Dompnier, B., & Butera, F. (2014). Performance goals in conflictual social interactions: Towards the distinction between two modes of relational conflict regulation. British Journal of Social Psychology, 53(1), 134--153. [https://doi.org/10.1111/bjso.12015](https://doi.org/10.1111/bjso.12015)
+
+Sperber, D., Clément, F., Heintz, C., Mascaro, O., Mercier, H., Origgi, G., & Wilson, D. (2010). Epistemic vigilance. Mind & Language, 25(4), 359--393. [https://doi.org/10.1111/j.1468-0017.2010.01394.x](https://doi.org/10.1111/j.1468-0017.2010.01394.x)
+
+Toma, C., & Butera, F. (2009). Hidden profiles and concealed information: Strategic information sharing and use in group decision making. Personality and Social Psychology Bulletin, 35(6), 793--806. [https://doi.org/10.1177/0146167209333176](https://doi.org/10.1177/0146167209333176)
+
+Trouche, E., Johansson, P., Hall, L., & Mercier, H. (2016). The selective laziness of reasoning. Cognitive Science, 40(8), 2122--2136. [https://doi.org/10.1111/cogs.12303](https://doi.org/10.1111/cogs.12303)
+
+Vayre et al. (2026a). Prior knowledge and learning from open Web search \[Preprint\].
+
+Vayre et al. (2026b). CAVL: A cognitive architecture for vigilant learning \[Preprint\].
+
+Wecker, C., & Fischer, F. (2014). Where is the evidence? A meta-analysis on the role of argumentation for the acquisition of domain-specific knowledge in computer-supported collaborative learning. Computers & Education, 75, 218--228. [https://doi.org/10.1016/j.compedu.2014.02.016](https://doi.org/10.1016/j.compedu.2014.02.016)
+:::
+
+<script>
+window.MOVICI_REFERENCES = [{"id": "ref-1", "full": "Anderson, C., Brion, S., Moore, D. A., & Kennedy, J. A. (2012). A status-enhancement account of overconfidence. Journal of Personality and Social Psychology, 103(4), 718--735. https://doi.org/10.1037/a0029395", "doi": "https://doi.org/10.1037/a0029395", "aliases": ["Anderson and Kennedy (2012)", "Anderson and Kennedy, 2012", "Anderson & Kennedy (2012)", "Anderson & Kennedy, 2012", "Anderson et al. (2012)", "Anderson et al., 2012", "Anderson (2012)", "Anderson, 2012"]}, {"id": "ref-2", "full": "Anderson, C., & Kilduff, G. J. (2009). Why do dominant personalities attain influence in face-to-face groups? The competence-signaling effects of trait dominance. Journal of Personality and Social Psychology, 96(2), 491--503. https://doi.org/10.1037/a0014201", "doi": "https://doi.org/10.1037/a0014201", "aliases": ["Anderson and Kilduff (2009)", "Anderson and Kilduff, 2009", "Anderson & Kilduff (2009)", "Anderson & Kilduff, 2009", "Anderson et al. (2009)", "Anderson et al., 2009", "Anderson (2009)", "Anderson, 2009"]}, {"id": "ref-3", "full": "Atkisson, C., O'Brien, M. J., & Mesoudi, A. (2012). Adult learners in a novel environment use prestige-biased social learning. Evolutionary Psychology, 10(3), 519--537. https://doi.org/10.1177/147470491201000309", "doi": "https://doi.org/10.1177/147470491201000309", "aliases": ["Atkisson and Mesoudi (2012)", "Atkisson and Mesoudi, 2012", "Atkisson & Mesoudi (2012)", "Atkisson & Mesoudi, 2012", "Atkisson et al. (2012)", "Atkisson et al., 2012", "Atkisson (2012)", "Atkisson, 2012"]}, {"id": "ref-4", "full": "Berger, J., Ridgeway, C. L., & Zelditch, M. (2002). Construction of status and referential structures. Sociological Theory, 20(2), 157--179. https://doi.org/10.1111/1467-9558.00157", "doi": "https://doi.org/10.1111/1467-9558.00157", "aliases": ["Berger and Zelditch (2002)", "Berger and Zelditch, 2002", "Berger & Zelditch (2002)", "Berger & Zelditch, 2002", "Berger et al. (2002)", "Berger et al., 2002", "Berger (2002)", "Berger, 2002"]}, {"id": "ref-5", "full": "Bernard, S., Castelain, T., Mercier, H., Kaufmann, L., Van der Henst, J.-B., & Clément, F. (2016). The boss is always right: Preschoolers endorse the testimony of a dominant over that of a subordinate. Journal of Experimental Child Psychology, 152, 307--317. https://doi.org/10.1016/j.jecp.2016.08.007", "doi": "https://doi.org/10.1016/j.jecp.2016.08.007", "aliases": ["Bernard and Clément (2016)", "Bernard and Clément, 2016", "Bernard & Clément (2016)", "Bernard & Clément, 2016", "Bernard et al. (2016)", "Bernard et al., 2016", "Bernard (2016)", "Bernard, 2016"]}, {"id": "ref-6", "full": "Bourdieu, P. (1975). The specificity of the scientific field and the social conditions of the progress of reason. Social Science Information, 14(6), 19--47. https://doi.org/10.1177/053901847501400602", "doi": "https://doi.org/10.1177/053901847501400602", "aliases": ["Bourdieu et al. (1975)", "Bourdieu et al., 1975", "Bourdieu (1975)", "Bourdieu, 1975"]}, {"id": "ref-7", "full": "Brand-Gruwel, S., Kammerer, Y., van Meeuwen, L., & van Gog, T. (2017). Source evaluation of domain experts and novices during Web search. Journal of Computer Assisted Learning, 33(3), 234--251. https://doi.org/10.1111/jcal.12162", "doi": "https://doi.org/10.1111/jcal.12162", "aliases": ["Brand-Gruwel and van Gog (2017)", "Brand-Gruwel and van Gog, 2017", "Brand-Gruwel & van Gog (2017)", "Brand-Gruwel & van Gog, 2017", "Brand-Gruwel et al. (2017)", "Brand-Gruwel et al., 2017", "Brand-Gruwel (2017)", "Brand-Gruwel, 2017"]}, {"id": "ref-8", "full": "Buchs, C., & Butera, F. (2009). Is a partner's competence threatening during dyadic cooperative work? It depends on resource interdependence. European Journal of Psychology of Education, 24, 145--154. https://doi.org/10.1007/BF03173007", "doi": "https://doi.org/10.1007/BF03173007", "aliases": ["Buchs and Butera (2009)", "Buchs and Butera, 2009", "Buchs & Butera (2009)", "Buchs & Butera, 2009", "Buchs et al. (2009)", "Buchs et al., 2009", "Buchs (2009)", "Buchs, 2009"]}, {"id": "ref-9", "full": "Charafeddine, R., Mercier, H., Clément, F., Kaufmann, L., Berchtold, A., Reboul, A., & Van der Henst, J.-B. (2015). How preschoolers use cues of dominance to make sense of their social environment. Journal of Cognition and Development, 16(4), 587--607. https://doi.org/10.1080/15248372.2014.926269", "doi": "https://doi.org/10.1080/15248372.2014.926269", "aliases": ["Charafeddine and Van der Henst (2015)", "Charafeddine and Van der Henst, 2015", "Charafeddine & Van der Henst (2015)", "Charafeddine & Van der Henst, 2015", "Charafeddine et al. (2015)", "Charafeddine et al., 2015", "Charafeddine (2015)", "Charafeddine, 2015"]}, {"id": "ref-10", "full": "Cheng, J. T., Tracy, J. L., Foulsham, T., Kingstone, A., & Henrich, J. (2013). Two ways to the top: Evidence that dominance and prestige are distinct yet viable avenues to social rank and influence. Journal of Personality and Social Psychology, 104(1), 103--125. https://doi.org/10.1037/a0030398", "doi": "https://doi.org/10.1037/a0030398", "aliases": ["Cheng and Henrich (2013)", "Cheng and Henrich, 2013", "Cheng & Henrich (2013)", "Cheng & Henrich, 2013", "Cheng et al. (2013)", "Cheng et al., 2013", "Cheng (2013)", "Cheng, 2013"]}, {"id": "ref-11", "full": "Clément, F., Koenig, M. A., & Harris, P. L. (2004). The ontogenesis of trust. Mind & Language, 19(4), 360--379. https://doi.org/10.1111/j.0268-1064.2004.00263.x", "doi": "https://doi.org/10.1111/j.0268-1064.2004.00263.x", "aliases": ["Clément and Harris (2004)", "Clément and Harris, 2004", "Clément & Harris (2004)", "Clément & Harris, 2004", "Clément et al. (2004)", "Clément et al., 2004", "Clément (2004)", "Clément, 2004"]}, {"id": "ref-12", "full": "Colpaert, L., Muller, D., Fayant, M.-P., & Butera, F. (2015). A mindset of competition versus cooperation moderates the impact of social comparison on self-evaluation. Frontiers in Psychology, 6, 1337. https://doi.org/10.3389/fpsyg.2015.01337", "doi": "https://doi.org/10.3389/fpsyg.2015.01337", "aliases": ["Colpaert and Butera (2015)", "Colpaert and Butera, 2015", "Colpaert & Butera (2015)", "Colpaert & Butera, 2015", "Colpaert et al. (2015)", "Colpaert et al., 2015", "Colpaert (2015)", "Colpaert, 2015"]}, {"id": "ref-13", "full": "Darnon, C., Doll, S., & Butera, F. (2007). Dealing with a disagreeing partner: Relational and epistemic conflict elaboration. European Journal of Psychology of Education, 22(3), 227--242. https://doi.org/10.1007/BF03173423", "doi": "https://doi.org/10.1007/BF03173423", "aliases": ["Darnon and Butera (2007)", "Darnon and Butera, 2007", "Darnon & Butera (2007)", "Darnon & Butera, 2007", "Darnon et al. (2007)", "Darnon et al., 2007", "Darnon (2007)", "Darnon, 2007"]}, {"id": "ref-14", "full": "Darnon, C., Muller, D., Schrager, S. M., Pannuzzo, N., & Butera, F. (2006). Mastery and performance goals predict epistemic and relational conflict regulation. Journal of Educational Psychology, 98(4), 766--776. https://doi.org/10.1037/0022-0663.98.4.766", "doi": "https://doi.org/10.1037/0022-0663.98.4.766", "aliases": ["Darnon and Butera (2006)", "Darnon and Butera, 2006", "Darnon & Butera (2006)", "Darnon & Butera, 2006", "Darnon et al. (2006)", "Darnon et al., 2006", "Darnon (2006)", "Darnon, 2006"]}, {"id": "ref-15", "full": "De Dreu, C. K. W., Nijstad, B. A., & van Knippenberg, D. (2008). Motivated information processing in group judgment and decision making. Personality and Social Psychology Review, 12(1), 22--49. https://doi.org/10.1177/1088868307304092", "doi": "https://doi.org/10.1177/1088868307304092", "aliases": ["De Dreu and van Knippenberg (2008)", "De Dreu and van Knippenberg, 2008", "De Dreu & van Knippenberg (2008)", "De Dreu & van Knippenberg, 2008", "De Dreu et al. (2008)", "De Dreu et al., 2008", "De Dreu (2008)", "De Dreu, 2008"]}, {"id": "ref-16", "full": "Dosso, C., Morisseau, T., Heintz, C., & Vayre, J.-S. (2025). A cognitive resource-rational account of epistemic injustice. The Philosophical Quarterly, 75(4), 1272--1293. https://doi.org/10.1093/pq/pqaf088", "doi": "https://doi.org/10.1093/pq/pqaf088", "aliases": ["Dosso and Vayre (2025)", "Dosso and Vayre, 2025", "Dosso & Vayre (2025)", "Dosso et al. (2025)", "Dosso & Vayre, 2025", "Dosso et al., 2025", "Dosso (2025)", "Dosso, 2025"]}, {"id": "ref-17", "full": "Dotson, K. (2011). Tracking epistemic violence, tracking practices of silencing. Hypatia, 26(2), 236--257. https://doi.org/10.1111/j.1527-2001.2011.01177.x", "doi": "https://doi.org/10.1111/j.1527-2001.2011.01177.x", "aliases": ["Dotson et al. (2011)", "Dotson et al., 2011", "Dotson (2011)", "Dotson, 2011"]}, {"id": "ref-18", "full": "Festinger, L. (1954). A theory of social comparison processes. Human Relations, 7(2), 117--140. https://doi.org/10.1177/001872675400700202", "doi": "https://doi.org/10.1177/001872675400700202", "aliases": ["Festinger et al. (1954)", "Festinger et al., 1954", "Festinger (1954)", "Festinger, 1954"]}, {"id": "ref-19", "full": "Foschi, M. (2000). Double standards for competence: Theory and research. Annual Review of Sociology, 26, 21--42. https://doi.org/10.1146/annurev.soc.26.1.21", "doi": "https://doi.org/10.1146/annurev.soc.26.1.21", "aliases": ["Foschi et al. (2000)", "Foschi et al., 2000", "Foschi (2000)", "Foschi, 2000"]}, {"id": "ref-20", "full": "Fricker, M. (2007). Epistemic injustice: Power and the ethics of knowing. Oxford University Press. https://doi.org/10.1093/acprof:oso/9780198237907.001.0001", "doi": "https://doi.org/10.1093/acprof:oso/9780198237907.001.0001", "aliases": ["Fricker et al. (2007)", "Fricker et al., 2007", "Fricker (2007)", "Fricker, 2007"]}, {"id": "ref-21", "full": "Goldman, A. I. (2001). Experts: Which ones should you trust? Philosophy and Phenomenological Research, 63(1), 85--110. https://doi.org/10.1111/j.1933-1592.2001.tb00093.x", "doi": "https://doi.org/10.1111/j.1933-1592.2001.tb00093.x", "aliases": ["Goldman et al. (2001)", "Goldman et al., 2001", "Goldman (2001)", "Goldman, 2001"]}, {"id": "ref-22", "full": "Henrich, J., & Gil-White, F. J. (2001). The evolution of prestige: Freely conferred deference as a mechanism for enhancing the benefits of cultural transmission. Evolution and Human Behavior, 22(3), 165--196. https://doi.org/10.1016/S1090-5138(00)00071-4", "doi": "https://doi.org/10.1016/S1090-5138(00)00071-4", "aliases": ["Henrich and Gil-White (2001)", "Henrich and Gil-White, 2001", "Henrich & Gil-White (2001)", "Henrich & Gil-White, 2001", "Henrich et al. (2001)", "Henrich et al., 2001", "Henrich (2001)", "Henrich, 2001"]}, {"id": "ref-23", "full": "Hinds, P. J. (1999). The curse of expertise: The effects of expertise and debiasing methods on prediction of novice performance. Journal of Experimental Psychology: Applied, 5(2), 205--221. https://doi.org/10.1037/1076-898X.5.2.205", "doi": "https://doi.org/10.1037/1076-898X.5.2.205", "aliases": ["Hinds et al. (1999)", "Hinds et al., 1999", "Hinds (1999)", "Hinds, 1999"]}, {"id": "ref-24", "full": "Hinsz, V. B., Tindale, R. S., & Vollrath, D. A. (1997). The emerging conceptualization of groups as information processors. Psychological Bulletin, 121(1), 43--64. https://doi.org/10.1037/0033-2909.121.1.43", "doi": "https://doi.org/10.1037/0033-2909.121.1.43", "aliases": ["Hinsz and Vollrath (1997)", "Hinsz and Vollrath, 1997", "Hinsz & Vollrath (1997)", "Hinsz & Vollrath, 1997", "Hinsz et al. (1997)", "Hinsz et al., 1997", "Hinsz (1997)", "Hinsz, 1997"]}, {"id": "ref-25", "full": "Hollingshead, A. B. (2000). Perceptions of expertise and transactive memory in work relationships. Group Processes & Intergroup Relations, 3(3), 257--267. https://doi.org/10.1177/1368430200033002", "doi": "https://doi.org/10.1177/1368430200033002", "aliases": ["Hollingshead et al. (2000)", "Hollingshead et al., 2000", "Hollingshead (2000)", "Hollingshead, 2000"]}, {"id": "ref-26", "full": "Jiménez, Á. V., & Mesoudi, A. (2019). Prestige-biased social learning: Current evidence and outstanding questions. Palgrave Communications, 5, 20. https://doi.org/10.1057/s41599-019-0228-7", "doi": "https://doi.org/10.1057/s41599-019-0228-7", "aliases": ["Jiménez and Mesoudi (2019)", "Jiménez and Mesoudi, 2019", "Jiménez & Mesoudi (2019)", "Jiménez & Mesoudi, 2019", "Jiménez et al. (2019)", "Jiménez et al., 2019", "Jiménez (2019)", "Jiménez, 2019"]}, {"id": "ref-27", "full": "Johnson, D. W., & Johnson, R. T. (2009). An educational psychology success story: Social interdependence theory and cooperative learning. Educational Researcher, 38(5), 365--379. https://doi.org/10.3102/0013189X09339057", "doi": "https://doi.org/10.3102/0013189X09339057", "aliases": ["Johnson and Johnson (2009)", "Johnson and Johnson, 2009", "Johnson & Johnson (2009)", "Johnson & Johnson, 2009", "Johnson et al. (2009)", "Johnson et al., 2009", "Johnson (2009)", "Johnson, 2009"]}, {"id": "ref-28", "full": "Kalkhoff, W., & Thye, S. R. (2006). Expectation states theory and research: New observations from meta-analysis. Sociological Methods & Research, 35(2), 219--249. https://doi.org/10.1177/0049124106290311", "doi": "https://doi.org/10.1177/0049124106290311", "aliases": ["Kalkhoff and Thye (2006)", "Kalkhoff and Thye, 2006", "Kalkhoff & Thye (2006)", "Kalkhoff et al. (2006)", "Kalkhoff & Thye, 2006", "Kalkhoff et al., 2006", "Kalkhoff (2006)", "Kalkhoff, 2006"]}, {"id": "ref-29", "full": "Kirschner, F., Paas, F., & Kirschner, P. A. (2011). Task complexity as a driver for collaborative learning efficiency: The collective working-memory effect. Applied Cognitive Psychology, 25(4), 615--624. https://doi.org/10.1002/acp.1730", "doi": "https://doi.org/10.1002/acp.1730", "aliases": ["Kirschner and Kirschner (2011)", "Kirschner and Kirschner, 2011", "Kirschner & Kirschner (2011)", "Kirschner & Kirschner, 2011", "Kirschner et al. (2011)", "Kirschner et al., 2011", "Kirschner (2011)", "Kirschner, 2011"]}, {"id": "ref-30", "full": "Kirschner, P. A., Sweller, J., Kirschner, F., & Zambrano, J. R. (2018). From cognitive load theory to collaborative cognitive load theory. International Journal of Computer-Supported Collaborative Learning, 13(2), 213--233. https://doi.org/10.1007/s11412-018-9277-y", "doi": "https://doi.org/10.1007/s11412-018-9277-y", "aliases": ["Kirschner and Zambrano (2018)", "Kirschner and Zambrano, 2018", "Kirschner & Zambrano (2018)", "Kirschner & Zambrano, 2018", "Kirschner et al. (2018)", "Kirschner et al., 2018", "Kirschner (2018)", "Kirschner, 2018"]}, {"id": "ref-31", "full": "Lee, Y.-K., & Roseth, C. J. (2022). A 2 × 2 model of sociocognitive conflict regulation. Journal of Experimental Social Psychology, 99, 104269. https://doi.org/10.1016/j.jesp.2021.104269", "doi": "https://doi.org/10.1016/j.jesp.2021.104269", "aliases": ["Lee and Roseth (2022)", "Lee and Roseth, 2022", "Lee & Roseth (2022)", "Lee & Roseth, 2022", "Lee et al. (2022)", "Lee et al., 2022", "Lee (2022)", "Lee, 2022"]}, {"id": "ref-32", "full": "Lucassen, T., & Schraagen, J. M. (2011). Factual accuracy and trust in information: The role of expertise. Journal of the American Society for Information Science and Technology, 62(7), 1232--1242. https://doi.org/10.1002/asi.21545", "doi": "https://doi.org/10.1002/asi.21545", "aliases": ["Lucassen and Schraagen (2011)", "Lucassen and Schraagen, 2011", "Lucassen & Schraagen (2011)", "Lucassen & Schraagen, 2011", "Lucassen et al. (2011)", "Lucassen et al., 2011", "Lucassen (2011)", "Lucassen, 2011"]}, {"id": "ref-33", "full": "Medina, J. (2011). The relevance of credibility excess in a proportional view of epistemic injustice: Differential epistemic authority and the social imaginary. Social Epistemology, 25(1), 15--35. https://doi.org/10.1080/02691728.2010.534568", "doi": "https://doi.org/10.1080/02691728.2010.534568", "aliases": ["Medina et al. (2011)", "Medina et al., 2011", "Medina (2011)", "Medina, 2011"]}, {"id": "ref-34", "full": "Medina, J. (2013). The epistemology of resistance: Gender and racial oppression, epistemic injustice, and the social imagination. Oxford University Press. https://doi.org/10.1093/acprof:oso/9780199929023.001.0001", "doi": "https://doi.org/10.1093/acprof:oso/9780199929023.001.0001", "aliases": ["Medina et al. (2013)", "Medina et al., 2013", "Medina (2013)", "Medina, 2013"]}, {"id": "ref-35", "full": "Mercier, H. (2016). The argumentative theory: Predictions and empirical evidence. Trends in Cognitive Sciences, 20(9), 689--700. https://doi.org/10.1016/j.tics.2016.07.001", "doi": "https://doi.org/10.1016/j.tics.2016.07.001", "aliases": ["Mercier et al. (2016)", "Mercier et al., 2016", "Mercier (2016)", "Mercier, 2016"]}, {"id": "ref-36", "full": "Mercier, H., & Sperber, D. (2011). Why do humans reason? Arguments for an argumentative theory. Behavioral and Brain Sciences, 34(2), 57--74. https://doi.org/10.1017/S0140525X10000968", "doi": "https://doi.org/10.1017/S0140525X10000968", "aliases": ["Mercier and Sperber (2011)", "Mercier and Sperber, 2011", "Mercier & Sperber (2011)", "Mercier & Sperber, 2011", "Mercier et al. (2011)", "Mercier et al., 2011", "Mercier (2011)", "Mercier, 2011"]}, {"id": "ref-37", "full": "Mercier, H., Trouche, E., Yama, H., Heintz, C., & Girotto, V. (2015). Experts and laymen grossly underestimate the benefits of argumentation for reasoning. Thinking & Reasoning, 21(3), 341--355. https://doi.org/10.1080/13546783.2014.981582", "doi": "https://doi.org/10.1080/13546783.2014.981582", "aliases": ["Mercier and Girotto (2015)", "Mercier and Girotto, 2015", "Mercier & Girotto (2015)", "Mercier & Girotto, 2015", "Mercier et al. (2015)", "Mercier et al., 2015", "Mercier (2015)", "Mercier, 2015"]}, {"id": "ref-38", "full": "Moore, D. A., & Healy, P. J. (2008). The trouble with overconfidence. Psychological Review, 115(2), 502--517. https://doi.org/10.1037/0033-295X.115.2.502", "doi": "https://doi.org/10.1037/0033-295X.115.2.502", "aliases": ["Moore and Healy (2008)", "Moore and Healy, 2008", "Moore & Healy (2008)", "Moore & Healy, 2008", "Moore et al. (2008)", "Moore et al., 2008", "Moore (2008)", "Moore, 2008"]}, {"id": "ref-39", "full": "Pesout, O., & Nietfeld, J. (2021). The impact of cooperation and competition on metacognitive monitoring in classroom context. The Journal of Experimental Education, 89(2), 237--258. https://doi.org/10.1080/00220973.2020.1751577", "doi": "https://doi.org/10.1080/00220973.2020.1751577", "aliases": ["Pesout and Nietfeld (2021)", "Pesout and Nietfeld, 2021", "Pesout & Nietfeld (2021)", "Pesout & Nietfeld, 2021", "Pesout et al. (2021)", "Pesout et al., 2021", "Pesout (2021)", "Pesout, 2021"]}, {"id": "ref-40", "full": "Price, P. C., & Stone, E. R. (2004). Intuitive evaluation of likelihood judgment producers: Evidence for a confidence heuristic. Journal of Behavioral Decision Making, 17(1), 39--57. https://doi.org/10.1002/bdm.460", "doi": "https://doi.org/10.1002/bdm.460", "aliases": ["Price and Stone (2004)", "Price and Stone, 2004", "Price & Stone (2004)", "Price & Stone, 2004", "Price et al. (2004)", "Price et al., 2004", "Price (2004)", "Price, 2004"]}, {"id": "ref-41", "full": "Pustejovsky, J. E., & Tipton, E. (2018). Small-sample methods for cluster-robust variance estimation and hypothesis testing in fixed effects models. Journal of Business & Economic Statistics, 36(4), 672--683. https://doi.org/10.1080/07350015.2016.1247004", "doi": "https://doi.org/10.1080/07350015.2016.1247004", "aliases": ["Pustejovsky and Tipton (2018)", "Pustejovsky and Tipton, 2018", "Pustejovsky & Tipton (2018)", "Pustejovsky & Tipton, 2018", "Pustejovsky et al. (2018)", "Pustejovsky et al., 2018", "Pustejovsky (2018)", "Pustejovsky, 2018"]}, {"id": "ref-42", "full": "Sommet, N., Darnon, C., Mugny, G., Quiamzade, A., Pulfrey, C., Dompnier, B., & Butera, F. (2014). Performance goals in conflictual social interactions: Towards the distinction between two modes of relational conflict regulation. British Journal of Social Psychology, 53(1), 134--153. https://doi.org/10.1111/bjso.12015", "doi": "https://doi.org/10.1111/bjso.12015", "aliases": ["Sommet and Butera (2014)", "Sommet and Butera, 2014", "Sommet & Butera (2014)", "Sommet & Butera, 2014", "Sommet et al. (2014)", "Sommet et al., 2014", "Sommet (2014)", "Sommet, 2014"]}, {"id": "ref-43", "full": "Sperber, D., Clément, F., Heintz, C., Mascaro, O., Mercier, H., Origgi, G., & Wilson, D. (2010). Epistemic vigilance. Mind & Language, 25(4), 359--393. https://doi.org/10.1111/j.1468-0017.2010.01394.x", "doi": "https://doi.org/10.1111/j.1468-0017.2010.01394.x", "aliases": ["Sperber and Wilson (2010)", "Sperber and Wilson, 2010", "Sperber & Wilson (2010)", "Sperber & Wilson, 2010", "Sperber et al. (2010)", "Sperber et al., 2010", "Sperber (2010)", "Sperber, 2010"]}, {"id": "ref-44", "full": "Toma, C., & Butera, F. (2009). Hidden profiles and concealed information: Strategic information sharing and use in group decision making. Personality and Social Psychology Bulletin, 35(6), 793--806. https://doi.org/10.1177/0146167209333176", "doi": "https://doi.org/10.1177/0146167209333176", "aliases": ["Toma and Butera (2009)", "Toma and Butera, 2009", "Toma & Butera (2009)", "Toma & Butera, 2009", "Toma et al. (2009)", "Toma et al., 2009", "Toma (2009)", "Toma, 2009"]}, {"id": "ref-45", "full": "Trouche, E., Johansson, P., Hall, L., & Mercier, H. (2016). The selective laziness of reasoning. Cognitive Science, 40(8), 2122--2136. https://doi.org/10.1111/cogs.12303", "doi": "https://doi.org/10.1111/cogs.12303", "aliases": ["Trouche and Mercier (2016)", "Trouche and Mercier, 2016", "Trouche & Mercier (2016)", "Trouche & Mercier, 2016", "Trouche et al. (2016)", "Trouche et al., 2016", "Trouche (2016)", "Trouche, 2016"]}, {"id": "ref-46", "full": "Vayre et al. (2026a). Prior knowledge and learning from open Web search \\[Preprint\\].", "doi": "", "aliases": ["Vayre et al et al. (2026a)", "Vayre et al et al., 2026a", "Vayre et al (2026a)", "Vayre et al, 2026a"]}, {"id": "ref-47", "full": "Vayre et al. (2026b). CAVL: A cognitive architecture for vigilant learning \\[Preprint\\].", "doi": "", "aliases": ["Vayre et al et al. (2026b)", "Vayre et al et al., 2026b", "Vayre et al (2026b)", "Vayre et al, 2026b"]}, {"id": "ref-48", "full": "Wecker, C., & Fischer, F. (2014). Where is the evidence? A meta-analysis on the role of argumentation for the acquisition of domain-specific knowledge in computer-supported collaborative learning. Computers & Education, 75, 218--228. https://doi.org/10.1016/j.compedu.2014.02.016", "doi": "https://doi.org/10.1016/j.compedu.2014.02.016", "aliases": ["Wecker and Fischer (2014)", "Wecker and Fischer, 2014", "Wecker & Fischer (2014)", "Wecker & Fischer, 2014", "Wecker et al. (2014)", "Wecker et al., 2014", "Wecker (2014)", "Wecker, 2014"]}];
+</script>

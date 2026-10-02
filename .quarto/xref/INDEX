@@ -1,0 +1,29 @@
+{
+  "index.qmd": {
+    "index.html": "1a8cd311"
+  },
+  "funding.qmd": {
+    "funding.html": "0db64668"
+  },
+  "README_FIRST.md": {
+    "README_FIRST.html": "9de5b45d"
+  },
+  "team.qmd": {
+    "team.html": "1807c904"
+  },
+  "working-papers/wp01-cavl/index.qmd": {
+    "index.html": "f1fdd819"
+  },
+  "working-papers/wp02-information-search/index.qmd": {
+    "index.html": "e1c59eea"
+  },
+  "working-papers/wp03-debate/index.qmd": {
+    "index.html": "f9dc2775"
+  },
+  "working-papers/wp04-search-debate/index.qmd": {
+    "index.html": "553ed2a0"
+  },
+  "working-papers/wp05-agent-based-model/index.qmd": {
+    "index.html": "030ed54e"
+  }
+}

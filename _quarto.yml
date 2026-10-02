@@ -1,0 +1,48 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "MOVICI"
+  navbar:
+    pinned: true
+    collapse: true
+    left:
+      - href: index.qmd
+        text: Home
+      - text: "Working Papers"
+        menu:
+          - href: working-papers/wp01-cavl/index.qmd
+            text: "WP01 — CAVL"
+          - href: working-papers/wp02-information-search/index.qmd
+            text: "WP02 — Information Search"
+          - href: working-papers/wp03-debate/index.qmd
+            text: "WP03 — Debate"
+          - href: working-papers/wp04-search-debate/index.qmd
+            text: "WP04 — Information Search & Debate"
+          - href: working-papers/wp05-agent-based-model/index.qmd
+            text: "WP05 — Agent-Based Model"
+      - href: team.qmd
+        text: "Project Team"
+      - href: funding.qmd
+        text: "Funding"
+
+  page-footer:
+    center: "MOVICI Research Programme · Working papers and research materials"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-location: right
+    toc-title: "On this page"
+    number-sections: false
+    footnotes-hover: true
+    crossrefs-hover: true
+    link-external-newwindow: true
+    smooth-scroll: true
+    include-after-body: citation-hover.html
+
+execute:
+  freeze: auto

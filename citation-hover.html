@@ -1,0 +1,109 @@
+
+<div id="movici-citation-tooltip" role="tooltip"></div>
+<script>
+(function () {
+  function escRE(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+
+  function run() {
+    const refs = window.MOVICI_REFERENCES || [];
+    if (!refs.length) return;
+
+    const aliasMap = new Map();
+    refs.forEach(ref => (ref.aliases || []).forEach(a => {
+      if (a && !aliasMap.has(a)) aliasMap.set(a, ref);
+    }));
+    const aliases = Array.from(aliasMap.keys()).sort((a,b) => b.length - a.length);
+    if (!aliases.length) return;
+
+    const rx = new RegExp(aliases.map(escRE).join('|'), 'g');
+    const root = document.querySelector('main.content') || document.querySelector('main') || document.body;
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    let node;
+    while ((node = walker.nextNode())) {
+      const p = node.parentElement;
+      if (!p) continue;
+      if (p.closest('#movici-references, script, style, pre, code, a, .movici-citation-hover')) continue;
+      if (rx.test(node.nodeValue)) nodes.push(node);
+      rx.lastIndex = 0;
+    }
+
+    nodes.forEach(textNode => {
+      const text = textNode.nodeValue;
+      let last = 0, match;
+      rx.lastIndex = 0;
+      const frag = document.createDocumentFragment();
+      while ((match = rx.exec(text))) {
+        if (match.index > last) frag.appendChild(document.createTextNode(text.slice(last, match.index)));
+        const ref = aliasMap.get(match[0]);
+        const el = ref && ref.doi ? document.createElement('a') : document.createElement('span');
+        el.className = 'movici-citation-hover';
+        el.textContent = match[0];
+        el.dataset.full = (ref && ref.full) || '';
+        el.dataset.doi = (ref && ref.doi) || '';
+        if (ref && ref.doi) {
+          el.href = ref.doi;
+          el.target = '_blank';
+          el.rel = 'noopener';
+          el.setAttribute('aria-label', match[0] + ' — open DOI');
+        }
+        frag.appendChild(el);
+        last = rx.lastIndex;
+      }
+      if (last < text.length) frag.appendChild(document.createTextNode(text.slice(last)));
+      textNode.replaceWith(frag);
+    });
+
+    const tip = document.getElementById('movici-citation-tooltip');
+    let hideTimer = null;
+
+    function show(el) {
+      clearTimeout(hideTimer);
+      const full = el.dataset.full || '';
+      const doi = el.dataset.doi || '';
+      tip.innerHTML = '';
+      const txt = document.createElement('div');
+      txt.textContent = full;
+      tip.appendChild(txt);
+      if (doi) {
+        const a = document.createElement('a');
+        a.href = doi;
+        a.target = '_blank';
+        a.rel = 'noopener';
+        a.textContent = 'Open DOI';
+        tip.appendChild(a);
+      }
+      tip.style.display = 'block';
+      const r = el.getBoundingClientRect();
+      const w = Math.min(460, window.innerWidth - 24);
+      tip.style.maxWidth = w + 'px';
+      let left = Math.min(r.left, window.innerWidth - w - 12);
+      left = Math.max(12, left);
+      let top = r.bottom + 8;
+      requestAnimationFrame(() => {
+        const th = tip.getBoundingClientRect().height;
+        if (top + th > window.innerHeight - 12) top = Math.max(12, r.top - th - 8);
+        tip.style.left = left + 'px';
+        tip.style.top = top + 'px';
+      });
+    }
+
+    function scheduleHide() {
+      hideTimer = setTimeout(() => { tip.style.display = 'none'; }, 180);
+    }
+
+    document.querySelectorAll('.movici-citation-hover').forEach(el => {
+      el.addEventListener('mouseenter', () => show(el));
+      el.addEventListener('mouseleave', scheduleHide);
+      el.addEventListener('focus', () => show(el));
+      el.addEventListener('blur', scheduleHide);
+      el.tabIndex = 0;
+    });
+    tip.addEventListener('mouseenter', () => clearTimeout(hideTimer));
+    tip.addEventListener('mouseleave', scheduleHide);
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run);
+  else run();
+})();
+</script>

@@ -1,0 +1,17 @@
+---
+title: "Funding"
+subtitle: "Funding and institutional support for the MOVICI research programme"
+toc: false
+---
+
+<div class="funding-item">
+<strong>French Government — UCAJEDI Investments in the Future</strong>
+
+MOVICI has been supported through the UCAJEDI Investments in the Future project, managed by the French National Research Agency (ANR), reference **ANR-15-IDEX-01**.
+</div>
+
+<div class="funding-item">
+<strong>Université Côte d’Azur — 2024 Scientific Incentive Credits</strong>
+
+Additional equipment support was provided by Université Côte d’Azur through the **2024 Scientific Incentive Credits — Equipment track** (*Crédits Scientifiques Incitatifs, Volet ÉQUIPEMENTS*).
+</div>

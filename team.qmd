@@ -1,0 +1,93 @@
+---
+title: "Project Team"
+subtitle: "People who contributed to the MOVICI research programme"
+toc: false
+---
+
+## Researchers
+
+<div class="team-grid">
+
+<div class="team-person">
+<strong>Jean-Sébastien Vayre</strong>
+<span>Associate Professor in Sociology · Université Côte d’Azur · GREDEG</span>
+</div>
+
+<div class="team-person">
+<strong>Cheyenne Dosso</strong>
+<span>Postdoctoral Researcher in Cognitive Psychology · Université Côte d’Azur · GREDEG</span>
+</div>
+
+<div class="team-person">
+<strong>Sahbi Benlamine</strong>
+<span>Associate Professor in Information Science · Higher Colleges of Technology, Dubai</span>
+</div>
+
+<div class="team-person">
+<strong>Christophe Heintz</strong>
+<span>Researcher in Cognitive Science · Central European University · SMC</span>
+</div>
+
+<div class="team-person">
+<strong>Tiffany Morisseau</strong>
+<span>Researcher in Cognitive Psychology and Psychologist · Institut Catholique de Paris (ICP)</span>
+</div>
+
+<div class="team-person">
+<strong>Serena Villata</strong>
+<span>Senior Researcher in Information Science · Université Côte d’Azur · I3S</span>
+</div>
+
+</div>
+
+## Students
+
+<div class="team-grid">
+
+<div class="team-person">
+<strong>Talia Nguyen</strong>
+<span>Student in Cognitive Psychology</span>
+</div>
+
+<div class="team-person">
+<strong>Dede Houedakor Massouabome</strong>
+<span>Student in Cognitive Psychology</span>
+</div>
+
+<div class="team-person">
+<strong>Farid Aidi</strong>
+<span>Student in Cognitive Psychology</span>
+</div>
+
+<div class="team-person">
+<strong>Manel Mohandamer</strong>
+<span>Student in Cognitive Psychology</span>
+</div>
+
+<div class="team-person">
+<strong>Chloé Ranjon</strong>
+<span>Student in Sociology</span>
+</div>
+
+<div class="team-person">
+<strong>Ines Wanderscheid</strong>
+<span>Student in Sociology</span>
+</div>
+
+</div>
+
+## Scientific Review
+
+<div class="team-grid">
+
+<div class="team-person">
+<strong>André Tricot</strong>
+<span>Scientific review of the CAVL manuscript</span>
+</div>
+
+<div class="team-person">
+<strong>Franck Amadieu</strong>
+<span>Scientific review of the Information Search manuscript</span>
+</div>
+
+</div>
