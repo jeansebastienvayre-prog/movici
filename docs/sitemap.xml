@@ -1,28 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://jeansebastienvayre-prog.github.io/movici/</loc>
-  </url>
-  <url>
-    <loc>https://jeansebastienvayre-prog.github.io/movici/working-papers/wp01-cavl/</loc>
-  </url>
-  <url>
-    <loc>https://jeansebastienvayre-prog.github.io/movici/working-papers/wp02-information-search/</loc>
-  </url>
-  <url>
-    <loc>https://jeansebastienvayre-prog.github.io/movici/working-papers/wp03-debate/</loc>
-  </url>
-  <url>
-    <loc>https://jeansebastienvayre-prog.github.io/movici/working-papers/wp04-search-debate/</loc>
-  </url>
-  <url>
-    <loc>https://jeansebastienvayre-prog.github.io/movici/working-papers/wp05-agent-based-model/</loc>
-  </url>
-  <url>
-    <loc>https://jeansebastienvayre-prog.github.io/movici/team.html</loc>
-  </url>
-  <url>
-    <loc>https://jeansebastienvayre-prog.github.io/movici/funding.html</loc>
-  </url>
+  <url><loc>https://jeansebastienvayre-prog.github.io/movici/</loc></url>
+  <url><loc>https://jeansebastienvayre-prog.github.io/movici/working-papers/wp01-cavl/</loc></url>
+  <url><loc>https://jeansebastienvayre-prog.github.io/movici/working-papers/wp02-information-search/</loc></url>
+  <url><loc>https://jeansebastienvayre-prog.github.io/movici/working-papers/wp03-debate/</loc></url>
+  <url><loc>https://jeansebastienvayre-prog.github.io/movici/working-papers/wp04-search-debate/</loc></url>
+  <url><loc>https://jeansebastienvayre-prog.github.io/movici/working-papers/wp05-agent-based-model/</loc></url>
+  <url><loc>https://jeansebastienvayre-prog.github.io/movici/team.html</loc></url>
+  <url><loc>https://jeansebastienvayre-prog.github.io/movici/funding.html</loc></url>
 </urlset>
-EOFls docs/sitemap.xml
