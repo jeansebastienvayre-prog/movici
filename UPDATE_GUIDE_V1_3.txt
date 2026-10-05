@@ -1,0 +1,44 @@
+MOVICI Website V1.3 — Installation and publication
+
+THIS ZIP IS DESIGNED TO BE EXTRACTED DIRECTLY INTO YOUR EXISTING
+MOVICI_Website_V1_1_COMPLETE FOLDER.
+
+It deliberately does NOT contain the .git folder. Your existing Git
+configuration and GitHub connection remain untouched.
+
+1. Close RStudio.
+2. Make a backup copy of your current MOVICI_Website_V1_1_COMPLETE folder.
+3. Open MOVICI_Website_V1_3_COMPLETE_CONTENTS.zip.
+4. Extract ALL files directly into your existing
+   MOVICI_Website_V1_1_COMPLETE folder.
+5. When Windows asks, choose Replace the files in the destination.
+6. Re-open MOVICI_Website.Rproj.
+
+Then open the RStudio Terminal and run ONE command at a time:
+
+quarto render
+
+git add .
+
+git status
+
+git commit -m "Add funding support and UCA France 2030 logo"
+
+git push origin main
+
+GitHub Pages remains configured to publish from:
+main / docs
+
+After the push:
+- wait for the GitHub Pages action to finish;
+- refresh https://jeansebastienvayre-prog.github.io/movici/ with Ctrl+F5.
+
+Expected changes:
+- Support section on the homepage;
+- menu label Funding & Support;
+- expanded Funding & Institutional Support page;
+- links to UCA, MSHS Sud-Est, CoCoLab, MSI, DS4H and RISE;
+- RISE expanded as Academy of Excellence “Networks, Information and Digital Society”;
+- UCA / France 2030 Initiative d’Excellence logo on the Funding page;
+- sitemap and Google verification preserved across Quarto renders;
+- .nojekyll preserved for GitHub Pages static publication.

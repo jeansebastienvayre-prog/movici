@@ -312,3 +312,16 @@ a.movici-citation-hover:hover {
   overflow-wrap: anywhere;
   word-break: break-word;
 }
+
+
+/* Funding logo */
+.support-logo-block {
+  margin: 1.4rem 0 2.1rem 0;
+  text-align: center;
+}
+
+.support-logo {
+  width: min(720px, 100%);
+  height: auto;
+  display: inline-block;
+}

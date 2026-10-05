@@ -2,11 +2,14 @@ project:
   type: website
   output-dir: docs
   resources:
+    - .nojekyll
     - google3c12734bd85d1eb2.html
     - sitemap.xml
+    - images/LogoIdex.png
 
 website:
   title: "MOVICI"
+  site-url: "https://jeansebastienvayre-prog.github.io/movici/"
   navbar:
     pinned: true
     collapse: true

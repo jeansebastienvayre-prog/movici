@@ -6,6 +6,11 @@ toc: false
 
 The MOVICI research programme has benefited from financial, institutional, scientific, and infrastructural support from several organisations and research initiatives.
 
+
+<div class="support-logo-block">
+  <img src="images/LogoIdex.png" alt="Université Côte d’Azur and France 2030 Initiative d’Excellence" class="support-logo">
+</div>
+
 ## Funding
 
 <div class="funding-item">
