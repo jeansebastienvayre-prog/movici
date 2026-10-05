@@ -1,17 +1,55 @@
 ---
-title: "Funding"
-subtitle: "Funding and institutional support for the MOVICI research programme"
+title: "Funding & Institutional Support"
+subtitle: "Funding, institutional, scientific, and infrastructural support for the MOVICI research programme"
 toc: false
 ---
+
+The MOVICI research programme has benefited from financial, institutional, scientific, and infrastructural support from several organisations and research initiatives.
+
+## Funding
 
 <div class="funding-item">
 <strong>French Government — UCAJEDI Investments in the Future</strong>
 
-MOVICI has been supported through the UCAJEDI Investments in the Future project, managed by the French National Research Agency (ANR), reference **ANR-15-IDEX-01**.
+MOVICI has been supported through the UCAJEDI Investments in the Future project, managed by the [French National Research Agency (ANR)](https://anr.fr/en/), reference **ANR-15-IDEX-01**.
 </div>
 
 <div class="funding-item">
 <strong>Université Côte d’Azur — 2024 Scientific Incentive Credits</strong>
 
-Additional equipment support was provided by Université Côte d’Azur through the **2024 Scientific Incentive Credits — Equipment track** (*Crédits Scientifiques Incitatifs, Volet ÉQUIPEMENTS*).
+Additional equipment support was provided by [Université Côte d’Azur](https://univ-cotedazur.eu/) through the **2024 Scientific Incentive Credits — Equipment track** (*Crédits Scientifiques Incitatifs, Volet ÉQUIPEMENTS*).
 </div>
+
+## Institutional and Scientific Support
+
+<div class="funding-item">
+<strong><a href="https://mshs.univ-cotedazur.fr/">MSHS Sud-Est — Maison des Sciences Humaines et Sociales Sud-Est</a></strong>
+
+Research support structure for the humanities and social sciences.
+</div>
+
+<div class="funding-item">
+<strong><a href="https://mshs.univ-cotedazur.fr/plateforme-cocolab">CoCoLab — Complexity and Cognition Lab</a></strong>
+
+Experimental platform supporting research on human behaviour, cognition, communication, and social interaction.
+</div>
+
+<div class="funding-item">
+<strong><a href="https://msi.univ-cotedazur.fr/">MSI — Maison de la Modélisation, de la Simulation et des Interactions</a></strong>
+
+Université Côte d’Azur structure supporting modelling, simulation, data-intensive research, and interdisciplinary scientific interactions.
+</div>
+
+<div class="funding-item">
+<strong><a href="https://ds4h.univ-cotedazur.fr/">DS4H — Digital Systems for Humans</a></strong>
+
+Université Côte d’Azur research and graduate-school environment devoted to the scientific, technological, and human dimensions of digital systems.
+</div>
+
+<div class="funding-item">
+<strong><a href="https://ds4h.univ-cotedazur.fr/a-propos-de-leur-ds4h/academie-dexcellence">RISE — Academy of Excellence “Networks, Information and Digital Society”</a></strong>
+
+**RISE** refers to the French title *Académie d’Excellence « Réseaux, Information et Société Numérique »*, rendered in English as **Academy of Excellence “Networks, Information and Digital Society.”**
+</div>
+
+Together, these forms of support contributed to the development, implementation, experimental infrastructure, dissemination, and scientific environment of the MOVICI research programme.

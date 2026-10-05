@@ -10,6 +10,13 @@ The programme combines a theoretical framework (**CAVL — Cognitive Architectur
 
 Across these studies, MOVICI connects prior knowledge, metacognition, information search, source evaluation, expertise recognition, epistemic credit, social interaction, and socially structured opportunities to learn.
 
+
+## Support
+
+MOVICI has benefited from the financial, institutional, scientific, and infrastructural support of [Université Côte d’Azur](https://univ-cotedazur.eu/), [MSHS Sud-Est](https://mshs.univ-cotedazur.fr/), [CoCoLab](https://mshs.univ-cotedazur.fr/plateforme-cocolab), [MSI — Maison de la Modélisation, de la Simulation et des Interactions](https://msi.univ-cotedazur.fr/), [DS4H — Digital Systems for Humans](https://ds4h.univ-cotedazur.fr/), and [RISE — Academy of Excellence “Networks, Information and Digital Society”](https://ds4h.univ-cotedazur.fr/a-propos-de-leur-ds4h/academie-dexcellence).
+
+[Learn more about funding and institutional support](funding.qmd)
+
 ## Working Papers
 
 <div class="wp-list">

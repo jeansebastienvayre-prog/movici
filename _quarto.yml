@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - google3c12734bd85d1eb2.html
+    - sitemap.xml
 
 website:
   title: "MOVICI"
@@ -25,7 +28,7 @@ website:
       - href: team.qmd
         text: "Project Team"
       - href: funding.qmd
-        text: "Funding"
+        text: "Funding & Support"
 
   page-footer:
     center: "MOVICI Research Programme · Working papers and research materials"
