@@ -325,3 +325,13 @@ a.movici-citation-hover:hover {
   height: auto;
   display: inline-block;
 }
+
+
+.support-logo-home {
+  margin-top: 1rem;
+}
+
+.support-logo-home .support-logo,
+.support-logo-home img {
+  width: min(520px, 100%);
+}

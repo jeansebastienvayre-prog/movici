@@ -1,0 +1,17 @@
+Logo integration fix
+
+The UCA / France 2030 logo is now inserted as a native Quarto Markdown image
+instead of raw HTML.
+
+It appears:
+- prominently on Funding & Support;
+- in a smaller form in the Support section on the homepage.
+
+After extracting this ZIP over the existing project:
+1. quarto render
+2. git add .
+3. git status
+4. git commit -m "Fix UCA France 2030 logo display"
+5. git push origin main
+
+Then refresh the public site with Ctrl+F5.

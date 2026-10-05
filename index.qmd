@@ -17,6 +17,10 @@ MOVICI has benefited from the financial, institutional, scientific, and infrastr
 
 [Learn more about funding and institutional support](funding.qmd)
 
+::: {.support-logo-block .support-logo-home}
+![Université Côte d’Azur — France 2030 Initiative d’Excellence](images/LogoIdex.png){.support-logo}
+:::
+
 ## Working Papers
 
 <div class="wp-list">
